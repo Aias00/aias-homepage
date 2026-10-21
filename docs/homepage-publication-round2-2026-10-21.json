@@ -1,0 +1,3917 @@
+{
+  "checked_at_utc": "2026-10-21T11:37:44.397Z",
+  "url": "https://aias00.github.io/",
+  "source_commit": "c0ff7ed064f4d8e2a68f7b427c7b2d9d6b802733",
+  "book_count": 26,
+  "topic_counts": {
+    "backend": 13,
+    "agents": 12,
+    "opensource": 1
+  },
+  "pages": [
+    {
+      "path": "/",
+      "width": 320,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/books/",
+      "width": 320,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/about/",
+      "width": 320,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/books/",
+      "width": 390,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/about/",
+      "width": 390,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/",
+      "width": 820,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/books/",
+      "width": 820,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/about/",
+      "width": 820,
+      "http_status": 200,
+      "overflow": false
+    }
+  ],
+  "catalog_links_checked": 52,
+  "catalog_links": [
+    {
+      "id": "java",
+      "read_url": "https://aias00.github.io/opensource-book-site/java-concurrency/",
+      "epub_url": "https://aias00.github.io/opensource-book-site/java-concurrency/book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "jvm",
+      "read_url": "https://aias00.github.io/jvm-bug-book-reader/",
+      "epub_url": "https://aias00.github.io/jvm-bug-book-reader/book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "go-service",
+      "read_url": "https://aias00.github.io/go-service-engineering-book/",
+      "epub_url": "https://aias00.github.io/go-service-engineering-book/downloads/go-service-engineering-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "netty",
+      "read_url": "https://aias00.github.io/netty-book-reader/",
+      "epub_url": "https://aias00.github.io/netty-book-reader/downloads/netty-book-reader.epub",
+      "matches_source": true
+    },
+    {
+      "id": "redis",
+      "read_url": "https://aias00.github.io/redis-book/",
+      "epub_url": "https://aias00.github.io/redis-book/downloads/redis-learning-handbook.epub",
+      "matches_source": true
+    },
+    {
+      "id": "mysql",
+      "read_url": "https://aias00.github.io/mysql-reliability-book/",
+      "epub_url": "https://aias00.github.io/mysql-reliability-book/downloads/mysql-reliability-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "rocketmq",
+      "read_url": "https://aias00.github.io/rocketmq-book/",
+      "epub_url": "https://aias00.github.io/rocketmq-book/rocketmq-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "kafka",
+      "read_url": "https://aias00.github.io/kafka-book-reader/",
+      "epub_url": "https://aias00.github.io/kafka-book-reader/downloads/kafka-book-reader.epub",
+      "matches_source": true
+    },
+    {
+      "id": "kubernetes",
+      "read_url": "https://aias00.github.io/k8s-book-reader/",
+      "epub_url": "https://aias00.github.io/k8s-book-reader/downloads/k8s-book-reader.epub",
+      "matches_source": true
+    },
+    {
+      "id": "envoy",
+      "read_url": "https://aias00.github.io/envoy-learning-book/",
+      "epub_url": "https://github.com/Aias00/envoy-learning-book/releases/download/v1.0.0/envoy-learning-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "gateway",
+      "read_url": "https://aias00.github.io/api-gateway-book-reader/",
+      "epub_url": "https://aias00.github.io/api-gateway-book-reader/book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "ai-gateway",
+      "read_url": "https://aias00.github.io/ai-gateway-book/",
+      "epub_url": "https://aias00.github.io/ai-gateway-book/downloads/ai-gateway-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "observability",
+      "read_url": "https://aias00.github.io/observability-book/",
+      "epub_url": "https://aias00.github.io/observability-book/downloads/observability-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "agent",
+      "read_url": "https://aias00.github.io/agent-book/",
+      "epub_url": "https://aias00.github.io/agent-book/downloads/agent-engineering-java.epub",
+      "matches_source": true
+    },
+    {
+      "id": "durable-agent-workflow",
+      "read_url": "https://aias00.github.io/durable-agent-workflow-book/",
+      "epub_url": "https://aias00.github.io/durable-agent-workflow-book/downloads/durable-agent-workflow-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "enterprise-agent-auth",
+      "read_url": "https://aias00.github.io/enterprise-agent-auth-book/",
+      "epub_url": "https://aias00.github.io/enterprise-agent-auth-book/downloads/enterprise-agent-auth-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "knowledge-retrieval",
+      "read_url": "https://aias00.github.io/knowledge-retrieval-book/",
+      "epub_url": "https://aias00.github.io/knowledge-retrieval-book/downloads/knowledge-retrieval-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "sandbox",
+      "read_url": "https://aias00.github.io/agent-sandbox-book-online/",
+      "epub_url": "https://aias00.github.io/agent-sandbox-book-online/Agent-Sandbox-3.0.epub",
+      "matches_source": true
+    },
+    {
+      "id": "memory",
+      "read_url": "https://aias00.github.io/agent-memory-book/",
+      "epub_url": "https://aias00.github.io/agent-memory-book/agent-memory.epub",
+      "matches_source": true
+    },
+    {
+      "id": "codex",
+      "read_url": "https://aias00.github.io/codex-engineering-book/",
+      "epub_url": "https://aias00.github.io/codex-engineering-book/downloads/codex-engineering-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "pi",
+      "read_url": "https://aias00.github.io/pi-beginner-book-zh/",
+      "epub_url": "https://aias00.github.io/pi-beginner-book-zh/downloads/pi-beginner.epub",
+      "matches_source": true
+    },
+    {
+      "id": "harness",
+      "read_url": "https://aias00.github.io/deepseek-harness-book/",
+      "epub_url": "https://aias00.github.io/deepseek-harness-book/deepseek-harness-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "claude-code",
+      "read_url": "https://aias00.github.io/claude-code-source-book/",
+      "epub_url": "https://aias00.github.io/claude-code-source-book/downloads/claude-code-source-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "agent-harness",
+      "read_url": "https://aias00.github.io/agent-harness-engineering-book-zh/",
+      "epub_url": "https://aias00.github.io/agent-harness-engineering-book-zh/downloads/agent-harness-engineering.epub",
+      "matches_source": true
+    },
+    {
+      "id": "ai-quality",
+      "read_url": "https://aias00.github.io/ai-quality-book/",
+      "epub_url": "https://aias00.github.io/ai-quality-book/downloads/ai-quality-book.epub",
+      "matches_source": true
+    },
+    {
+      "id": "opensource",
+      "read_url": "https://aias00.github.io/opensource-book-site/",
+      "epub_url": "https://aias00.github.io/opensource-book-site/book.epub",
+      "matches_source": true
+    }
+  ],
+  "filters": [
+    {
+      "width": 320,
+      "checks": [
+        {
+          "topic": "backend",
+          "count": 13,
+          "ids": [
+            "java",
+            "jvm",
+            "go-service",
+            "netty",
+            "redis",
+            "mysql",
+            "rocketmq",
+            "kafka",
+            "kubernetes",
+            "envoy",
+            "gateway",
+            "ai-gateway",
+            "observability"
+          ]
+        },
+        {
+          "topic": "agents",
+          "count": 12,
+          "ids": [
+            "agent",
+            "durable-agent-workflow",
+            "enterprise-agent-auth",
+            "knowledge-retrieval",
+            "sandbox",
+            "memory",
+            "codex",
+            "pi",
+            "harness",
+            "claude-code",
+            "agent-harness",
+            "ai-quality"
+          ]
+        },
+        {
+          "topic": "opensource",
+          "count": 1,
+          "ids": [
+            "opensource"
+          ]
+        }
+      ],
+      "all_reset": true,
+      "reading_path_reveals_hidden_book": true
+    },
+    {
+      "width": 390,
+      "checks": [
+        {
+          "topic": "backend",
+          "count": 13,
+          "ids": [
+            "java",
+            "jvm",
+            "go-service",
+            "netty",
+            "redis",
+            "mysql",
+            "rocketmq",
+            "kafka",
+            "kubernetes",
+            "envoy",
+            "gateway",
+            "ai-gateway",
+            "observability"
+          ]
+        },
+        {
+          "topic": "agents",
+          "count": 12,
+          "ids": [
+            "agent",
+            "durable-agent-workflow",
+            "enterprise-agent-auth",
+            "knowledge-retrieval",
+            "sandbox",
+            "memory",
+            "codex",
+            "pi",
+            "harness",
+            "claude-code",
+            "agent-harness",
+            "ai-quality"
+          ]
+        },
+        {
+          "topic": "opensource",
+          "count": 1,
+          "ids": [
+            "opensource"
+          ]
+        }
+      ],
+      "all_reset": true,
+      "reading_path_reveals_hidden_book": true
+    },
+    {
+      "width": 820,
+      "checks": [
+        {
+          "topic": "backend",
+          "count": 13,
+          "ids": [
+            "java",
+            "jvm",
+            "go-service",
+            "netty",
+            "redis",
+            "mysql",
+            "rocketmq",
+            "kafka",
+            "kubernetes",
+            "envoy",
+            "gateway",
+            "ai-gateway",
+            "observability"
+          ]
+        },
+        {
+          "topic": "agents",
+          "count": 12,
+          "ids": [
+            "agent",
+            "durable-agent-workflow",
+            "enterprise-agent-auth",
+            "knowledge-retrieval",
+            "sandbox",
+            "memory",
+            "codex",
+            "pi",
+            "harness",
+            "claude-code",
+            "agent-harness",
+            "ai-quality"
+          ]
+        },
+        {
+          "topic": "opensource",
+          "count": 1,
+          "ids": [
+            "opensource"
+          ]
+        }
+      ],
+      "all_reset": true,
+      "reading_path_reveals_hidden_book": true
+    }
+  ],
+  "mobile_readability": [
+    {
+      "path": "/",
+      "width": 320,
+      "passed": true,
+      "measurements": {
+        "navigation": [
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 30.609375,
+            "left": 136.171875,
+            "right": 166.78125
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 30.609375,
+            "left": 176.78125,
+            "right": 207.390625
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 30.609375,
+            "left": 217.390625,
+            "right": 248
+          }
+        ],
+        "body": [
+          {
+            "font_size": 17,
+            "height": 125.75,
+            "width": 288,
+            "left": 16,
+            "right": 304
+          }
+        ],
+        "motto": [
+          {
+            "font_size": 20,
+            "height": 28,
+            "width": 288,
+            "left": 16,
+            "right": 304
+          }
+        ],
+        "actions": [
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 174.921875,
+            "left": 16,
+            "right": 190.921875
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 74.96875,
+            "left": 206.921875,
+            "right": 281.890625
+          }
+        ]
+      }
+    },
+    {
+      "path": "/books/",
+      "width": 320,
+      "passed": true,
+      "measurements": {
+        "navigation": [
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 30.609375,
+            "left": 136.171875,
+            "right": 166.78125
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 30.609375,
+            "left": 176.78125,
+            "right": 207.390625
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 30.609375,
+            "left": 217.390625,
+            "right": 248
+          }
+        ],
+        "titles": [
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 93,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 93,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 93,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 93,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 93,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 93,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 93,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 168,
+            "left": 119,
+            "right": 287
+          }
+        ],
+        "body": [
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 118.375,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 118.375,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 118.375,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 118.375,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 118.375,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 118.375,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 118.375,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          }
+        ],
+        "details": [
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 254,
+            "left": 33,
+            "right": 287
+          }
+        ],
+        "actions": [
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 33,
+            "right": 156
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 123,
+            "left": 164,
+            "right": 287
+          }
+        ],
+        "filter_buttons": [
+          {
+            "font_size": 14,
+            "height": 46,
+            "width": 78.96875,
+            "left": 16,
+            "right": 94.96875
+          },
+          {
+            "font_size": 14,
+            "height": 46,
+            "width": 150.375,
+            "left": 102.96875,
+            "right": 253.34375
+          },
+          {
+            "font_size": 14,
+            "height": 46,
+            "width": 124.203125,
+            "left": 16,
+            "right": 140.203125
+          },
+          {
+            "font_size": 14,
+            "height": 46,
+            "width": 100.328125,
+            "left": 148.203125,
+            "right": 248.53125
+          }
+        ]
+      }
+    },
+    {
+      "path": "/about/",
+      "width": 320,
+      "passed": true,
+      "measurements": {
+        "navigation": [
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 30.609375,
+            "left": 136.171875,
+            "right": 166.78125
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 30.609375,
+            "left": 176.78125,
+            "right": 207.390625
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 30.609375,
+            "left": 217.390625,
+            "right": 248
+          }
+        ],
+        "body": [
+          {
+            "font_size": 16,
+            "height": 121.5625,
+            "width": 288,
+            "left": 16,
+            "right": 304
+          },
+          {
+            "font_size": 16,
+            "height": 121.5625,
+            "width": 288,
+            "left": 16,
+            "right": 304
+          }
+        ],
+        "contact": [
+          {
+            "font_size": 16,
+            "height": 91.171875,
+            "width": 288,
+            "left": 16,
+            "right": 304
+          }
+        ],
+        "actions": [
+          {
+            "font_size": 17,
+            "height": 44,
+            "width": 175.453125,
+            "left": 16,
+            "right": 191.453125
+          }
+        ]
+      }
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "passed": true,
+      "measurements": {
+        "navigation": [
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 174.171875,
+            "right": 212.78125
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 224.78125,
+            "right": 263.390625
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 275.390625,
+            "right": 314
+          }
+        ],
+        "body": [
+          {
+            "font_size": 17,
+            "height": 94.3125,
+            "width": 350,
+            "left": 20,
+            "right": 370
+          }
+        ],
+        "motto": [
+          {
+            "font_size": 20,
+            "height": 28,
+            "width": 350,
+            "left": 20,
+            "right": 370
+          }
+        ],
+        "actions": [
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 174.921875,
+            "left": 20,
+            "right": 194.921875
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 74.96875,
+            "left": 210.921875,
+            "right": 285.890625
+          }
+        ]
+      }
+    },
+    {
+      "path": "/books/",
+      "width": 390,
+      "passed": true,
+      "measurements": {
+        "navigation": [
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 174.171875,
+            "right": 212.78125
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 224.78125,
+            "right": 263.390625
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 275.390625,
+            "right": 314
+          }
+        ],
+        "titles": [
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 93,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 93,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 62,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 210,
+            "left": 139,
+            "right": 349
+          }
+        ],
+        "body": [
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 88.78125,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          }
+        ],
+        "details": [
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 308,
+            "left": 41,
+            "right": 349
+          }
+        ],
+        "actions": [
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 41,
+            "right": 189
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 148,
+            "left": 201,
+            "right": 349
+          }
+        ],
+        "filter_buttons": [
+          {
+            "font_size": 14,
+            "height": 46,
+            "width": 78.96875,
+            "left": 20,
+            "right": 98.96875
+          },
+          {
+            "font_size": 14,
+            "height": 46,
+            "width": 150.375,
+            "left": 106.96875,
+            "right": 257.34375
+          },
+          {
+            "font_size": 14,
+            "height": 46,
+            "width": 124.203125,
+            "left": 20,
+            "right": 144.203125
+          },
+          {
+            "font_size": 14,
+            "height": 46,
+            "width": 100.328125,
+            "left": 152.203125,
+            "right": 252.53125
+          }
+        ]
+      }
+    },
+    {
+      "path": "/about/",
+      "width": 390,
+      "passed": true,
+      "measurements": {
+        "navigation": [
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 174.171875,
+            "right": 212.78125
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 224.78125,
+            "right": 263.390625
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 275.390625,
+            "right": 314
+          }
+        ],
+        "body": [
+          {
+            "font_size": 16,
+            "height": 91.171875,
+            "width": 350,
+            "left": 20,
+            "right": 370
+          },
+          {
+            "font_size": 16,
+            "height": 91.171875,
+            "width": 350,
+            "left": 20,
+            "right": 370
+          }
+        ],
+        "contact": [
+          {
+            "font_size": 16,
+            "height": 60.78125,
+            "width": 320,
+            "left": 20,
+            "right": 340
+          }
+        ],
+        "actions": [
+          {
+            "font_size": 17,
+            "height": 44,
+            "width": 175.453125,
+            "left": 20,
+            "right": 195.453125
+          }
+        ]
+      }
+    },
+    {
+      "path": "/",
+      "width": 820,
+      "passed": true,
+      "measurements": {
+        "navigation": [
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 604.171875,
+            "right": 642.78125
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 654.78125,
+            "right": 693.390625
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 705.390625,
+            "right": 744
+          }
+        ],
+        "body": [
+          {
+            "font_size": 17,
+            "height": 94.3125,
+            "width": 470,
+            "left": 20,
+            "right": 490
+          }
+        ],
+        "motto": [
+          {
+            "font_size": 20,
+            "height": 28,
+            "width": 780,
+            "left": 20,
+            "right": 800
+          }
+        ],
+        "actions": [
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 174.921875,
+            "left": 20,
+            "right": 194.921875
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 74.96875,
+            "left": 210.921875,
+            "right": 285.890625
+          }
+        ]
+      }
+    },
+    {
+      "path": "/books/",
+      "width": 820,
+      "passed": true,
+      "measurements": {
+        "navigation": [
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 604.171875,
+            "right": 642.78125
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 654.78125,
+            "right": 693.390625
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 705.390625,
+            "right": 744
+          }
+        ],
+        "titles": [
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          },
+          {
+            "font_size": 20,
+            "height": 31,
+            "width": 640,
+            "left": 139,
+            "right": 779
+          }
+        ],
+        "body": [
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 59.1875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 29.59375,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          }
+        ],
+        "details": [
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          },
+          {
+            "font_size": 14,
+            "height": 23.796875,
+            "width": 738,
+            "left": 41,
+            "right": 779
+          }
+        ],
+        "actions": [
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 41,
+            "right": 404
+          },
+          {
+            "font_size": 16,
+            "height": 48,
+            "width": 363,
+            "left": 416,
+            "right": 779
+          }
+        ],
+        "filter_buttons": [
+          {
+            "font_size": 14,
+            "height": 46,
+            "width": 78.96875,
+            "left": 20,
+            "right": 98.96875
+          },
+          {
+            "font_size": 14,
+            "height": 46,
+            "width": 150.375,
+            "left": 106.96875,
+            "right": 257.34375
+          },
+          {
+            "font_size": 14,
+            "height": 46,
+            "width": 124.203125,
+            "left": 265.34375,
+            "right": 389.546875
+          },
+          {
+            "font_size": 14,
+            "height": 46,
+            "width": 100.328125,
+            "left": 397.546875,
+            "right": 497.875
+          }
+        ]
+      }
+    },
+    {
+      "path": "/about/",
+      "width": 820,
+      "passed": true,
+      "measurements": {
+        "navigation": [
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 604.171875,
+            "right": 642.78125
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 654.78125,
+            "right": 693.390625
+          },
+          {
+            "font_size": 15,
+            "height": 49,
+            "width": 38.609375,
+            "left": 705.390625,
+            "right": 744
+          }
+        ],
+        "body": [
+          {
+            "font_size": 16,
+            "height": 60.78125,
+            "width": 780,
+            "left": 20,
+            "right": 800
+          },
+          {
+            "font_size": 16,
+            "height": 60.78125,
+            "width": 780,
+            "left": 20,
+            "right": 800
+          }
+        ],
+        "contact": [
+          {
+            "font_size": 16,
+            "height": 60.78125,
+            "width": 320,
+            "left": 20,
+            "right": 340
+          }
+        ],
+        "actions": [
+          {
+            "font_size": 17,
+            "height": 44,
+            "width": 175.453125,
+            "left": 20,
+            "right": 195.453125
+          }
+        ]
+      }
+    }
+  ],
+  "no_js": true,
+  "no_js_checks": [
+    {
+      "width": 320,
+      "navigation": [
+        "/",
+        "/books/",
+        "/about/",
+        "/"
+      ],
+      "book_count": 26,
+      "catalog_matches_source": true,
+      "filter_hidden": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "navigation": [
+        "/",
+        "/books/",
+        "/about/",
+        "/"
+      ],
+      "book_count": 26,
+      "catalog_matches_source": true,
+      "filter_hidden": true,
+      "overflow": false
+    },
+    {
+      "width": 820,
+      "navigation": [
+        "/",
+        "/books/",
+        "/about/",
+        "/"
+      ],
+      "book_count": 26,
+      "catalog_matches_source": true,
+      "filter_hidden": true,
+      "overflow": false
+    }
+  ],
+  "legacy_anchor": true,
+  "legacy_anchors": [
+    {
+      "anchor": "books",
+      "destination": "/books/",
+      "target_visible": true
+    },
+    {
+      "anchor": "about",
+      "destination": "/about/",
+      "target_visible": true
+    },
+    {
+      "anchor": "contact",
+      "destination": "/about/#contact",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-java",
+      "destination": "/books/#book-java",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-jvm",
+      "destination": "/books/#book-jvm",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-go-service",
+      "destination": "/books/#book-go-service",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-netty",
+      "destination": "/books/#book-netty",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-redis",
+      "destination": "/books/#book-redis",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-mysql",
+      "destination": "/books/#book-mysql",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-rocketmq",
+      "destination": "/books/#book-rocketmq",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-kafka",
+      "destination": "/books/#book-kafka",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-kubernetes",
+      "destination": "/books/#book-kubernetes",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-envoy",
+      "destination": "/books/#book-envoy",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-gateway",
+      "destination": "/books/#book-gateway",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-ai-gateway",
+      "destination": "/books/#book-ai-gateway",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-observability",
+      "destination": "/books/#book-observability",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-agent",
+      "destination": "/books/#book-agent",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-durable-agent-workflow",
+      "destination": "/books/#book-durable-agent-workflow",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-enterprise-agent-auth",
+      "destination": "/books/#book-enterprise-agent-auth",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-knowledge-retrieval",
+      "destination": "/books/#book-knowledge-retrieval",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-sandbox",
+      "destination": "/books/#book-sandbox",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-memory",
+      "destination": "/books/#book-memory",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-codex",
+      "destination": "/books/#book-codex",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-pi",
+      "destination": "/books/#book-pi",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-harness",
+      "destination": "/books/#book-harness",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-claude-code",
+      "destination": "/books/#book-claude-code",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-agent-harness",
+      "destination": "/books/#book-agent-harness",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-ai-quality",
+      "destination": "/books/#book-ai-quality",
+      "target_visible": true
+    },
+    {
+      "anchor": "book-opensource",
+      "destination": "/books/#book-opensource",
+      "target_visible": true
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "/tmp/homepage-round2-public-screenshots/320-home.png",
+    "/tmp/homepage-round2-public-screenshots/320-books.png",
+    "/tmp/homepage-round2-public-screenshots/320-about.png",
+    "/tmp/homepage-round2-public-screenshots/390-home.png",
+    "/tmp/homepage-round2-public-screenshots/390-books.png",
+    "/tmp/homepage-round2-public-screenshots/390-about.png",
+    "/tmp/homepage-round2-public-screenshots/820-home.png",
+    "/tmp/homepage-round2-public-screenshots/820-books.png",
+    "/tmp/homepage-round2-public-screenshots/820-about.png"
+  ],
+  "status": "passed",
+  "successful_ci": {
+    "run_id": 39592745232,
+    "url": "https://github.com/Aias00/aias-homepage/actions/runs/39592745232",
+    "source_commit": "c0ff7ed064f4d8e2a68f7b427c7b2d9d6b802733",
+    "conclusion": "success"
+  },
+  "publication_repository": {
+    "repository": "Aias00/aias00.github.io",
+    "branch": "master",
+    "commit": "1cc65453b5a02c31432f128f141b910fbcebda5f",
+    "message": "Publish homepage from c0ff7ed064f4d8e2a68f7b427c7b2d9d6b802733"
+  },
+  "home_primary_navigation": true
+}

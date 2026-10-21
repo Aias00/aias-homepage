@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "audited_at_utc": "2026-10-21T11:39:35.631599+00:00",
+  "overall_status": "PASS",
+  "auditor": "Publication verification and original read-only content review; durable archive-gate repair and publication executed by this agent after explicit delegation.",
+  "books": {
+    "go-service-engineering-book": {
+      "status": "PASS",
+      "reviewed_product_commit": "ee5e29d5ab69681e5d63e00ecc38a144e567a3fa",
+      "documentation_commit": "abbf6739c4c7379bb184707416e066b09c0f14e8",
+      "ci": {
+        "run_id": 39588398529,
+        "url": "https://github.com/Aias00/go-service-engineering-book/actions/runs/39588398529",
+        "status": "success",
+        "build_and_deploy_success": true,
+        "download_artifact_id": 12340943089,
+        "pages_artifact_id": 12340253770,
+        "raw_log": "/tmp/round2-audit/go/v1.0.1/ci.log"
+      },
+      "release": {
+        "tag": "v1.0.1",
+        "url": "https://github.com/Aias00/go-service-engineering-book/releases/tag/v1.0.1",
+        "tag_commit_verified": true,
+        "latest_public_release": true
+      },
+      "pages": "https://aias00.github.io/go-service-engineering-book/",
+      "epub": {
+        "bytes": 128887,
+        "sha256": "71f1495f93770a6e6034a04aeda6ab1a7791c10ba6ff9d4c3809bc5389661c74",
+        "ci_pages_release_equal": true,
+        "downloaded_independently": true,
+        "epubcheck": "5.4.0: 0 fatals/errors/warnings/infos"
+      },
+      "content": {
+        "body_chapters": 18,
+        "total_reading_entries": 23,
+        "body_chinese_characters_excluding_code": 27153,
+        "full_body_and_appendices_read": true,
+        "all_public_chapters_equal_source": true,
+        "source_index_cache_hashes_verified": 9
+      },
+      "lab": {
+        "files": 13,
+        "go_files": 8,
+        "zip_sha256": "7a5dedb2f9ba44079628bcfd535424611922fbba0d3bead4af27c753fbd6c0e0",
+        "ci_pages_zip_equal": true,
+        "zip_files_equal_product_source": true,
+        "independent_public_zip_race": "PASS go1.24.3 darwin/arm64 cmd/service 3.139s; internal/service 2.074s",
+        "independent_public_zip_vet": "PASS",
+        "reviewed_assertions": [
+          "queue overload and concurrent close",
+          "accepted task ownership",
+          "task timeout and worker actual release",
+          "real TCP occupied connection timeout and recovery",
+          "blocked response body cancellation reaches server",
+          "nonreading TCP client write deadline releases handler",
+          "actual subprocess SIGTERM drain and deadline cancellation",
+          "real pprof output parsed by Linux CI"
+        ],
+        "ci_pages_release_zip_equal": true
+      },
+      "browser": "PASS public 23 chapters, 320/390px, search/theme/font/no-JS/downloads",
+      "claims_and_privacy": "Scope honestly limits production capacity, persistence, authentication, outbound policy and business success. Raw teaching profile retains author-local paths; no credentials or real user data detected.",
+      "findings": [
+        {
+          "severity": "medium",
+          "status": "FIXED_AND_PUBLISHED",
+          "description": "Original chapter2 exercise used Pool active to observe /work handlers, which Pool Stats excludes. Published v1.0.1 uses request/stream logs and actual handler-return notifications and clarifies the distinction in related chapters.",
+          "fixed_commit": "ee5e29d5ab69681e5d63e00ecc38a144e567a3fa",
+          "fixed_release": "v1.0.1"
+        }
+      ],
+      "older_release_preserved": {
+        "tag": "v1.0.0",
+        "epub_sha256": "365d394bb4e169fd83e6a63d880fa688d17b31835e5c442075d0e73140e69c32"
+      }
+    },
+    "durable-agent-workflow-book": {
+      "status": "PASS",
+      "reviewed_lab_commit": "5e07ffe1a0752d51924488dc85fea4c494e8cc3d",
+      "body_chapters_read": 18,
+      "lab_source_and_tests_reviewed": true,
+      "lab_ci": {
+        "run_id": 39586231582,
+        "status": "success",
+        "artifact_id": 12340230307,
+        "independently_downloaded": true,
+        "expected_top_level_tests": 26,
+        "raw_pass_entries": 28,
+        "raw_skips": 0,
+        "raw_failures": 0,
+        "source_hashes_match_current_lab": true,
+        "actual_postgresql": "17.11",
+        "image_digest": "postgres@sha256:a63c1ea3f6a3a5a1621f97d2aba3b30faecfab4224c1b0000cc85ced57bb1939"
+      },
+      "findings": [
+        {
+          "severity": "medium",
+          "status": "FIXED_IN_SUCCESSFUL_PUBLICATION_CI",
+          "description": "Archive gate incorrectly rejected Go package-level skip emitted for command packages without test files. Fix rejects all failures and test-level skips and requires all28 named test passes exactly once.",
+          "fixed_commit": "6ce0cbd3d713c7723858e8c858fbfb4be48155a8",
+          "independently_reviewed_by": "go_service_book",
+          "final_run": 39591665656
+        },
+        {
+          "severity": "medium",
+          "status": "FIXED_BEFORE_FINAL_PUBLICATION",
+          "description": "Model demo originally described a literal state as if persisted; final stateless plancheck reports next_required_stage, retains original stdout, and distinguishes extracted candidate JSON from complete CLI output."
+        }
+      ],
+      "source_index_cache_hashes_verified": 8,
+      "model_read_review": "Final Linux publication CI actual fixed GGUF/engine CPU generation for both authored cases, raw stdout hashes, extracted candidate JSON and stateless Go admission verified.",
+      "reviewed_product_commit": "6ce0cbd3d713c7723858e8c858fbfb4be48155a8",
+      "pages": "https://aias00.github.io/durable-agent-workflow-book/",
+      "ci": {
+        "run_id": 39591665656,
+        "url": "https://github.com/Aias00/durable-agent-workflow-book/actions/runs/39591665656",
+        "status": "success",
+        "build_and_deploy_success": true,
+        "download_artifact_id": 12342542534,
+        "runtime_artifact_id": 12342412557,
+        "pages_artifact_id": 12342257811,
+        "raw_log": "/tmp/round2-audit/durable/v1.0.0/ci.log",
+        "source_run_test_pass_entries": 28,
+        "independent_zip_test_pass_entries": 28,
+        "test_skips": 0,
+        "test_failures": 0,
+        "command_packages_with_no_test_files": 2,
+        "source_and_zip_exact_test_inventory_verified": true
+      },
+      "release": {
+        "tag": "v1.0.0",
+        "url": "https://github.com/Aias00/durable-agent-workflow-book/releases/tag/v1.0.0",
+        "tag_commit_verified": true,
+        "latest_public_release": true,
+        "assets_from_same_ci": 10
+      },
+      "epub": {
+        "bytes": 156189,
+        "sha256": "9e39bce14f69d085244050ea784ee77097b0acb98f1044d1bb1f98e346fc574d",
+        "ci_pages_release_equal": true,
+        "anonymous_downloads_compared": true,
+        "epubcheck": "5.4.0: 0 fatals/errors/warnings/infos"
+      },
+      "content": {
+        "body_chapters": 18,
+        "total_reading_entries": 23,
+        "body_chinese_characters_excluding_code": 26718,
+        "full_body_and_appendices_read_before_pipeline_repair": true,
+        "all_public_chapters_equal_source_and_epub": true,
+        "ci_manuscript_equal_source": true,
+        "official_source_index_entries": 10,
+        "source_index_cache_hashes_verified": 8
+      },
+      "lab": {
+        "files": 17,
+        "go_files": 7,
+        "zip_sha256": "560727f591196833fd873efc75386b9011f0d0b853f72c23ce3d41701237cfa6",
+        "ci_pages_release_zip_equal": true,
+        "zip_files_equal_product_source": true,
+        "independent_zip_integration_race": "Actual clean-directory Linux publication CI reran all26 top-level PostgreSQL/HTTP/process experiments plus2 subcases; exact28 pass, zero test skips/failures. Both raw JSON streams downloaded and parsed independently.",
+        "module_root_and_embedded_schema_verified": true
+      },
+      "model": {
+        "model": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+        "revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+        "model_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+        "model_bytes": 491400032,
+        "engine_release": "b11789",
+        "engine_binary_sha256": "fc4930ab9cefe2efef9a488a54b8d1558094e54187f36248301644bb407ee785",
+        "actual_platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+        "cpu_only": true,
+        "actual_cases": 2,
+        "cases_match_authored_request": true,
+        "raw_stdout_sha256_verified": true,
+        "stateless_go_admission_verified": true,
+        "ci_pages_report_equal": true
+      },
+      "browser": "PASS public23 chapters, 320/390px, all chapters without JS, pagination/search/theme/font/downloads",
+      "claims_and_privacy": "Single side-effect teaching node, separate transactions on one PostgreSQL instance, trusted application identity assumption, no global workflow deadline or exactly-once claim, cancellation does not undo effects; public fixture data and credentials only.",
+      "documentation_commit": "bad7cf52ebd4f0089f5a4f0368f4817b546a8d86",
+      "delivery_document": "https://github.com/Aias00/durable-agent-workflow-book/blob/main/DELIVERY.md",
+      "canonical_reports_equal_successful_ci": true,
+      "final_independent_recheck": {
+        "reviewer": "go_service_book",
+        "status": "PASS",
+        "scope": [
+          "exact pipeline gate and eight invalid-output cases",
+          "successful final CI build/deploy and exact test-name counters in both raw streams",
+          "tag and product commit identity",
+          "runtime source hashes and all17 ZIP files",
+          "independent fresh public Pages/Release EPUB and ZIP downloads versus CI bytes",
+          "canonical report JSON and DELIVERY accuracy"
+        ],
+        "no_files_modified_by_reviewer": true
+      }
+    },
+    "enterprise-agent-auth-book": {
+      "status": "PASS",
+      "reviewed_product_commit": "49b91ead9094e13554cbc700d12f33617b1d44a9",
+      "documentation_commit": "81471b54c978a8c4b1234d706719442657fe1d07",
+      "ci": {
+        "run_id": 39588610889,
+        "url": "https://github.com/Aias00/enterprise-agent-auth-book/actions/runs/39588610889",
+        "status": "success",
+        "build_and_deploy_success": true,
+        "download_artifact_id": 12340583379,
+        "pages_artifact_id": 12340368637,
+        "raw_log": "/tmp/round2-audit/enterprise/v1.0.1/ci.log",
+        "real_keycloak": "PASS actual discovery/JWKS, signed workload credential, roles/azp/tenant/refund denial and real 12-second expiry; TestRealKeycloakWorkload 12.27s, full package 13.421s",
+        "real_keycloak_skipped": false
+      },
+      "release": {
+        "tag": "v1.0.1",
+        "url": "https://github.com/Aias00/enterprise-agent-auth-book/releases/tag/v1.0.1",
+        "tag_commit_verified": true,
+        "latest_public_release": true
+      },
+      "pages": "https://aias00.github.io/enterprise-agent-auth-book/",
+      "epub": {
+        "bytes": 116259,
+        "sha256": "3c1f8dfede767cb72c84253fc65b23ce15b59cba40aa88e87df474f056547265",
+        "ci_pages_release_equal": true,
+        "downloaded_independently": true,
+        "epubcheck": "5.4.0: 0 fatals/errors/warnings/infos",
+        "author": "Aias00",
+        "rights_verified": true
+      },
+      "content": {
+        "body_chapters": 18,
+        "total_reading_entries": 21,
+        "body_chinese_characters_excluding_code": 25303,
+        "all_public_chapters_equal_source": true,
+        "ci_manuscript_equal_source": true,
+        "full_body_and_lab_review": "Independent read review by go_service_book agent; this auditor verified final artifacts, ZIP and CI proof.",
+        "official_source_index_entries": 11,
+        "source_index_cache_hashes_verified": 11
+      },
+      "lab": {
+        "files": 11,
+        "go_files": 4,
+        "zip_sha256": "086abdf8e122faed9f636b447888a047b75a37c4aede0d9bedc5bf5db5f1b956",
+        "ci_pages_release_zip_equal": true,
+        "zip_files_equal_product_source": true,
+        "independent_zip_race": "PASS go1.24.3 darwin/arm64 package 1.599s; 6 local top-level tests and subcases passed; real Keycloak correctly skipped because local container unavailable, independently confirmed passing in Linux publication CI.",
+        "business_effect_assertions": "Final source asserts persisted refund status and amount, replay stability and concurrent single-consumption outcome, plus approval audit-reference binding."
+      },
+      "browser": "PASS public 21 chapters, 320/390px including all chapters without JS, search/theme/font/downloads",
+      "claims_and_privacy": "Public development credentials clearly labeled; fake issuer endpoints distinguished from OAuth/OIDC RFC protocols. Real Keycloak path explicitly uses workload identity; user login/PKCE/logout/DPoP/token exchange unclaimed. No production or prompt-injection immunity claim.",
+      "findings": [
+        {
+          "severity": "medium",
+          "status": "FIXED_AND_PUBLISHED",
+          "description": "Metadata originally attributed authorship/rights to Apache ShenYu PMC; final EPUB, README and LICENSE correctly attribute Aias00 with personal-background disclaimer.",
+          "fixed_commit": "49b91ead9094e13554cbc700d12f33617b1d44a9",
+          "fixed_release": "v1.0.1"
+        },
+        {
+          "severity": "medium",
+          "status": "FIXED_BEFORE_FINAL_PUBLICATION",
+          "description": "Separate reviewer required persisted business refund status/amount rather than HTTP status alone; final tests and publication CI contain real object-state assertions."
+        }
+      ]
+    }
+  },
+  "review_independence": {
+    "go_and_enterprise": "Final artifacts independently downloaded and checked; Go complete manuscript/lab read-only reviewed; enterprise full content/lab separately reviewed by go_service_book.",
+    "durable_original_content": "18 chapters, appendices and original PostgreSQL/HTTP/process lab reviewed read-only before publication ownership changed.",
+    "durable_pipeline_repair": "This agent authored archive-only pass/skip inventory gate repair at 6ce0cbd3d713c7723858e8c858fbfb4be48155a8 and is executing publication.",
+    "durable_independent_patch_review": "PASS: go_service_book independently reviewed exact YAML and tested valid output plus eight invalid failure/skip/missing/duplicate/extra cases.",
+    "durable_documentation_commit": "bad7cf52ebd4f0089f5a4f0368f4817b546a8d86",
+    "durable_final_independent_publication_review": "PASS: go_service_book separately checked final source/ZIP raw experiment streams, commit/tag, actual public EPUB/ZIP bytes against CI, canonical reports and DELIVERY."
+  },
+  "scope": "All three requested book publications. Main homepage26-book rollout is verified separately by root and is outside this audit verdict."
+}

@@ -1,12 +1,12 @@
 # 技术电子书写作与发布路线
 
-用户目标：按已推荐路线继续写书，提供 EPUB，提交至 Aias00 的 GitHub，并支持在线阅读。上一轮八本已完成；2026-10-21 用户按新的推荐路线启动第二轮，优先执行可靠执行、身份授权、Go服务工程三本。第二轮不能沿用上一轮完成状态，完成一本也不代表三本目标完成。
+用户目标：按已推荐路线继续写书，提供 EPUB，提交至 Aias00 的 GitHub，并支持在线阅读。第一轮八本和第二轮三本均已交付；26本公开书架完成部署与公网验收。后续选题分析另行记录，尚未启动新一轮书稿。
 
-## 第二轮：当前执行范围
+## 第二轮：已交付的三本
 
 | 顺序 | 书籍 | 状态 | 本地目录 | 公开入口 |
 | --- | --- | --- | --- | --- |
-| 1 | 长任务 Agent 的可靠执行：状态、审批与故障恢复 | 已发布EPUB与在线阅读：18章26718正文汉字、4附录；真实PG28项、CPU模型、ZIP独立执行与完整出版CI39591665656通过，Release核验收尾中 | /Volumes/data/durable-agent-workflow-book | [阅读](https://aias00.github.io/durable-agent-workflow-book/) · [EPUB](https://aias00.github.io/durable-agent-workflow-book/downloads/durable-agent-workflow-book.epub) · [GitHub](https://github.com/Aias00/durable-agent-workflow-book) |
+| 1 | 长任务 Agent 的可靠执行：状态、审批与故障恢复 | 已交付v1.0.0：18章26718正文汉字、4附录；真实PG28项、CPU模型、ZIP独立执行与完整出版CI39591665656通过，EPUB的CI/Pages/Release逐字节一致 | /Volumes/data/durable-agent-workflow-book | [阅读](https://aias00.github.io/durable-agent-workflow-book/) · [EPUB](https://aias00.github.io/durable-agent-workflow-book/downloads/durable-agent-workflow-book.epub) · [GitHub](https://github.com/Aias00/durable-agent-workflow-book) |
 | 2 | 企业 Agent 工具接入：身份委托、授权与审计 | 已交付v1.0.1：18章25303正文汉字、2附录；真实HTTP/Keycloak、独立审阅与公开产物核验通过 | /Volumes/data/enterprise-agent-auth-book | [阅读](https://aias00.github.io/enterprise-agent-auth-book/) · [EPUB](https://aias00.github.io/enterprise-agent-auth-book/downloads/enterprise-agent-auth-book.epub) · [GitHub](https://github.com/Aias00/enterprise-agent-auth-book) |
 | 3 | Go 服务工程：并发、资源管理与故障诊断 | 已交付v1.0.1：18章27153正文汉字、4附录；真实TCP/取消/SIGTERM/race/profile与公开产物核验通过 | /Volumes/data/go-service-engineering-book | [阅读](https://aias00.github.io/go-service-engineering-book/) · [EPUB](https://aias00.github.io/go-service-engineering-book/downloads/go-service-engineering-book.epub) · [GitHub](https://github.com/Aias00/go-service-engineering-book) |
 
@@ -50,3 +50,17 @@
 23本[公开书架](https://aias00.github.io/books/)已部署并复核，分类为后端12本、AI10本、开源1本。主页源提交 `d7c0419625b06a6374a897b0c347fa6f533c08c3` 的完整[CI 39581614746](https://github.com/Aias00/aias-homepage/actions/runs/39581614746)成功，发布仓库提交 `9eefbfc0051b4f8fb0725ec3e38d273f8f1e1ed3` 与该源提交对应。本地与CI均通过类型检查、构建和8项浏览器回归；公网三页320/390/820px布局、23书卡的46个链接与源数据一致、分类筛选、旧锚点和无JavaScript导航均通过，记录见[主页部署验收](docs/homepage-publication-2026-10-21.json)。第一轮八本写作与整理发布范围全部完成。
 
 各书 `DELIVERY.md` 记录实验前提与未测试范围：受控HTTP上游不等于真实模型API，合成评测不等于模型排名，单节点KRaft/kind不等于生产高可用，Outbox本地原子性不等于消息恰好一次。Netty、Kafka、Kubernetes的原维护仓库仍为私有，公开阅读仓库使用审查后的独立历史。
+
+## 第二轮完成审计
+
+本轮三本共54章正文、10个附录、3篇前言，合计67个公开阅读单元，排除代码块后正文共79174中文汉字。[三书出版审计](docs/publication-audit-round2-2026-10-21.json)全部PASS：正文、实验、公开阅读、EPUBCheck、移动端和无JavaScript阅读均通过，各书EPUB的成功CI、Pages与Release逐字节相同。产品提交和后续证据提交分别记录，不以文档更新触发重建或替换已发布附件。
+
+| 书籍 | 产品源提交 | 成功CI | Release | EPUB SHA256 |
+| --- | --- | --- | --- | --- |
+| 长任务Agent | `6ce0cbd3d713c7723858e8c858fbfb4be48155a8` | [39591665656](https://github.com/Aias00/durable-agent-workflow-book/actions/runs/39591665656) | v1.0.0 | `9e39bce14f69d085244050ea784ee77097b0acb98f1044d1bb1f98e346fc574d` |
+| 企业工具授权 | `49b91ead9094e13554cbc700d12f33617b1d44a9` | [39588610889](https://github.com/Aias00/enterprise-agent-auth-book/actions/runs/39588610889) | v1.0.1 | `3c1f8dfede767cb72c84253fc65b23ce15b59cba40aa88e87df474f056547265` |
+| Go服务工程 | `ee5e29d5ab69681e5d63e00ecc38a144e567a3fa` | [39588398529](https://github.com/Aias00/go-service-engineering-book/actions/runs/39588398529) | v1.0.1 | `71f1495f93770a6e6034a04aeda6ab1a7791c10ba6ff9d4c3809bc5389661c74` |
+
+长任务书实测为单个业务副作用节点，包含真实PostgreSQL、HTTP、SIGKILL和两例真实CPU模型生成；工具授权书的真实Keycloak路径使用服务身份；Go书验证真实TCP、取消、有界并发、SIGTERM与诊断。这些证据不扩展为通用工作流高可用、完整用户登录或生产容量保证。审计JSON明确区分原始内容独立审阅、流水线修复执行者及另一位审阅者的最终CI/发布复核。
+
+26本[公开书架](https://aias00.github.io/books/)的分类为后端13本、AI12本、开源1本。源码提交 `c0ff7ed064f4d8e2a68f7b427c7b2d9d6b802733` 的[CI 39592745232](https://github.com/Aias00/aias-homepage/actions/runs/39592745232)完成类型检查、构建和8项浏览器回归；发布仓库提交 `1cc65453b5a02c31432f128f141b910fbcebda5f` 的消息引用该完整源SHA。[本轮主页公网验收](docs/homepage-publication-round2-2026-10-21.json)核对三页320/390/820px、全部26张书卡的52个链接、各宽分类筛选与字号、48px阅读/下载按钮、三宽无脚本导航和29个旧锚点，全部通过。第一轮23本的验收JSON保留为历史记录。
