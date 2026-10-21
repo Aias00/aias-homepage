@@ -33,6 +33,8 @@
 
 ## 完成审计
 
-八本均已完成正文、实验、EPUB、GitHub源代码与在线阅读，合计125章正文、31个附录。[独立出版审计](docs/publication-audit-2026-10-21.json)的8本全部通过：164个公开阅读单元可读，各书Pages、Release与同次成功CI的EPUB逐字节相同。书架最后三本已纳入23本源数据，本地类型检查、构建和8项浏览器回归通过，正在完成线上部署复核。
+八本均已完成正文、实验、EPUB、GitHub源代码与在线阅读，合计125章正文、31个附录。[独立出版审计](docs/publication-audit-2026-10-21.json)的8本全部通过：164个公开阅读单元可读，各书Pages、Release与同次成功CI的EPUB逐字节相同。
+
+23本[公开书架](https://aias00.github.io/books/)已部署并复核，分类为后端12本、AI10本、开源1本。主页源提交 `d7c0419625b06a6374a897b0c347fa6f533c08c3` 的完整[CI 39581614746](https://github.com/Aias00/aias-homepage/actions/runs/39581614746)成功，发布仓库提交 `9eefbfc0051b4f8fb0725ec3e38d273f8f1e1ed3` 与该源提交对应。本地与CI均通过类型检查、构建和8项浏览器回归；公网三页320/390/820px布局、23书卡的46个链接与源数据一致、分类筛选、旧锚点和无JavaScript导航均通过，记录见[主页部署验收](docs/homepage-publication-2026-10-21.json)。本轮八本写作与整理发布范围全部完成。
 
 各书 `DELIVERY.md` 记录实验前提与未测试范围：受控HTTP上游不等于真实模型API，合成评测不等于模型排名，单节点KRaft/kind不等于生产高可用，Outbox本地原子性不等于消息恰好一次。Netty、Kafka、Kubernetes的原维护仓库仍为私有，公开阅读仓库使用审查后的独立历史。

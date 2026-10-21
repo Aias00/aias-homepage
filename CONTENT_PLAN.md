@@ -107,3 +107,5 @@ Envoy 的 PDF、HTML 和 Markdown 版本保留在其 [Release](https://github.co
 2026-10-21（第二批交付）：新增Kafka、全链路可观测性、AI应用质量交付，书架共20本。Kafka以官方包校验后的真实KRaft实验验证回放与再均衡；可观测性以真实Java/Redis/RocketMQ/OTel/Tempo/Prometheus集成验证因果、日志、指标与故障；质量交付以明确标注的合成样本和受控候选验证评分与发布流水线，不冒称真实模型排名。
 
 2026-10-21（第三批交付）：新增MySQL、企业知识库检索、Kubernetes，书架共23本。MySQL为17章4附录、15项真实InnoDB场景；检索为16章4附录、24项测试含真实CPU ONNX BGE，覆盖权限、更新、删除与引用；Kubernetes为14章3附录、真实kind部署和故障演练。三书EPUBCheck零错误零警告，分章网页在320/390px及无JavaScript阅读下验收通过。阅读和EPUB主入口均指向各自Pages，同次成功CI工件同时用于Release，避免独立重建导致版本不一致。
+
+本轮八本共125章正文、31附录、164阅读单元，[最终出版审计](docs/publication-audit-2026-10-21.json)全部通过。23本书架源提交d7c0419的完整CI39581614746成功；[实际公网验收](docs/homepage-publication-2026-10-21.json)核对三页移动端、全部书卡链接、分类筛选、无脚本与旧锚点兼容。交付记录补充提交不改页面源文件。

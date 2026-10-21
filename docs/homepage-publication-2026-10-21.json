@@ -1,0 +1,83 @@
+{
+  "checked_at_utc": "2026-10-21T10:04:48.533Z",
+  "url": "https://aias00.github.io/",
+  "source_commit": "d7c0419625b06a6374a897b0c347fa6f533c08c3",
+  "book_count": 23,
+  "topic_counts": {
+    "backend": 12,
+    "agents": 10,
+    "opensource": 1
+  },
+  "pages": [
+    {
+      "path": "/",
+      "width": 320,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/books/",
+      "width": 320,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/about/",
+      "width": 320,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/books/",
+      "width": 390,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/about/",
+      "width": 390,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/",
+      "width": 820,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/books/",
+      "width": 820,
+      "http_status": 200,
+      "overflow": false
+    },
+    {
+      "path": "/about/",
+      "width": 820,
+      "http_status": 200,
+      "overflow": false
+    }
+  ],
+  "catalog_links_checked": 46,
+  "no_js": true,
+  "legacy_anchor": true,
+  "status": "passed",
+  "successful_ci": {
+    "run_id": 39581614746,
+    "url": "https://github.com/Aias00/aias-homepage/actions/runs/39581614746",
+    "source_commit": "d7c0419625b06a6374a897b0c347fa6f533c08c3",
+    "conclusion": "success"
+  },
+  "publication_repository": {
+    "repository": "Aias00/aias00.github.io",
+    "branch": "master",
+    "commit": "9eefbfc0051b4f8fb0725ec3e38d273f8f1e1ed3",
+    "message": "Publish homepage from d7c0419625b06a6374a897b0c347fa6f533c08c3"
+  }
+}
