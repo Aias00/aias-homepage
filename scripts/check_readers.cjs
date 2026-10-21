@@ -19,7 +19,11 @@ const books = [
   ['Pi', 'pi-beginner-book-zh/site/chapters/05-prompt-to-tool.html'],
   ['Harness', 'deepseek-harness-book/docs/index.html'],
   ['Envoy', snapshots + 'envoy-learning-book/site/01-foundations/01-one-request/index.html'],
+  ['RocketMQ', 'rocketmq-book/dist/index.html'],
+  ['Claude Code', 'ccsource/claude-code-source-book/site/index.html#source/scfe9ecb797316961'],
+  ['AI Harness', 'ccsource/agent-harness-engineering-book-zh/site/index.html'],
 ];
+const newReaders = new Set(['RocketMQ', 'Claude Code', 'AI Harness']);
 const content = 'main, article, .prose, .book-content, #book, .md-typeset, .aias-basic-reader';
 async function settle(page) {
   await page.waitForFunction(() => document.querySelector('.aias-reader-theme, [data-md-component="palette"]'));
@@ -37,11 +41,16 @@ async function measurements(page) {
       const pre = span.closest('pre');
       codeContrast = Math.min(codeContrast, contrast(getComputedStyle(span).color, getComputedStyle(pre).backgroundColor));
     }
+    const actionContrast = [...document.querySelectorAll('main a.primary, main a.download')].reduce((minimum, action) => {
+      const style = getComputedStyle(action);
+      return Math.min(minimum, contrast(style.color, style.backgroundColor));
+    }, Infinity);
     return {
       background: css.backgroundColor,
       textContrast: contrast(css.color, css.backgroundColor),
       mutedContrast: contrast(css.getPropertyValue('--reader-muted'), css.getPropertyValue('--reader-page')),
       codeContrast: Number.isFinite(codeContrast) ? codeContrast : null,
+      actionContrast: Number.isFinite(actionContrast) ? actionContrast : null,
       fontSize: target ? getComputedStyle(target).fontSize : null,
       overflow: document.documentElement.scrollWidth > innerWidth + 1,
       theme: document.documentElement.dataset.theme || document.body.dataset.mdColorScheme,
@@ -70,12 +79,20 @@ async function toggle(page) {
       const response = await page.goto(new URL(path, base).href);
       assert.equal(response.status(), 200, name + ' entry');
       await settle(page);
+      if (name === 'Claude Code') await page.locator('#content pre code').waitFor();
       const light = await measurements(page);
       assert.equal(light.background, 'rgb(247, 247, 243)', name + ' defaults to light under dark OS');
       assert(light.textContrast >= 7, name + ' body contrast');
       assert(light.mutedContrast >= 4.5, name + ' muted contrast');
       assert(!light.overflow, name + ' desktop overflow');
       if (light.codeContrast !== null) assert(light.codeContrast >= 4.5, name + ' light syntax contrast: ' + light.codeContrast);
+      if (light.actionContrast !== null) assert(light.actionContrast >= 4.5, name + ' light action contrast: ' + light.actionContrast);
+      if (newReaders.has(name)) {
+        const download = page.locator('.download').first();
+        const downloadResponse = await context.request.get(new URL(await download.getAttribute('href'), page.url()).href);
+        assert.equal(downloadResponse.status(), 200, name + ' EPUB download');
+        assert.equal((await downloadResponse.body()).subarray(0, 4).toString('hex'), '504b0304', name + ' EPUB signature');
+      }
       if (shots && ['Codex', 'Memory', 'Agent'].includes(name)) await page.screenshot({ path: `${shots}/${name}-light.png` });
       await toggle(page);
       const dark = await measurements(page);
@@ -83,11 +100,27 @@ async function toggle(page) {
       assert(dark.textContrast >= 7, name + ' dark body contrast');
       assert(dark.mutedContrast >= 4.5, name + ' dark muted contrast');
       if (dark.codeContrast !== null) assert(dark.codeContrast >= 4.5, name + ' dark syntax contrast: ' + dark.codeContrast);
+      if (dark.actionContrast !== null) assert(dark.actionContrast >= 4.5, name + ' dark action contrast: ' + dark.actionContrast);
       await page.reload();
       await settle(page);
       assert.equal((await measurements(page)).background, 'rgb(28, 31, 36)', name + ' persists theme');
       await page.setViewportSize({ width: 390, height: 844 });
       assert(!(await measurements(page)).overflow, name + ' mobile overflow');
+      if (newReaders.has(name)) {
+        for (const width of [320, 390]) {
+          await page.setViewportSize({ width, height: 844 });
+          assert(!(await measurements(page)).overflow, name + ' mobile overflow at ' + width);
+          const wrappedButtons = await page.locator('header button:visible').evaluateAll(buttons => buttons.filter(button => {
+            const range = document.createRange();
+            range.selectNodeContents(button);
+            return new Set([...range.getClientRects()].map(rect => Math.round(rect.top))).size > 1;
+          }).map(button => button.textContent));
+          assert.deepEqual(wrappedButtons, [], name + ' header buttons stay on one line at ' + width);
+          await page.locator('#menu').click();
+          assert.equal(await page.locator('#menu').getAttribute('aria-expanded'), 'true', name + ' mobile contents opens');
+          await page.locator('#menu').click();
+        }
+      }
       if (shots && ['Codex', 'Memory', 'Agent'].includes(name)) await page.screenshot({ path: `${shots}/${name}-dark-mobile.png` });
       assert.deepEqual(errors, [], name + ' JavaScript errors');
       console.log('PASS', name, JSON.stringify({ light, dark }));
@@ -96,11 +129,13 @@ async function toggle(page) {
     const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
     const page = await context.newPage();
     await page.goto(process.env.HOMEPAGE_URL || 'http://127.0.0.1:4321/books/');
-    assert.equal(await page.locator('.book-card').count(), 12);
+    const totalBooks = await page.locator('.book-card').count();
+    const agentBooks = await page.locator('.book-card[data-topic="agents"]').count();
+    assert(totalBooks >= books.length, 'bookshelf includes all configured readers');
     await page.locator('[data-filter="agents"]').click();
-    assert.equal(await page.locator('.book-card:visible').count(), 6);
+    assert.equal(await page.locator('.book-card:visible').count(), agentBooks);
     await page.locator('.reading-path a[href="#book-java"]').click();
-    assert.equal(await page.locator('.book-card:visible').count(), 12);
+    assert.equal(await page.locator('.book-card:visible').count(), totalBooks);
     assert(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'bookshelf mobile overflow');
     await context.close();
     // A denied storage API must not prevent reading or switching themes.
@@ -124,7 +159,7 @@ async function toggle(page) {
     await sharedPage.goto(new URL(books[8][1], base).href);
     await settle(sharedPage);
     await toggle(sharedPage);
-    for (const index of [6, 11, 1]) {
+    for (const index of [6, 11, 1, 12, 13, 14]) {
       await sharedPage.goto(new URL(books[index][1], base).href);
       await settle(sharedPage);
       assert.equal((await measurements(sharedPage)).background, 'rgb(28, 31, 36)', books[index][0] + ' shares theme across books');

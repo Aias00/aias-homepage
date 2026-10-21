@@ -13,6 +13,25 @@ CSS = (ROOT / "reader-theme/reader.css").read_text()
 JS = (ROOT / "reader-theme/reader.js").read_text()
 START = "/* BEGIN AIAS SHARED READER */"
 END = "/* END AIAS SHARED READER */"
+ADAPTERS = {
+    "rocketmq-book": """@media screen {
+  .topbar { background: var(--reader-surface); color: var(--reader-text); }
+  .topbar a { color: var(--reader-accent); }
+  .topbar nav { flex-shrink: 0; white-space: nowrap; }
+  .topbar button { color: var(--reader-text); border-color: var(--reader-line); white-space: nowrap; }
+  #content a.download { color: var(--reader-page) !important; }
+  .topbar .brand { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+}""",
+    "claude-code-source-book": """@media screen {
+  header .brand { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  header button, header .download { flex-shrink: 0; white-space: nowrap; }
+}""",
+    "agent-harness-engineering-book-zh": """@media screen {
+  header .brand { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  header button, header .download { flex-shrink: 0; white-space: nowrap; }
+  #content a.primary { color: var(--reader-page) !important; }
+}""",
+}
 
 
 def write(path, content):
@@ -28,8 +47,8 @@ def append(path, content):
     write(path, text.rstrip() + "\n\n" + START + "\n" + content.rstrip() + "\n" + END + "\n")
 
 
-def assets(repo, css, js, copies=()):
-    append(repo / css, CSS)
+def assets(repo, css, js, copies=(), adapter=""):
+    append(repo / css, CSS + ("\n" + adapter + "\n" if adapter else ""))
     append(repo / js, JS)
     for source, destination in copies:
         write(repo / destination, (repo / source).read_text())
@@ -51,7 +70,8 @@ def add_script(path, src="reader.js"):
         write(path, text.replace("</head>", tag + "\n</head>"))
 
 
-def sync(root):
+def sync(root, books=()):
+    enabled = lambda name: not books or name in books
     configs = {
         "agent-book": ("web/reader.css", "web/reader.js", [("web/reader.css", "docs/site/style.css"), ("web/reader.js", "docs/site/reader.js")]),
         "opensource-book-site": ("reading.css", "reading.js", []),
@@ -63,6 +83,9 @@ def sync(root):
         "codex-engineering-book": ("web/reader.css", "web/reader.js", []),
         "pi-beginner-book-zh": ("web/site.css", "web/site.js", []),
         "deepseek-harness-book": ("site.css", "reader.js", [("site.css", "docs/site.css"), ("reader.js", "docs/reader.js")]),
+        "rocketmq-book": ("style.css", "reader.js", [("style.css", "dist/style.css"), ("reader.js", "dist/reader.js")]),
+        "claude-code-source-book": ("web/style.css", "web/app.js", [("web/style.css", "site/style.css"), ("web/app.js", "site/app.js")]),
+        "agent-harness-engineering-book-zh": ("web/style.css", "web/app.js", [("web/style.css", "site/style.css"), ("web/app.js", "site/app.js")]),
         # Original authoring checkouts used to publish the standalone readers.
         "opensource-book": ("assets/reading.css", "assets/reading.js", [("assets/reading.css", "docs/reading.css"), ("assets/reading.js", "docs/reading.js")]),
         "api-gateway-book": ("web/reader.css", "web/reader.js", [("web/reader.css", "site/reader.css"), ("web/reader.js", "site/reader.js")]),
@@ -70,17 +93,22 @@ def sync(root):
         "agent-sandbox": ("site/reader.css", "site/reader.js", []),
     }
     for name, (css, js, copies) in configs.items():
+        if not enabled(name):
+            continue
         repo = root / name
+        if not repo.exists() and name in {"claude-code-source-book", "agent-harness-engineering-book-zh"}:
+            repo = root / "ccsource" / name
         if repo.exists() and (repo / css).exists():
-            assets(repo, css, js, copies)
+            assets(repo, css, js, copies, ADAPTERS.get(name, ""))
 
-    for path in [root / "opensource-book-site/java-concurrency/index.html",
-                 root / "concurrency-book/web/template.html", root / "concurrency-book/docs/index.html"]:
-        if path.exists():
+    for name, path in [("opensource-book-site", root / "opensource-book-site/java-concurrency/index.html"),
+                       ("concurrency-book", root / "concurrency-book/web/template.html"),
+                       ("concurrency-book", root / "concurrency-book/docs/index.html")]:
+        if enabled(name) and path.exists():
             inline(path)
 
     repo = root / "envoy-learning-book"
-    if repo.exists():
+    if enabled("envoy-learning-book") and repo.exists():
         write(repo / "book/styles/aias-reader.css", CSS)
         write(repo / "book/styles/aias-reader.js", JS)
         config = repo / "mkdocs.yml"
@@ -92,7 +120,7 @@ def sync(root):
         write(config, text)
 
     repo = root / "agent-memory-book"
-    if repo.exists():
+    if enabled("agent-memory-book") and repo.exists():
         builder = repo / "scripts/build_site.py"
         add_script(builder)
         text = builder.read_text()
@@ -105,7 +133,7 @@ def sync(root):
             add_script(path)
 
     repo = root / "deepseek-harness-book"
-    if repo.exists():
+    if enabled("deepseek-harness-book") and repo.exists():
         add_script(repo / "site-template.html")
         builder = repo / "build_site.py"
         text = builder.read_text()
@@ -119,5 +147,6 @@ def sync(root):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--checkout-root", required=True, type=Path)
+    parser.add_argument("--book", action="append", default=[], help="Sync only this repository; repeat for multiple books")
     args = parser.parse_args()
-    sync(args.checkout_root)
+    sync(args.checkout_root, args.book)
