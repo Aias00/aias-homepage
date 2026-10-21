@@ -1,6 +1,18 @@
 # 技术电子书写作与发布路线
 
-用户目标：按已推荐路线继续写书，提供 EPUB，提交至 Aias00 的 GitHub，并支持在线阅读。第一轮八本和第二轮三本均已交付；26本公开书架完成部署与公网验收。后续选题分析另行记录，尚未启动新一轮书稿。
+用户目标：按已推荐路线继续写书，提供 EPUB，提交至 Aias00 的 GitHub，并支持在线阅读。第一轮八本和第二轮三本均已交付，26本公开书架完成部署与公网验收。用户现按最新推荐路线启动第三轮：Kubernetes控制器、CDC数据同步、MySQL备份复制与恢复。前两轮的完成记录不代表第三轮已完成。
+
+## 第三轮：当前执行范围
+
+| 顺序 | 书籍 | 当前状态 | 本地目录 | GitHub仓库 |
+| --- | --- | --- | --- | --- |
+| 1 | Kubernetes 控制器与 Operator 工程：从协调循环到可靠运维 | 开始编写18章及托管网关控制器；先验证真实kind实验 | /Volumes/data/kubernetes-operator-book | 计划使用 `Aias00/kubernetes-operator-book` |
+| 2 | 业务数据同步工程：从 CDC 到可重建索引 | 开始编写18章及真实MySQL→CDC→Kafka→查询投影实验 | /Volumes/data/cdc-data-pipeline-book | 计划使用 `Aias00/cdc-data-pipeline-book` |
+| 3 | MySQL 备份、复制与恢复演练：从数据保护到故障切换 | 开始编写18章及真实备份、PITR、复制和隔离切换实验 | /Volumes/data/mysql-recovery-book | 计划使用 `Aias00/mysql-recovery-book` |
+
+每本排除代码块后正文至少25000中文汉字，提供完整解释、贯穿项目、练习、来源、实验代码及真实运行证据。逐本执行[第三轮出版验收清单](docs/round3-publication-checklist.md)。新书在EPUB与公共阅读验收后才加入书架，当前公网总数仍为26本。
+
+浏览器Agent、Linux排障、模型推理服务及数据分析Agent是后续储备；记忆与Sandbox改版另行安排，不替代或扩充本轮三书范围。
 
 ## 第二轮：已交付的三本
 
@@ -10,7 +22,7 @@
 | 2 | 企业 Agent 工具接入：身份委托、授权与审计 | 已交付v1.0.1：18章25303正文汉字、2附录；真实HTTP/Keycloak、独立审阅与公开产物核验通过 | /Volumes/data/enterprise-agent-auth-book | [阅读](https://aias00.github.io/enterprise-agent-auth-book/) · [EPUB](https://aias00.github.io/enterprise-agent-auth-book/downloads/enterprise-agent-auth-book.epub) · [GitHub](https://github.com/Aias00/enterprise-agent-auth-book) |
 | 3 | Go 服务工程：并发、资源管理与故障诊断 | 已交付v1.0.1：18章27153正文汉字、4附录；真实TCP/取消/SIGTERM/race/profile与公开产物核验通过 | /Volumes/data/go-service-engineering-book | [阅读](https://aias00.github.io/go-service-engineering-book/) · [EPUB](https://aias00.github.io/go-service-engineering-book/downloads/go-service-engineering-book.epub) · [GitHub](https://github.com/Aias00/go-service-engineering-book) |
 
-每本中文正文目标至少25000汉字，必须有完整解释、实际实验与明确边界。EPUB、网页、GitHub源、Release与书架仍须满足下述逐项交付条件。下一轮[选题分析](docs/next-book-topics-2026-10-21.md)建议优先Kubernetes控制器、CDC数据同步、MySQL复制恢复，浏览器Agent作为后续候选；记忆与Sandbox修订另行安排。这些建议尚未启动，不替代本轮三本。
+第二轮三书已逐项完成下述交付条件。最新[选题分析](docs/next-book-topics-2026-10-21.md)中的前三本现已启动第三轮，第二轮既有产物和审计记录保持独立。
 
 ## 第一轮：已完成的八本
 
@@ -36,8 +48,8 @@
 
 ## 当前工作约定
 
-- 第一本文稿：`book/chapters/*.md`，元数据：`book/metadata.json`；原生 SVG 封面。
-- 第一本文实验：`lab/` 与 `tests/`；先用可控的真实 HTTP 上游替身建立确定性实验，区分教学保证与生产实现。
+- 各书使用独立仓库；书稿：`book/chapters/*.md`，元数据：`book/metadata.json`；原生 SVG 封面。
+- 实验源码与配置放在各书`lab/`等目录；第三轮分别使用真实kind API、真实CDC数据链路及真实MySQL多实例，不以替身或静态配置检查代替集成证据。
 - 构建与网页：`scripts/`、`web/`、`epub/`；生成物不直接修改。
 - 不冒称来自真实生产事故，不声称已经完成尚未运行的评测、集群或故障实验。
 - 本机无容器、Kubernetes、MySQL服务；依赖实验已在 GitHub Actions 的真实容器和kind环境运行并保存证据。Netty与Kafka也保留本机JDK/Maven及真实KRaft验证。
