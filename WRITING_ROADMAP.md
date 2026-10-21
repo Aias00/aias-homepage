@@ -6,12 +6,12 @@
 | --- | --- | --- | --- | --- |
 | 1 | AI 网关与模型路由实战 | 已交付：17章4附录、26项HTTP测试、EPUB/在线/Release与书架均核验 | /Volumes/data/ai-gateway-book | [GitHub](https://github.com/Aias00/ai-gateway-book) · [阅读](https://aias00.github.io/ai-gateway-book/) · [EPUB](https://aias00.github.io/ai-gateway-book/downloads/ai-gateway-book.epub) |
 | 2 | 全链路可观测性：从一次慢请求到故障定位 | 已交付：16章4附录，真实Java/Redis/RocketMQ/OTel链路、EPUB与公开阅读核验通过 | /Volumes/data/observability-book | [GitHub](https://github.com/Aias00/observability-book) · [阅读](https://aias00.github.io/observability-book/) · [EPUB](https://aias00.github.io/observability-book/downloads/observability-book.epub) |
-| 3 | MySQL 事务、并发控制与故障排查 | 17章4附录完成；15项真实InnoDB测试通过，增强死锁断言后执行最终出版验收 | /Volumes/data/mysql-reliability-book | [GitHub](https://github.com/Aias00/mysql-reliability-book)，阅读与Release待最终CI |
+| 3 | MySQL 事务、并发控制与故障排查 | 已交付：17章4附录、15项真实InnoDB测试，含增强死锁与提交确认丢失探针；公开阅读和v1.0.0核验通过 | /Volumes/data/mysql-reliability-book | [GitHub](https://github.com/Aias00/mysql-reliability-book) · [阅读](https://aias00.github.io/mysql-reliability-book/) · [EPUB](https://aias00.github.io/mysql-reliability-book/downloads/mysql-reliability-book.epub) |
 | 4 | AI 应用质量交付：从评测集到发布回归 | 已交付：16章4附录、17项流水线测试；v1.0.1线上/Release/CI同源核验通过 | /Volumes/data/ai-quality-book | [GitHub](https://github.com/Aias00/ai-quality-book) · [阅读](https://aias00.github.io/ai-quality-book/) · [EPUB](https://aias00.github.io/ai-quality-book/downloads/ai-quality-book.epub) |
-| 5 | 企业知识库检索工程 | 16章4附录完成；FTS5/权限/更新删除与真实BGE实验通过，公开产物复核中 | /Volumes/data/knowledge-retrieval-book | [GitHub](https://github.com/Aias00/knowledge-retrieval-book)，待Release核验后加入书架 |
+| 5 | 企业知识库检索工程 | 已交付：16章4附录，24项测试含真实BGE，FTS5/权限/更新删除实验；v1.0.1发布 | /Volumes/data/knowledge-retrieval-book | [GitHub](https://github.com/Aias00/knowledge-retrieval-book) · [阅读](https://aias00.github.io/knowledge-retrieval-book/) · [EPUB](https://aias00.github.io/knowledge-retrieval-book/downloads/knowledge-retrieval-book.epub) |
 | 6 | 从零开始学 Netty | 已交付：15章4附录、Java/EPUB/在线/Release与书架均核验 | /Volumes/data/netty-book | [阅读](https://aias00.github.io/netty-book-reader/) · [GitHub](https://github.com/Aias00/netty-book-reader)；原仓库保持私有 |
 | 7 | Kafka 从零开始 | 已交付：14章4附录，真实4.1.2 KRaft回放/再均衡/重启、EPUB与公开阅读通过 | /Volumes/data/kafka-book | [GitHub](https://github.com/Aias00/kafka-book-reader) · [阅读](https://aias00.github.io/kafka-book-reader/) · [EPUB](https://aias00.github.io/kafka-book-reader/downloads/kafka-book-reader.epub)；原仓库私有 |
-| 8 | Kubernetes 入门与实践 | 14章3附录完成；最终公共CI真实kind与出版检查通过，Release/线上产物比对中 | /Volumes/data/k8s-book | [GitHub](https://github.com/Aias00/k8s-book-reader)，待Release核验后加入书架；原仓库私有 |
+| 8 | 从零开始学 Kubernetes | 已交付：14章3附录，真实kind部署/探针/回滚/PVC/调度，公开阅读与v1.0.0核验通过 | /Volumes/data/k8s-book | [GitHub](https://github.com/Aias00/k8s-book-reader) · [阅读](https://aias00.github.io/k8s-book-reader/) · [EPUB](https://aias00.github.io/k8s-book-reader/downloads/k8s-book-reader.epub)；原仓库私有 |
 
 ## 每本书的交付条件
 
@@ -28,9 +28,11 @@
 - 第一本文实验：`lab/` 与 `tests/`；先用可控的真实 HTTP 上游替身建立确定性实验，区分教学保证与生产实现。
 - 构建与网页：`scripts/`、`web/`、`epub/`；生成物不直接修改。
 - 不冒称来自真实生产事故，不声称已经完成尚未运行的评测、集群或故障实验。
-- Kubernetes 实验环境需要重新探测，不能沿用旧稿“未安装工具”的状态作为当前阻塞证据。
-- 2026-10-21 已实测本机无容器、Kubernetes、MySQL、OTel工具及可用服务；JDK21/Maven可运行。后续依赖实验可通过 GitHub Actions 的真实容器和 kind 环境运行并保存证据，缺少本地工具不构成停止写作与验证的依据。
+- 本机无容器、Kubernetes、MySQL服务；依赖实验已在 GitHub Actions 的真实容器和kind环境运行并保存证据。Netty与Kafka也保留本机JDK/Maven及真实KRaft验证。
+- Release直接采用成功CI产物，逐本比对公开Pages、Release与CI的EPUB；交付文档不触发出版重建。补丁版本保留旧Release，不覆盖既有附件。
 
 ## 完成审计
 
-AI网关、Netty、Kafka、全链路可观测性与AI质量交付均已核验公开阅读、Release和同次CI产物；第二批三本加入后书架共20本。MySQL、企业知识库检索和Kubernetes继续最终验收，整体八本目标尚未完成。以本文件、各书仓库的源码、DELIVERY.md、实际运行记录、GitHub Actions和线上产物作为后续继续工作的依据。
+八本均已完成正文、实验、EPUB、GitHub源代码与在线阅读，合计125章正文、31个附录。[独立出版审计](docs/publication-audit-2026-10-21.json)的8本全部通过：164个公开阅读单元可读，各书Pages、Release与同次成功CI的EPUB逐字节相同。书架最后三本已纳入23本源数据，本地类型检查、构建和8项浏览器回归通过，正在完成线上部署复核。
+
+各书 `DELIVERY.md` 记录实验前提与未测试范围：受控HTTP上游不等于真实模型API，合成评测不等于模型排名，单节点KRaft/kind不等于生产高可用，Outbox本地原子性不等于消息恰好一次。Netty、Kafka、Kubernetes的原维护仓库仍为私有，公开阅读仓库使用审查后的独立历史。

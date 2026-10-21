@@ -1,0 +1,3175 @@
+{
+  "verified_content_totals": {
+    "body_chapters": 125,
+    "appendices": 31,
+    "reading_units": 164,
+    "preface": 8
+  },
+  "schema_version": 1,
+  "audit": "Eight-book final public publication verification",
+  "checked_at_utc": "2026-10-21T10:01:25.701611+00:00",
+  "status": "passed",
+  "expected_book_count": 8,
+  "counts": {
+    "passed": 8,
+    "pending": 0,
+    "failed": 0
+  },
+  "scope": [
+    "GitHub repository visibility and final successful CI commit",
+    "Latest Release tag and its product commit",
+    "Fresh Pages and Release EPUB downloads compared byte-for-byte with actual CI artifact",
+    "EPUB ZIP directory, every member CRC/readability, first stored mimetype and container.xml",
+    "Public build-info version and body/appendix/reading-unit counts; every chapter URL fetched with nonempty article",
+    "Pages experiment ZIP compared with the same CI archive and all members read",
+    "Original Netty, Kafka and Kubernetes authoring repositories remain private"
+  ],
+  "limitations": [
+    "Publication and downloadable artifact audit; does not certify production behavior beyond each book's stated experiment scope.",
+    "Public CI artifacts already independently downloaded earlier in this session may be reused after rechecking their exact run and source commit."
+  ],
+  "private_authoring_repositories": [
+    {
+      "repository": "Aias00/netty-book",
+      "url": "https://github.com/Aias00/netty-book",
+      "visibility": "PRIVATE",
+      "passed": true,
+      "checked_at_utc": "2026-10-21T10:01:25.701611+00:00"
+    },
+    {
+      "repository": "Aias00/kafka-book",
+      "url": "https://github.com/Aias00/kafka-book",
+      "visibility": "PRIVATE",
+      "passed": true,
+      "checked_at_utc": "2026-10-21T10:01:25.701611+00:00"
+    },
+    {
+      "repository": "Aias00/k8s-book",
+      "url": "https://github.com/Aias00/k8s-book",
+      "visibility": "PRIVATE",
+      "passed": true,
+      "checked_at_utc": "2026-10-21T10:01:25.701611+00:00"
+    }
+  ],
+  "books": [
+    {
+      "id": "ai-gateway-book",
+      "status": "passed",
+      "checked_at_utc": "2026-10-21T09:55:04.027275+00:00",
+      "repository": "Aias00/ai-gateway-book",
+      "pages_url": "https://aias00.github.io/ai-gateway-book/",
+      "artifact_directory": "/tmp/eight-books-final-audit/ai-gateway-book",
+      "checks": {
+        "repository_public": true,
+        "ci_success_for_product_commit": true,
+        "latest_release_matches_expected": true,
+        "release_targets_ci_product_commit": true,
+        "all_public_reading_units_accessible": true,
+        "ci_release_pages_epub_byte_identical": true,
+        "epub_hash_matches_build_info_and_release_metadata": true,
+        "epub_zip_directory_and_contents_readable": true,
+        "pages_experiment_zip_matches_ci_and_is_readable": true,
+        "experiment_zip_has_no_git_history_or_escaping_paths": true
+      },
+      "repository_metadata": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "url": "https://github.com/Aias00/ai-gateway-book",
+        "visibility": "PUBLIC"
+      },
+      "final_ci": {
+        "status": "completed",
+        "conclusion": "success",
+        "headSha": "18d84e1e1bf756a2b91b6f8de838c2f7d25e71bf",
+        "url": "https://github.com/Aias00/ai-gateway-book/actions/runs/39568610281",
+        "run_id": 39568610281,
+        "jobs": [
+          {
+            "name": "build",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "deploy",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      },
+      "release": {
+        "url": "https://github.com/Aias00/ai-gateway-book/releases/tag/v1.0.0",
+        "tagName": "v1.0.0",
+        "targetCommitish": "18d84e1e1bf756a2b91b6f8de838c2f7d25e71bf",
+        "publishedAt": "2026-10-21T08:31:13Z"
+      },
+      "published_content": {
+        "version": "1.0.0",
+        "body_chapters": 17,
+        "appendices": 4,
+        "reading_units": 22,
+        "preface": 1,
+        "public_chapter_pages": [
+          {
+            "slug": "00-preface",
+            "title": "前言：把一条模型请求变成可以解释的系统行为",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/00-preface.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "9a2015e2274dbdfd20de6581653bd320f26580d70958758f1f1530996fba388c"
+          },
+          {
+            "slug": "01-request-lifecycle",
+            "title": "第 1 章：从用户请求到一次上游尝试",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/01-request-lifecycle.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "71c806a3a4dc402a7c84add3fd2ea4966538fa91943e9b4d98632662bb28a57d"
+          },
+          {
+            "slug": "02-protocol-contract",
+            "title": "第 2 章：把协议兼容写成可以测试的合同",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/02-protocol-contract.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "03f402b060a932d342fadbdf734da3c173bd8a89efda5dbe5bc7b4e28506f4fa"
+          },
+          {
+            "slug": "03-upstream-capabilities",
+            "title": "第 3 章：为上游建立能力、信任和版本清单",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/03-upstream-capabilities.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "92a2068acb13c8606d446adcafcd530caffd46aa520b4c621c4c73785fe873fe"
+          },
+          {
+            "slug": "04-routing-and-versioning",
+            "title": "第 4 章：让路由决策可以解释，也可以回退",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/04-routing-and-versioning.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "5b473794272bb9fe6c41128f85b5ce150b06f95884b1115a6c7c7668dd4af394"
+          },
+          {
+            "slug": "05-streaming-and-backpressure",
+            "title": "第 5 章：流式输出是一串有边界的事件",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/05-streaming-and-backpressure.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "d8262ed26c2538e623f8fc4e41b440502ad8a901881fcea7b144cf8108f4c70d"
+          },
+          {
+            "slug": "06-deadlines-and-cancellation",
+            "title": "第 6 章：超时、取消和业务撤销是三件事",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/06-deadlines-and-cancellation.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "8d83c6f70e29931eb39f19cea296b188187625099f8795d8cd09d34f075e6246"
+          },
+          {
+            "slug": "07-retries-and-failover",
+            "title": "第 7 章：重试之前，先判断自己知道什么",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/07-retries-and-failover.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "40edb1c369749980bfc6c54bab23a67f143e1d3ea1f6e9866a1477a3a048a770"
+          },
+          {
+            "slug": "08-tenant-admission",
+            "title": "第 8 章：先获得准入，再消耗共享资源",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/08-tenant-admission.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "f24bead92ff230a8e88544bef4f6fabea2aafc59cf7d54d3b0b45ae585003737"
+          },
+          {
+            "slug": "09-budget-and-settlement",
+            "title": "第 9 章：用量未知，也是一种需要保存的状态",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/09-budget-and-settlement.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "c968d87b3ef26a238ee2b62e423d92c72edda002192abec1095c13b1d7c200a0"
+          },
+          {
+            "slug": "10-security",
+            "title": "第 10 章：把身份、内容与执行权分开",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/10-security.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "6162397c4057f8f416b5e2075f07e9825a68d8c46c82e2e946fdc8f2d3c9e333"
+          },
+          {
+            "slug": "11-observability",
+            "title": "第 11 章：让成功率、延迟与成本说同一件事",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/11-observability.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "56d837c2d75085a0b48af9b7a0a4a0322d5ddfeb9625beb17e83be174669f720"
+          },
+          {
+            "slug": "12-failure-tests",
+            "title": "第 12 章：用故障矩阵验证合同",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/12-failure-tests.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "47b2d246873494174a4a740881d068aba0cd03441c1c41b59057876af77a83c0"
+          },
+          {
+            "slug": "13-lab-first-run",
+            "title": "第 13 章：先运行一条完整的 HTTP 链路",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/13-lab-first-run.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "f31d64d78581e4f0f6f4f7d5994eca2147cd3933545bb56f6669cdc1220fc318"
+          },
+          {
+            "slug": "14-lab-routing-and-failure",
+            "title": "第 14 章：让切换发生在有证据的边界",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/14-lab-routing-and-failure.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "c8e916ac227c1602d5438d678103bafaf37c9736588d60e99ff7d08f41d11ede"
+          },
+          {
+            "slug": "15-lab-quotas-and-recovery",
+            "title": "第 15 章：并发结束了，预算为什么还被占用",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/15-lab-quotas-and-recovery.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "28f2a0ddf3a8751f003fe71bef09d8c8fb94342236ac587773874b10a218edc5"
+          },
+          {
+            "slug": "16-production-design",
+            "title": "第 16 章：从单进程实验推导生产边界",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/16-production-design.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "35c23b891be29032605f1f8ba7189bc700fe4a1db0ee52f3d329e0c8d8903ef3"
+          },
+          {
+            "slug": "17-capstone",
+            "title": "第 17 章：设计你自己的 AI 网关",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/17-capstone.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "fbd7d6c7ecfc6e4480bdc98d4b4673980aa6a2cd1cff702f3822231de3701acc"
+          },
+          {
+            "slug": "90-exercise-answers",
+            "title": "附录 A：练习解题方向",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/90-exercise-answers.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "3af7e95e9fcd0220b7b3ac77b4d52f7f017397c4178fddf92655258836f13370"
+          },
+          {
+            "slug": "91-sources",
+            "title": "附录 B：来源、版本与复核方法",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/91-sources.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "04199eba9261662e6791a57cb387d227cf24736da37d2daf0f8351d83cc79fdf"
+          },
+          {
+            "slug": "92-glossary",
+            "title": "附录 C：术语与状态速查",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/92-glossary.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "73b7482af4029e54af445b2cce2929b64130dc7697aadbae5b646028f2020f85"
+          },
+          {
+            "slug": "99-generated-lab",
+            "title": "附录：随书实验完整代码",
+            "url": "https://aias00.github.io/ai-gateway-book/chapters/99-generated-lab.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "60a7ff94376ad8d7b08eb6cd37ae3f2f15bc7636cbf3a5f2c1945c523f11e0a1"
+          }
+        ]
+      },
+      "epub": {
+        "ci": {
+          "sha256": "84e7acd05f4a5350d285b1701514e16209bd901e347f62c027579f7c43fab0fa",
+          "bytes": 123842,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 34,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file1.svg",
+              "EPUB/media/file0.svg",
+              "EPUB/media/file2.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml",
+              "EPUB/text/ch022.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "release": {
+          "sha256": "84e7acd05f4a5350d285b1701514e16209bd901e347f62c027579f7c43fab0fa",
+          "bytes": 123842,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 34,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file1.svg",
+              "EPUB/media/file0.svg",
+              "EPUB/media/file2.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml",
+              "EPUB/text/ch022.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages": {
+          "sha256": "84e7acd05f4a5350d285b1701514e16209bd901e347f62c027579f7c43fab0fa",
+          "bytes": 123842,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 34,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file1.svg",
+              "EPUB/media/file0.svg",
+              "EPUB/media/file2.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml",
+              "EPUB/text/ch022.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages_url": "https://aias00.github.io/ai-gateway-book/downloads/ai-gateway-book.epub",
+        "release_url": "https://github.com/Aias00/ai-gateway-book/releases/download/v1.0.0/ai-gateway-book.epub",
+        "ci_local_path": "/var/folders/38/945f17ss29gbl8l87zl649bh0000gn/T/audit-ai-gateway-book-9f2bcg12/ci/ai-gateway-book.epub"
+      },
+      "experiment_zip": {
+        "sha256": "b7b85fd46fd888d5f2933bf1427225d261d76dba20403fde08900d50c8c1efab",
+        "bytes": 25561,
+        "zip": {
+          "directory_readable": true,
+          "all_members_readable": true,
+          "crc_valid": true,
+          "entries": 10,
+          "member_names": [
+            "lab/README.md",
+            "lab/__init__.py",
+            "lab/client.py",
+            "lab/demo.py",
+            "lab/evidence/demo.json",
+            "lab/gateway.py",
+            "lab/protocol.py",
+            "lab/upstream.py",
+            "tests/test_integration.py",
+            "README.md"
+          ],
+          "mimetype_valid": null
+        }
+      }
+    },
+    {
+      "id": "observability-book",
+      "status": "passed",
+      "checked_at_utc": "2026-10-21T09:56:16.089750+00:00",
+      "repository": "Aias00/observability-book",
+      "pages_url": "https://aias00.github.io/observability-book/",
+      "artifact_directory": "/tmp/eight-books-final-audit/observability-book",
+      "checks": {
+        "repository_public": true,
+        "ci_success_for_product_commit": true,
+        "latest_release_matches_expected": true,
+        "release_targets_ci_product_commit": true,
+        "all_public_reading_units_accessible": true,
+        "ci_release_pages_epub_byte_identical": true,
+        "epub_hash_matches_build_info_and_release_metadata": true,
+        "epub_zip_directory_and_contents_readable": true,
+        "pages_experiment_zip_matches_ci_and_is_readable": true,
+        "experiment_zip_has_no_git_history_or_escaping_paths": true
+      },
+      "repository_metadata": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "url": "https://github.com/Aias00/observability-book",
+        "visibility": "PUBLIC"
+      },
+      "final_ci": {
+        "status": "completed",
+        "conclusion": "success",
+        "headSha": "1a568a4f5c0d93e52f2377d30370299b16b28475",
+        "url": "https://github.com/Aias00/observability-book/actions/runs/39574082710",
+        "run_id": 39574082710,
+        "jobs": [
+          {
+            "name": "experiment / integration",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "build",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "deploy",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      },
+      "release": {
+        "url": "https://github.com/Aias00/observability-book/releases/tag/v1.0.0",
+        "tagName": "v1.0.0",
+        "targetCommitish": "1a568a4f5c0d93e52f2377d30370299b16b28475",
+        "publishedAt": "2026-10-21T09:13:17Z"
+      },
+      "published_content": {
+        "version": "1.0.0",
+        "body_chapters": 16,
+        "appendices": 4,
+        "reading_units": 21,
+        "preface": 1,
+        "public_chapter_pages": [
+          {
+            "slug": "00-preface",
+            "title": "前言：让系统解释自己",
+            "url": "https://aias00.github.io/observability-book/chapters/00-preface.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "75b7396c5cd95494de294e2a89710f72eaae9a2c55e34302812a0604d0913ad8"
+          },
+          {
+            "slug": "01-evidence-model",
+            "title": "第 1 章：从“很慢”到可以反驳的假设",
+            "url": "https://aias00.github.io/observability-book/chapters/01-evidence-model.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "23f29dabc3c4e3ca0c034c543e4a79cbc04459009841d07c1f1994041f4fbdaf"
+          },
+          {
+            "slug": "02-running-system",
+            "title": "第 2 章：搭建一套能被独立核查的小系统",
+            "url": "https://aias00.github.io/observability-book/chapters/02-running-system.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "ef8b02c39287008114b14833fde1536f5a2c1bb9f30843df23ff488b8eeff8fd"
+          },
+          {
+            "slug": "03-span-lifecycle",
+            "title": "第 3 章：让 span 描述真实工作区间",
+            "url": "https://aias00.github.io/observability-book/chapters/03-span-lifecycle.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "65721ca9a99ab9997e48349e6a4b6e432d11d896a589eef9394b1069bdaa08ba"
+          },
+          {
+            "slug": "04-http-context",
+            "title": "第 4 章：让一次 HTTP 调用跨过两端仍保持身份",
+            "url": "https://aias00.github.io/observability-book/chapters/04-http-context.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "2035724cc273383403170c7349070ce53f197e8919dc3c847bb93ca0d083100a"
+          },
+          {
+            "slug": "05-redis-latency",
+            "title": "第 5 章：一段 Redis span 变长，究竟证明了什么",
+            "url": "https://aias00.github.io/observability-book/chapters/05-redis-latency.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "f3cd4e7a501853ef0654cc6271f619d50f9abc70262ed37659d1d9cd0a490265"
+          },
+          {
+            "slug": "06-message-context",
+            "title": "第 6 章：消息成功送达，追踪为什么仍会断开",
+            "url": "https://aias00.github.io/observability-book/chapters/06-message-context.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "12eef4c8ab8133375057565ba466af5962ebbfe7e84d12fbdfdcff25f79b3c19"
+          },
+          {
+            "slug": "07-correlated-logs",
+            "title": "第 7 章：日志不是追踪的替代品，而是决定的证词",
+            "url": "https://aias00.github.io/observability-book/chapters/07-correlated-logs.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "f3e48667ea148a56d9b38b5d81793011ba0dc215bae76174b9b3dd9b7852cd0a"
+          },
+          {
+            "slug": "08-metrics-histograms",
+            "title": "第 8 章：用指标描述群体，而不丢掉分母",
+            "url": "https://aias00.github.io/observability-book/chapters/08-metrics-histograms.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "a0c098422ec942e14b9a7eec52aa9e7ced570e48953ecafeded6f482c99b442d"
+          },
+          {
+            "slug": "09-collector-pipelines",
+            "title": "第 9 章：Collector 是数据管线，不是万能缓冲区",
+            "url": "https://aias00.github.io/observability-book/chapters/09-collector-pipelines.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "2010881f1ebd5a7b2768a57c6b8602637fac3cd3fdbc9a560686369b54ea26d8"
+          },
+          {
+            "slug": "10-tempo-query",
+            "title": "第 10 章：从一个 trace ID 还原因果图",
+            "url": "https://aias00.github.io/observability-book/chapters/10-tempo-query.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "1f05cc1cc4f53a824e246850faadb91bc9355b621b3828efdd797a8f1daffd93"
+          },
+          {
+            "slug": "11-sampling",
+            "title": "第 11 章：采样改变的是观察，不是业务事实",
+            "url": "https://aias00.github.io/observability-book/chapters/11-sampling.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "4eec1006597b5ef1ad4d2738636152f5c66482aef0066c2843beb5f0b6e49baf"
+          },
+          {
+            "slug": "12-cardinality-privacy",
+            "title": "第 12 章：先约束标签，再讨论采集成本",
+            "url": "https://aias00.github.io/observability-book/chapters/12-cardinality-privacy.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "5e5e204848a5b062bdbde75d2d76b5058a8fae63aa97b5f791b201825ec35948"
+          },
+          {
+            "slug": "13-slo-alerting",
+            "title": "第 13 章：从错误比例到可以行动的告警",
+            "url": "https://aias00.github.io/observability-book/chapters/13-slo-alerting.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "48a095dd2d8a8d37a60bd20ae797a3c5722e8f86ecb2e43e80464c3a30fd506a"
+          },
+          {
+            "slug": "14-fault-investigation",
+            "title": "第 14 章：用四个故障场景练习排查顺序",
+            "url": "https://aias00.github.io/observability-book/chapters/14-fault-investigation.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "d4b5af827e2ad9c4e0cb8a031e9ef8cae2336eed747ee186a62d4e8f7ceb2067"
+          },
+          {
+            "slug": "15-telemetry-outage",
+            "title": "第 15 章：采集故障时，业务和证据分别怎样退化",
+            "url": "https://aias00.github.io/observability-book/chapters/15-telemetry-outage.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "764d3d992da06831536019291f0d054332220e58ab0aa70c7dceae3a9f7a2a06"
+          },
+          {
+            "slug": "16-production-delivery",
+            "title": "第 16 章：把实验转换成团队可以维护的交付",
+            "url": "https://aias00.github.io/observability-book/chapters/16-production-delivery.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "4d34dec38fba60de01d42d8ca182a4de7022001a97d364ac3ce659ada7c2bb15"
+          },
+          {
+            "slug": "17-runbook",
+            "title": "附录 A：运行命令、接口与证据字段",
+            "url": "https://aias00.github.io/observability-book/chapters/17-runbook.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "eb4b7c63f0b26b0291eb4f910e8655828f272003843d50425dfd26befe35a563"
+          },
+          {
+            "slug": "18-exercise-answers",
+            "title": "附录 B：练习参考与继续实验",
+            "url": "https://aias00.github.io/observability-book/chapters/18-exercise-answers.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "2c9bcce25ced9dc44b6f79830feae66117ac3f2573b91885a2e243d4ba2aa978"
+          },
+          {
+            "slug": "19-sources-validation",
+            "title": "附录 C：版本、资料与验证范围",
+            "url": "https://aias00.github.io/observability-book/chapters/19-sources-validation.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "015893aa322e0b01a823a54e71aa45ae00d2c71cc33719e4937ce177b5868731"
+          },
+          {
+            "slug": "99-generated-lab",
+            "title": "附录：随书实验完整代码",
+            "url": "https://aias00.github.io/observability-book/chapters/99-generated-lab.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "9fa3802015260ad207a34c11a31b2d2d0befc42636898ea9a803c945abd2f657"
+          }
+        ]
+      },
+      "epub": {
+        "ci": {
+          "sha256": "f798054f24dd4cd14b5cce6a9ce075ecb6874a6d3d80a58bb4ede4065004442d",
+          "bytes": 101453,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 33,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file1.svg",
+              "EPUB/media/file0.svg",
+              "EPUB/media/file2.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "release": {
+          "sha256": "f798054f24dd4cd14b5cce6a9ce075ecb6874a6d3d80a58bb4ede4065004442d",
+          "bytes": 101453,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 33,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file1.svg",
+              "EPUB/media/file0.svg",
+              "EPUB/media/file2.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages": {
+          "sha256": "f798054f24dd4cd14b5cce6a9ce075ecb6874a6d3d80a58bb4ede4065004442d",
+          "bytes": 101453,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 33,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file1.svg",
+              "EPUB/media/file0.svg",
+              "EPUB/media/file2.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages_url": "https://aias00.github.io/observability-book/downloads/observability-book.epub",
+        "release_url": "https://github.com/Aias00/observability-book/releases/download/v1.0.0/observability-book.epub",
+        "ci_local_path": "/var/folders/38/945f17ss29gbl8l87zl649bh0000gn/T/audit-observability-book-2foy5xs4/ci/observability-book.epub"
+      },
+      "experiment_zip": {
+        "sha256": "0872e4b57005861b84320874d3ac04847f481c299bae05a67a54eacfb36843c7",
+        "bytes": 16602,
+        "zip": {
+          "directory_readable": true,
+          "all_members_readable": true,
+          "crc_valid": true,
+          "entries": 14,
+          "member_names": [
+            "lab/compose.yaml",
+            "lab/config/alerts.yaml",
+            "lab/config/broker.conf",
+            "lab/config/collector.yaml",
+            "lab/config/prometheus.yaml",
+            "lab/config/tempo.yaml",
+            "lab/pom.xml",
+            "lab/run_ci.sh",
+            "lab/src/main/java/book/SystemLab.java",
+            "lab/src/main/java/book/Telemetry.java",
+            "tests/verify_system.py",
+            "README.md",
+            "LICENSE",
+            "LICENSE-CODE"
+          ],
+          "mimetype_valid": null
+        }
+      }
+    },
+    {
+      "id": "ai-quality-book",
+      "status": "passed",
+      "checked_at_utc": "2026-10-21T09:55:04.009380+00:00",
+      "repository": "Aias00/ai-quality-book",
+      "pages_url": "https://aias00.github.io/ai-quality-book/",
+      "artifact_directory": "/tmp/eight-books-final-audit/ai-quality-book",
+      "checks": {
+        "repository_public": true,
+        "ci_success_for_product_commit": true,
+        "latest_release_matches_expected": true,
+        "release_targets_ci_product_commit": true,
+        "all_public_reading_units_accessible": true,
+        "ci_release_pages_epub_byte_identical": true,
+        "epub_hash_matches_build_info_and_release_metadata": true,
+        "epub_zip_directory_and_contents_readable": true,
+        "pages_experiment_zip_matches_ci_and_is_readable": true,
+        "experiment_zip_has_no_git_history_or_escaping_paths": true
+      },
+      "repository_metadata": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "url": "https://github.com/Aias00/ai-quality-book",
+        "visibility": "PUBLIC"
+      },
+      "final_ci": {
+        "status": "completed",
+        "conclusion": "success",
+        "headSha": "34e45ad2cdb5b87389adc43c77572c3cb12427d1",
+        "url": "https://github.com/Aias00/ai-quality-book/actions/runs/39578206011",
+        "run_id": 39578206011,
+        "jobs": [
+          {
+            "name": "build",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "deploy",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      },
+      "release": {
+        "url": "https://github.com/Aias00/ai-quality-book/releases/tag/v1.0.1",
+        "tagName": "v1.0.1",
+        "targetCommitish": "34e45ad2cdb5b87389adc43c77572c3cb12427d1",
+        "publishedAt": "2026-10-21T09:38:46Z"
+      },
+      "published_content": {
+        "version": "1.0.1",
+        "body_chapters": 16,
+        "appendices": 4,
+        "reading_units": 21,
+        "preface": 1,
+        "public_chapter_pages": [
+          {
+            "slug": "00-preface",
+            "title": "前言：把“看起来变好”变成一次可复核的交付",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/00-preface.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "cdc6b6b9da27c70e7d3db355d5efb0270c6335c415be22f978e98dac07000145"
+          },
+          {
+            "slug": "01-decision-contract",
+            "title": "第 1 章：先写发布决定，再选择指标",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/01-decision-contract.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "3826105a753833bfd352f0c4fff2001a6c9b7eb6fb08381841b953b8ca91bf37"
+          },
+          {
+            "slug": "02-versioned-data",
+            "title": "第 2 章：评测集首先是一份数据合同",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/02-versioned-data.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "21f22e7a41ee65e82184730f60e4addc53cf1e205c98eafd91aded1a0c1905ec"
+          },
+          {
+            "slug": "03-splits-and-contamination",
+            "title": "第 3 章：训练、开发与验收要按真实关联切分",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/03-splits-and-contamination.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "984e80bb7569f45151ad57168a47dfe114ec0938f71da894af8f76aae1acfbe0"
+          },
+          {
+            "slug": "04-acceptance-and-quality",
+            "title": "第 4 章：任务完成与回答质量分别验收",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/04-acceptance-and-quality.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "70b252d5528ae393bde5ab5f1e2a2e6ef6c4fb29e73ad9cec4fa760c06d14d1a"
+          },
+          {
+            "slug": "05-calibrating-graders",
+            "title": "第 5 章：先证明评分器不会轻易被骗",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/05-calibrating-graders.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "fa5bb45fc319bbd496774f121e3890ca83d6044458f92b0226a9b45f2017f5bd"
+          },
+          {
+            "slug": "06-candidate-boundary",
+            "title": "第 6 章：把候选执行与验收证据隔开",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/06-candidate-boundary.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "b74a9bf98f56a227a6a0d79d3c477c303f020bcb85e813045b51dcd792105eb6"
+          },
+          {
+            "slug": "07-paired-comparison",
+            "title": "第 7 章：总分之外，保留每个任务的配对变化",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/07-paired-comparison.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "ecc6c636939f743828480a355d93644fcd818e95ae20b9535f3cfb131db1d6dc"
+          },
+          {
+            "slug": "08-uncertainty",
+            "title": "第 8 章：配对统计与区间不能替代样本设计",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/08-uncertainty.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "a2bbb9d99f83c597cbd208d35ea26578636ba75831e0e296bfc5199051c8c8f3"
+          },
+          {
+            "slug": "09-budget-and-completeness",
+            "title": "第 9 章：预算不足不能让困难任务消失",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/09-budget-and-completeness.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "4dc6473e432e6dfe1ddbfc146a80252dc2aab9c64f3aa85971cdff07dcae0018"
+          },
+          {
+            "slug": "10-review-and-disputes",
+            "title": "第 10 章：人工争议需要留下可以追溯的决定",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/10-review-and-disputes.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "1be59a41da5ab9304c50cafa4d70d904c041ec4f5e79b9c2518d36ffb6fbcd71"
+          },
+          {
+            "slug": "11-regression-attribution",
+            "title": "第 11 章：分别改变提示、检索与生成器",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/11-regression-attribution.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "5929647dab1f7c97df56f9b2524abafbb1142e6ed4fefe2219f12c16fb1586b5"
+          },
+          {
+            "slug": "12-release-gates",
+            "title": "第 12 章：把发布门槛变成可失败的程序",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/12-release-gates.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "bb2158a5a06692d8e3ded84e7a7ef5d82012afa37e2e8c8d03f65d6d2d9216fc"
+          },
+          {
+            "slug": "13-first-run",
+            "title": "第 13 章：运行完整质量流水线",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/13-first-run.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "edfdcbcf86c15168998e6122b1518b1676dae587f94e73258bdb068414a13ed5"
+          },
+          {
+            "slug": "14-failure-and-review-lab",
+            "title": "第 14 章：让错误评分、争议与预算在实验中显形",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/14-failure-and-review-lab.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "3aa776c628a5e898859558f0b7903f5c711389241e18b5b0704313f8f9213fe3"
+          },
+          {
+            "slug": "15-real-model-adaptation",
+            "title": "第 15 章：接入真实模型之前，还缺哪些证据",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/15-real-model-adaptation.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "3299bee34de7606b4d8bb8087c1fb214553a6cc540363e1ccf3c7dc37ea22e1e"
+          },
+          {
+            "slug": "16-operating-quality",
+            "title": "第 16 章：把评测维护成产品能力",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/16-operating-quality.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "bb8e84173d9bcccdb3fffef83524228487767dc77c87ece5a4e12c8e46e60e99"
+          },
+          {
+            "slug": "90-exercise-answers",
+            "title": "附录 A：练习参考与排错",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/90-exercise-answers.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "fc948629a685bdf1ad28fc479a274b4f1bf75eb608d595aa3ebadede3e05f3e9"
+          },
+          {
+            "slug": "91-sources",
+            "title": "附录 B：资料、证据与适用范围",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/91-sources.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "9f11fadf2e77d4c69f05f9fc0a19cf48157753d5c4a2216764ea0cd7e094cf80"
+          },
+          {
+            "slug": "92-glossary",
+            "title": "附录 C：术语与保证边界",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/92-glossary.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "572445bedfa359defe866b2e3026d5ca41754f16732d66f181e5e461ec0c16b0"
+          },
+          {
+            "slug": "99-generated-lab",
+            "title": "附录：随书实验完整代码",
+            "url": "https://aias00.github.io/ai-quality-book/chapters/99-generated-lab.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "a3820cff81f97deb5cbcb553d72aa7316671dabe0d81528c2404a02ed5d1b1b0"
+          }
+        ]
+      },
+      "epub": {
+        "ci": {
+          "sha256": "f144ae283740c22d9a21c01a39c25a90ed9e19d6220cf3d4594a0a10c06d3bbe",
+          "bytes": 127213,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 31,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "release": {
+          "sha256": "f144ae283740c22d9a21c01a39c25a90ed9e19d6220cf3d4594a0a10c06d3bbe",
+          "bytes": 127213,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 31,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages": {
+          "sha256": "f144ae283740c22d9a21c01a39c25a90ed9e19d6220cf3d4594a0a10c06d3bbe",
+          "bytes": 127213,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 31,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages_url": "https://aias00.github.io/ai-quality-book/downloads/ai-quality-book.epub",
+        "release_url": "https://github.com/Aias00/ai-quality-book/releases/download/v1.0.1/ai-quality-book.epub",
+        "ci_local_path": "/tmp/ai-quality-book-v1.0.1-ci/ai-quality-book.epub"
+      },
+      "experiment_zip": {
+        "sha256": "d48bd3d83ca9f68585216d79d5d1f9f228cd7b59dff4b2fd8596096b02deb786",
+        "bytes": 27254,
+        "zip": {
+          "directory_readable": true,
+          "all_members_readable": true,
+          "crc_valid": true,
+          "entries": 16,
+          "member_names": [
+            "lab/README.md",
+            "lab/__init__.py",
+            "lab/candidate.py",
+            "lab/data/answers.json",
+            "lab/data/manifest.json",
+            "lab/data/samples.json",
+            "lab/demo.py",
+            "lab/evidence/model_v2.json",
+            "lab/evidence/prompt_v2.json",
+            "lab/evidence/retrieval_v2.json",
+            "lab/evidence/summary.json",
+            "lab/make_data.py",
+            "lab/pipeline.py",
+            "lab/review.py",
+            "tests/test_pipeline.py",
+            "README.md"
+          ],
+          "mimetype_valid": null
+        }
+      }
+    },
+    {
+      "id": "netty-book-reader",
+      "status": "passed",
+      "checked_at_utc": "2026-10-21T09:55:04.011334+00:00",
+      "repository": "Aias00/netty-book-reader",
+      "pages_url": "https://aias00.github.io/netty-book-reader/",
+      "artifact_directory": "/tmp/eight-books-final-audit/netty-book-reader",
+      "checks": {
+        "repository_public": true,
+        "ci_success_for_product_commit": true,
+        "latest_release_matches_expected": true,
+        "release_targets_ci_product_commit": true,
+        "all_public_reading_units_accessible": true,
+        "ci_release_pages_epub_byte_identical": true,
+        "epub_hash_matches_build_info_and_release_metadata": true,
+        "epub_zip_directory_and_contents_readable": true,
+        "pages_experiment_zip_matches_ci_and_is_readable": true,
+        "experiment_zip_has_no_git_history_or_escaping_paths": true
+      },
+      "repository_metadata": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "url": "https://github.com/Aias00/netty-book-reader",
+        "visibility": "PUBLIC"
+      },
+      "final_ci": {
+        "status": "completed",
+        "conclusion": "success",
+        "headSha": "a6fd0ce6a1c985c8b6e6a76003d9a54c9dd5a822",
+        "url": "https://github.com/Aias00/netty-book-reader/actions/runs/39568186174",
+        "run_id": 39568186174,
+        "jobs": [
+          {
+            "name": "build",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "deploy",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      },
+      "release": {
+        "url": "https://github.com/Aias00/netty-book-reader/releases/tag/v1.0.0",
+        "tagName": "v1.0.0",
+        "targetCommitish": "a6fd0ce6a1c985c8b6e6a76003d9a54c9dd5a822",
+        "publishedAt": "2026-10-21T08:22:40Z"
+      },
+      "published_content": {
+        "version": "1.0.0",
+        "body_chapters": 15,
+        "appendices": 4,
+        "reading_units": 20,
+        "preface": 1,
+        "public_chapter_pages": [
+          {
+            "slug": "00-preface",
+            "title": "写给第一次接触 Netty 的你",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/00-preface.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "db96d64d9869e2d6b87b5309ce97e868dd18d004231dff872d53eba3af439982"
+          },
+          {
+            "slug": "01-network-basics",
+            "title": "第 1 章　先认识网络通信",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/01-network-basics.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "02c4201c71a33644f7f688cdfff9fb3c13048c5e6aa1a07d0c7a6ccd52d717a1"
+          },
+          {
+            "slug": "02-java-and-maven",
+            "title": "第 2 章　补齐最少的 Java 与工具知识",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/02-java-and-maven.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "95ae99b0c0fa51c68b806fb3d48ff587a764ace756b734d15957a3bf16c1e25f"
+          },
+          {
+            "slug": "03-first-server",
+            "title": "第 3 章　运行第一个 Netty 服务",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/03-first-server.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "d0fc998d0c17f50cfe06e455514e019570a740c7aa3da0c61aaf2f381c5a13ed"
+          },
+          {
+            "slug": "04-channel-eventloop",
+            "title": "第 4 章　Channel、EventLoop 与异步结果",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/04-channel-eventloop.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "2c4df7f3272561f8f368198ae5ec09290f85e918be41d535644adf9bb4b07b4e"
+          },
+          {
+            "slug": "05-pipeline",
+            "title": "第 5 章　Pipeline：消息的处理路线",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/05-pipeline.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "0f63130b74f49982b05132d1e85c824cd59001a256255c115040472194a3e898"
+          },
+          {
+            "slug": "06-framing",
+            "title": "第 6 章　拆包、粘包与协议边界",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/06-framing.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "939d5229e18acd3254bc9a5baa660d7d4314bcfb2265c00d3e66c010278be68e"
+          },
+          {
+            "slug": "07-bytebuf",
+            "title": "第 7 章　ByteBuf 与内存所有权",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/07-bytebuf.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "79ab0cc6e1d561023f47df76202b5978a703b2429e3906ee3eab31c8ab6494e6"
+          },
+          {
+            "slug": "08-lifecycle",
+            "title": "第 8 章　连接生命周期与正确关闭",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/08-lifecycle.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "f27a82cc2e71163b1d0e6f1adb64b076cdc7d64600c7d56768efe3b91f99031d"
+          },
+          {
+            "slug": "09-heartbeat-timeouts",
+            "title": "第 9 章　空闲检测、心跳与超时",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/09-heartbeat-timeouts.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "d580a9aa6f297c1d72c69583fc28dadbba3061a16838eea5fd86568cdf1c97df"
+          },
+          {
+            "slug": "10-custom-protocol",
+            "title": "第 10 章　从行协议走向自定义协议",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/10-custom-protocol.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "62b166a9697414e0057b74d91e7692197855fcf02a2a10027aa0936d788f457f"
+          },
+          {
+            "slug": "11-testing",
+            "title": "第 11 章　用测试模拟真实网络",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/11-testing.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "47910ad856927fe0a033450a86dd158af59f0cc44c26b340f4b4438217a1d520"
+          },
+          {
+            "slug": "12-backpressure",
+            "title": "第 12 章　慢业务、线程池与背压",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/12-backpressure.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "624bb0405fb35796870406fd4bfc22d7f9f476c506ae07464e2f9819ba5c985c"
+          },
+          {
+            "slug": "13-production-boundaries",
+            "title": "第 13 章　HTTP、TLS 与工程化边界",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/13-production-boundaries.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "ecf4c3fdafaf8caa7c7e235bd24d957c08108980816f338fd27a6166a2d7c70d"
+          },
+          {
+            "slug": "14-troubleshooting",
+            "title": "第 14 章　遇到问题时这样排查",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/14-troubleshooting.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "2bc37107af3722a875b80466d3977eb333c3399c9ccc8c526d11dc102507cb26"
+          },
+          {
+            "slug": "15-learning-route",
+            "title": "第 15 章　两周学习路线与进阶项目",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/15-learning-route.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "c7fdbbb6601f33130b9ec28694b0d8c881a55a9b1fca4abdaea5de8e3f7ad218"
+          },
+          {
+            "slug": "16-appendix-source",
+            "title": "附录 A　完整工程代码",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/16-appendix-source.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "d370d79b781eb6324dad8afb33bf662ec45f928ba937aea68d90711224d9a867"
+          },
+          {
+            "slug": "17-appendix-exercises",
+            "title": "附录 B　练习参考答案",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/17-appendix-exercises.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "9608c8856d711d29bb98c7e4ef97123763c988740ea80263ad98e5d52b9be3ba"
+          },
+          {
+            "slug": "18-appendix-reference",
+            "title": "附录 C　术语与命令速查",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/18-appendix-reference.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "e9b2294156d21e5121232d0d84c04990b26d9cea663f43dd7a62ea4d37f5da87"
+          },
+          {
+            "slug": "19-appendix-sources",
+            "title": "附录 D　资料来源与继续阅读",
+            "url": "https://aias00.github.io/netty-book-reader/chapters/19-appendix-sources.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "edc1cbe51e18ba4bb4672d31dbb372e70b0409a245db8d047c6da3e8b03980d4"
+          }
+        ]
+      },
+      "epub": {
+        "ci": {
+          "sha256": "5f1c824185cf9bb728b08c0cbb43429a517921ce8a0e116ccd5ef7513b29c68d",
+          "bytes": 69938,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 30,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "release": {
+          "sha256": "5f1c824185cf9bb728b08c0cbb43429a517921ce8a0e116ccd5ef7513b29c68d",
+          "bytes": 69938,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 30,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages": {
+          "sha256": "5f1c824185cf9bb728b08c0cbb43429a517921ce8a0e116ccd5ef7513b29c68d",
+          "bytes": 69938,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 30,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages_url": "https://aias00.github.io/netty-book-reader/downloads/netty-book-reader.epub",
+        "release_url": "https://github.com/Aias00/netty-book-reader/releases/download/v1.0.0/netty-book-reader.epub",
+        "ci_local_path": "/var/folders/38/945f17ss29gbl8l87zl649bh0000gn/T/audit-netty-book-reader-fvtsgy0q/ci/netty-book-reader.epub"
+      },
+      "experiment_zip": {
+        "sha256": "de8a80c0d9d5f866234ad52bb5fb4240ab513b4afdbdd71d89ecd2ae490b1b5b",
+        "bytes": 5588,
+        "zip": {
+          "directory_readable": true,
+          "all_members_readable": true,
+          "crc_valid": true,
+          "entries": 5,
+          "member_names": [
+            "examples/pom.xml",
+            "examples/src/main/java/book/LineClient.java",
+            "examples/src/main/java/book/LineServer.java",
+            "examples/src/test/java/book/ProtocolTest.java",
+            "README.md"
+          ],
+          "mimetype_valid": null
+        }
+      }
+    },
+    {
+      "id": "kafka-book-reader",
+      "status": "passed",
+      "checked_at_utc": "2026-10-21T09:55:04.012863+00:00",
+      "repository": "Aias00/kafka-book-reader",
+      "pages_url": "https://aias00.github.io/kafka-book-reader/",
+      "artifact_directory": "/tmp/eight-books-final-audit/kafka-book-reader",
+      "checks": {
+        "repository_public": true,
+        "ci_success_for_product_commit": true,
+        "latest_release_matches_expected": true,
+        "release_targets_ci_product_commit": true,
+        "all_public_reading_units_accessible": true,
+        "ci_release_pages_epub_byte_identical": true,
+        "epub_hash_matches_build_info_and_release_metadata": true,
+        "epub_zip_directory_and_contents_readable": true,
+        "pages_experiment_zip_matches_ci_and_is_readable": true,
+        "experiment_zip_has_no_git_history_or_escaping_paths": true
+      },
+      "repository_metadata": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "url": "https://github.com/Aias00/kafka-book-reader",
+        "visibility": "PUBLIC"
+      },
+      "final_ci": {
+        "status": "completed",
+        "conclusion": "success",
+        "headSha": "8c56dbb65822fc67448b0f01b72aec82586ed312",
+        "url": "https://github.com/Aias00/kafka-book-reader/actions/runs/39571548418",
+        "run_id": 39571548418,
+        "jobs": [
+          {
+            "name": "build",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "deploy",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      },
+      "release": {
+        "url": "https://github.com/Aias00/kafka-book-reader/releases/tag/v1.0.0",
+        "tagName": "v1.0.0",
+        "targetCommitish": "8c56dbb65822fc67448b0f01b72aec82586ed312",
+        "publishedAt": "2026-10-21T08:53:16Z"
+      },
+      "published_content": {
+        "version": "1.0.0",
+        "body_chapters": 14,
+        "appendices": 4,
+        "reading_units": 19,
+        "preface": 1,
+        "public_chapter_pages": [
+          {
+            "slug": "00-preface",
+            "title": "写在前面：你会学到什么",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/00-preface.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "58ff5de80fc083201e5655692efc6c4f80756164e902569418305ee1aa78a708"
+          },
+          {
+            "slug": "01-why-kafka",
+            "title": "第 1 章 一笔订单为什么需要 Kafka",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/01-why-kafka.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "c99922b7c30d10468d1affee1a4bdd25d4d0c9cf93f2b6a6b504323a53732671"
+          },
+          {
+            "slug": "02-concept-map",
+            "title": "第 2 章 用核心概念搭好地图",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/02-concept-map.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "4ecd2a5fc435550481da919b6bbffa0fcc516364f411b6627c3ab871d6b85a8d"
+          },
+          {
+            "slug": "03-kraft-environment",
+            "title": "第 3 章 准备一个安全的练习环境",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/03-kraft-environment.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "fbdca30e261b64dc38b50aeb9298abd16fd9c3b62dfc00719bc92851c573ac0c"
+          },
+          {
+            "slug": "04-first-records",
+            "title": "第 4 章 发出和读到第一条消息",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/04-first-records.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "a00e58e602ccb9447e961126b32c91d26f6deacd2479775080b59520db254da3"
+          },
+          {
+            "slug": "05-keys-partitions",
+            "title": "第 5 章 用订单号理解 Key 和分区",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/05-keys-partitions.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "0723ca4e491d5503232fed461e47314c249cd8246136587dd7249529e64ae56d"
+          },
+          {
+            "slug": "06-consumer-groups",
+            "title": "第 6 章 消费者组：独立进度、协作与再均衡",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/06-consumer-groups.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "be46530a7d162c4a5ed48945a117bdfb25b7b3d06174dcc5e561c37e8e1835e6"
+          },
+          {
+            "slug": "07-offsets-replay",
+            "title": "第 7 章 消费进度：书签记录在哪里",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/07-offsets-replay.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "ecb89d0b15c5fcf354837b7f64e4f9315005d3aa96865811ed1ca2fe94c023f5"
+          },
+          {
+            "slug": "08-retention-compaction",
+            "title": "第 8 章 数据保存多久：消费和删除彼此独立",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/08-retention-compaction.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "24f139ecab4aec2834c3020c58c6d3fdfd66ce541ff8add31d8797274184bfce"
+          },
+          {
+            "slug": "09-reliability",
+            "title": "第 9 章 可靠性：一条消息究竟算不算送达",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/09-reliability.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "0511ef51a75d4ffaf81dee830a17501a21d9e910c87a49e2dd3edf47017d7581"
+          },
+          {
+            "slug": "10-idempotence-outbox",
+            "title": "第 10 章 把重复变成可承受：幂等与事务发件箱",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/10-idempotence-outbox.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "b8da41f2001d7f7ea069512c5e7f8b1946a84d027e68e529717f76ca55fef854"
+          },
+          {
+            "slug": "11-order-project",
+            "title": "第 11 章 一份可以交付的小项目",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/11-order-project.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "e6940ec44f363d03e74091e9bb6235f5632a4c2eb89547d430f3881f1cb63dc3"
+          },
+          {
+            "slug": "12-stable-clients",
+            "title": "第 12 章 生产者与消费者怎样写得稳",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/12-stable-clients.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "c711feadb8777b553c9983019af4619eb9a5aa630e7ac15227ccc7aaee991cdd"
+          },
+          {
+            "slug": "13-operations",
+            "title": "第 13 章 运维入门：先看什么，再改什么",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/13-operations.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "3e347476f8908929ec69db8fa47d3d4bd063151a34563aeda46f180552b46d1c"
+          },
+          {
+            "slug": "14-connect-streams",
+            "title": "第 14 章 Kafka Connect、Streams 与下一步",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/14-connect-streams.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "a410bc40d2b731f58122b0dd6518416a92cd69bcfa7dc8d9f88b71cf525d2bce"
+          },
+          {
+            "slug": "15-appendix-commands",
+            "title": "附录 A 常用命令速查",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/15-appendix-commands.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "f1a4754a677b905a72050c2b987deb0f3e08e2e651e6ca4a23071952915bbd14"
+          },
+          {
+            "slug": "16-appendix-glossary",
+            "title": "附录 B 词汇表",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/16-appendix-glossary.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "9721d5906495bbe6a5e7a26bf56b0c3cff840449bdb7f5207af1a8bdff17c5c4"
+          },
+          {
+            "slug": "17-appendix-exercises",
+            "title": "附录 C 综合练习与参考答案",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/17-appendix-exercises.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "066a8dbca8b2e45c04c0f952c0d9948db0f3b1d61344d340600ef05a7ccfce52"
+          },
+          {
+            "slug": "18-appendix-sources",
+            "title": "附录 D 资料来源与继续阅读",
+            "url": "https://aias00.github.io/kafka-book-reader/chapters/18-appendix-sources.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "35df8fff7dbe069fbce48297cef07191a4926afa4c8f594b668c291f7b544216"
+          }
+        ]
+      },
+      "epub": {
+        "ci": {
+          "sha256": "2b28f27ea62f8017b61b7ad7f89c1fede303f65d5aee8045994bf39ad150961a",
+          "bytes": 56670,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 29,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "release": {
+          "sha256": "2b28f27ea62f8017b61b7ad7f89c1fede303f65d5aee8045994bf39ad150961a",
+          "bytes": 56670,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 29,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages": {
+          "sha256": "2b28f27ea62f8017b61b7ad7f89c1fede303f65d5aee8045994bf39ad150961a",
+          "bytes": 56670,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 29,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages_url": "https://aias00.github.io/kafka-book-reader/downloads/kafka-book-reader.epub",
+        "release_url": "https://github.com/Aias00/kafka-book-reader/releases/download/v1.0.0/kafka-book-reader.epub",
+        "ci_local_path": "/var/folders/38/945f17ss29gbl8l87zl649bh0000gn/T/audit-kafka-book-reader-8kg_s0bt/ci/kafka-book-reader.epub"
+      },
+      "experiment_zip": {
+        "sha256": "f530d4eebe45016e9bdfd55c37fcb067854d997939c5030dc811482abeea3a93",
+        "bytes": 7636,
+        "zip": {
+          "directory_readable": true,
+          "all_members_readable": true,
+          "crc_valid": true,
+          "entries": 4,
+          "member_names": [
+            "scripts/smoke_test.py",
+            "scripts/run_lab.py",
+            "scripts/prepare_kafka.py",
+            "README.md"
+          ],
+          "mimetype_valid": null
+        }
+      }
+    },
+    {
+      "id": "k8s-book-reader",
+      "status": "passed",
+      "checked_at_utc": "2026-10-21T09:55:04.013725+00:00",
+      "repository": "Aias00/k8s-book-reader",
+      "pages_url": "https://aias00.github.io/k8s-book-reader/",
+      "artifact_directory": "/tmp/eight-books-final-audit/k8s-book-reader",
+      "checks": {
+        "repository_public": true,
+        "ci_success_for_product_commit": true,
+        "latest_release_matches_expected": true,
+        "release_targets_ci_product_commit": true,
+        "all_public_reading_units_accessible": true,
+        "ci_release_pages_epub_byte_identical": true,
+        "epub_hash_matches_build_info_and_release_metadata": true,
+        "epub_zip_directory_and_contents_readable": true,
+        "pages_experiment_zip_matches_ci_and_is_readable": true,
+        "experiment_zip_has_no_git_history_or_escaping_paths": true
+      },
+      "repository_metadata": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "url": "https://github.com/Aias00/k8s-book-reader",
+        "visibility": "PUBLIC"
+      },
+      "final_ci": {
+        "status": "completed",
+        "conclusion": "success",
+        "headSha": "63c7ddcbddc95df0893c1a020374bbb7902b4a9b",
+        "url": "https://github.com/Aias00/k8s-book-reader/actions/runs/39578414258",
+        "run_id": 39578414258,
+        "jobs": [
+          {
+            "name": "build",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "deploy",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      },
+      "release": {
+        "url": "https://github.com/Aias00/k8s-book-reader/releases/tag/v1.0.0",
+        "tagName": "v1.0.0",
+        "targetCommitish": "63c7ddcbddc95df0893c1a020374bbb7902b4a9b",
+        "publishedAt": "2026-10-21T09:46:58Z"
+      },
+      "published_content": {
+        "version": "1.0.0",
+        "body_chapters": 14,
+        "appendices": 3,
+        "reading_units": 18,
+        "preface": 1,
+        "public_chapter_pages": [
+          {
+            "slug": "00-preface",
+            "title": "写在开始之前",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/00-preface.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "b9aa7928aef1c78f1ca82907da7e070247624a4d373eccfd3dc6c994ee058efd"
+          },
+          {
+            "slug": "01-why-kubernetes",
+            "title": "第 1 章　先弄懂：为什么需要 Kubernetes",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/01-why-kubernetes.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "b7f1c72daa879a8e1b645a385078f7e6387bef35a43ca5df3b536a8c884f35fc"
+          },
+          {
+            "slug": "02-cluster-map",
+            "title": "第 2 章　用一张地图认识集群",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/02-cluster-map.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "9145b1f6e517f01bbb742e478f01f2d1b1e47fbde97275df2d1692c6b52c0138"
+          },
+          {
+            "slug": "03-kind-environment",
+            "title": "第 3 章　搭建你的练习环境",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/03-kind-environment.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "eb995129fa43285e8c6461473b4f34e4ba87c2cf4f916b74ddbf887969ba2d16"
+          },
+          {
+            "slug": "04-first-yaml",
+            "title": "第 4 章　读懂第一份 YAML",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/04-first-yaml.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "3aa0ceb5fee7231abb74f6da758cb570b9ffd0c920b2b70cf846ad15c864b63b"
+          },
+          {
+            "slug": "05-deployment",
+            "title": "第 5 章　用 Deployment 管理应用",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/05-deployment.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "57abd5394d6976d6ba239afc40dd05a439199b7642c27a5845c2041fa2bb243e"
+          },
+          {
+            "slug": "06-service-dns",
+            "title": "第 6 章　Service：给会变化的 Pod 一个稳定入口",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/06-service-dns.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "8ea156ec32d57abc9b9f5e7cc60dd27591b611312981c6fcdd8fba8859836087"
+          },
+          {
+            "slug": "07-configmap-secret",
+            "title": "第 7 章　ConfigMap 与 Secret：把配置移出镜像",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/07-configmap-secret.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "467f8869818e5ffea3bcedf3041be0e25042a9004080ff6f24c4e5d72a6ad43c"
+          },
+          {
+            "slug": "08-health-resources",
+            "title": "第 8 章　健康检查与资源：让系统知道应用的状态",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/08-health-resources.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "5e3779a6221ab7700d079e1ef52421b5ed4722aaf110f04bcfdbc8e93c3d858f"
+          },
+          {
+            "slug": "09-rollout-rollback",
+            "title": "第 9 章　升级、回滚与配置更新",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/09-rollout-rollback.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "8707a6922534cd1d31d6ce76d5ece5617c6f8f1ce9fdba8c5e0925fbc9f18398"
+          },
+          {
+            "slug": "10-storage",
+            "title": "第 10 章　存储：为什么文件会消失",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/10-storage.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "cfca6e5a7a545e9d240baf119049d603f3d53dc71c3dfd66b5a1fa439067903c"
+          },
+          {
+            "slug": "11-troubleshooting",
+            "title": "第 11 章　排错：用证据缩小问题范围",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/11-troubleshooting.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "3dba36c147bdbe071223d1bb662394e4af282768f6968a5a62655c1989399f2f"
+          },
+          {
+            "slug": "12-security-monitoring",
+            "title": "第 12 章　安全、监控与自动扩容的第一课",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/12-security-monitoring.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "e35c906c26e1a4986f76929d7d61cabbc69eda2dbe1f3ca4c2ae92ad78cd19e0"
+          },
+          {
+            "slug": "13-graduation-project",
+            "title": "第 13 章　结业项目：交付你的小站",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/13-graduation-project.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "36082275c6e900cccc356f1a060f0b7f0131dc16108626ef1e0ec6f30044e041"
+          },
+          {
+            "slug": "14-learning-route",
+            "title": "第 14 章　接下来怎样学习",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/14-learning-route.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "aeead49f84144ab859d6ba359c3b0f2c8ddcb9c87b77189fd7c408363a568d5d"
+          },
+          {
+            "slug": "15-appendix-exercises",
+            "title": "附录 A　自测参考答案",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/15-appendix-exercises.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "6115be5f52a9086b28150eb40284e701fd10ff6084adf317381abb8f5d810746"
+          },
+          {
+            "slug": "16-appendix-reference",
+            "title": "附录 B　命令速查与术语",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/16-appendix-reference.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "944c8d04e6bd98b445d76f86a15c98a6d8e5ea8c091624a110d9d01365bb08a7"
+          },
+          {
+            "slug": "17-appendix-sources",
+            "title": "附录 C　资料来源与延伸阅读",
+            "url": "https://aias00.github.io/k8s-book-reader/chapters/17-appendix-sources.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "12606efadc15213a475e0bc7bf83fb1f3d80b371ec1498156e7dae8459c6afd7"
+          }
+        ]
+      },
+      "epub": {
+        "ci": {
+          "sha256": "9da558f7457de99a426e7e9ccb22aef58fedcb25cbec6e7aaab63a28b81c2055",
+          "bytes": 65610,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 28,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "release": {
+          "sha256": "9da558f7457de99a426e7e9ccb22aef58fedcb25cbec6e7aaab63a28b81c2055",
+          "bytes": 65610,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 28,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages": {
+          "sha256": "9da558f7457de99a426e7e9ccb22aef58fedcb25cbec6e7aaab63a28b81c2055",
+          "bytes": 65610,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 28,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages_url": "https://aias00.github.io/k8s-book-reader/downloads/k8s-book-reader.epub",
+        "release_url": "https://github.com/Aias00/k8s-book-reader/releases/download/v1.0.0/k8s-book-reader.epub",
+        "ci_local_path": "/tmp/eight-books-final-audit/k8s-book-reader/ci/k8s-book-reader.epub"
+      },
+      "experiment_zip": {
+        "sha256": "736e2a08d55e461d2ab4cce6ce821150fff3443bd6742ae0793bf0f5a7dc16db",
+        "bytes": 9718,
+        "zip": {
+          "directory_readable": true,
+          "all_members_readable": true,
+          "crc_valid": true,
+          "entries": 10,
+          "member_names": [
+            "examples/deployment-basic.yaml",
+            "examples/pod.yaml",
+            "examples/project/configmap.yaml",
+            "examples/project/deployment.yaml",
+            "examples/project/namespace.yaml",
+            "examples/project/service.yaml",
+            "examples/storage.yaml",
+            "lab/kind-ci.sh",
+            "lab/run_kind.py",
+            "README.md"
+          ],
+          "mimetype_valid": null
+        }
+      }
+    },
+    {
+      "id": "knowledge-retrieval-book",
+      "status": "passed",
+      "checked_at_utc": "2026-10-21T09:59:52.896630+00:00",
+      "repository": "Aias00/knowledge-retrieval-book",
+      "pages_url": "https://aias00.github.io/knowledge-retrieval-book/",
+      "artifact_directory": "/tmp/eight-books-final-audit/knowledge-retrieval-book",
+      "checks": {
+        "repository_public": true,
+        "ci_success_for_product_commit": true,
+        "latest_release_matches_expected": true,
+        "release_targets_ci_product_commit": true,
+        "all_public_reading_units_accessible": true,
+        "ci_release_pages_epub_byte_identical": true,
+        "epub_hash_matches_build_info_and_release_metadata": true,
+        "epub_zip_directory_and_contents_readable": true,
+        "pages_experiment_zip_matches_ci_and_is_readable": true,
+        "rag_experiment_zip_has_model_dependencies_and_excludes_nonbuild_root_readme": true,
+        "experiment_zip_has_no_git_history_or_escaping_paths": true
+      },
+      "repository_metadata": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "url": "https://github.com/Aias00/knowledge-retrieval-book",
+        "visibility": "PUBLIC"
+      },
+      "final_ci": {
+        "status": "completed",
+        "conclusion": "success",
+        "headSha": "b97053a0942120576a8e8dcd8c55c54115ab926b",
+        "url": "https://github.com/Aias00/knowledge-retrieval-book/actions/runs/39580408519",
+        "run_id": 39580408519,
+        "jobs": [
+          {
+            "name": "build",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "deploy",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      },
+      "release": {
+        "url": "https://github.com/Aias00/knowledge-retrieval-book/releases/tag/v1.0.1",
+        "tagName": "v1.0.1",
+        "targetCommitish": "b97053a0942120576a8e8dcd8c55c54115ab926b",
+        "publishedAt": "2026-10-21T09:58:10Z"
+      },
+      "published_content": {
+        "version": "1.0.1",
+        "body_chapters": 16,
+        "appendices": 4,
+        "reading_units": 21,
+        "preface": 1,
+        "public_chapter_pages": [
+          {
+            "slug": "00-preface",
+            "title": "前言：先让证据站得住",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/00-preface.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "1ac71de73ebb9fb8e1716c4c7fee0450511f1b519e217d2f1e26f060d3aeb003"
+          },
+          {
+            "slug": "01-contracts",
+            "title": "第1章 从回答演示走向检索契约",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/01-contracts.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "1e931a3de9a874cee0d5c7b666c5f0e900888a8b17fc513b38b26d3ec348d157"
+          },
+          {
+            "slug": "02-sources",
+            "title": "第2章 为文档建立身份、版本与来源",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/02-sources.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "d12f2c075574b7f943ff033cd675bddecf724957112ad30c157c7d962358f364"
+          },
+          {
+            "slug": "03-projection",
+            "title": "第3章 解析不是清洗，而是建立可定位的投影",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/03-projection.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "d2effd7fadecf8da701e2a5816ad1a832c3a7f2aeca164634ebafebedb84e81c"
+          },
+          {
+            "slug": "04-chunks",
+            "title": "第4章 切分窗口、重叠与证据粒度",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/04-chunks.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "612fad57e97b7a12f3e4eab5d8009d881edd4d0621be64eaf2bc34be0234b628"
+          },
+          {
+            "slug": "05-fts5",
+            "title": "第5章 用 SQLite FTS5 建立词面基线",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/05-fts5.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "07b8c043123f9f6bcb366b89272972b719a056ff4b95dc1d7047e11d555e06f2"
+          },
+          {
+            "slug": "06-vectors",
+            "title": "第6章 从词项向量到真实本地嵌入",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/06-vectors.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "6becf54b11989e61cece83da2217e089a6e1fb1f155e6c73334bf07cf4be76bc"
+          },
+          {
+            "slug": "07-hybrid",
+            "title": "第7章 用 RRF 合并可解释的召回通道",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/07-hybrid.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "a081b93980964cf839662f81fe4b9199fe83d5adbecfc21c090b4e1ef9fea1f3"
+          },
+          {
+            "slug": "08-rerank",
+            "title": "第8章 重排先从可检查的规则开始",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/08-rerank.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "87c27215acf3d2d64dac0dfbebc6de1baa398320e1bf54f34022fb9434aa599a"
+          },
+          {
+            "slug": "09-citations",
+            "title": "第9章 把引用变成一次当前状态复核",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/09-citations.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "ef8d23fa36d39443a2d72e591efcbd8e58c727c31e0c2c5265f54d6c2a5042a0"
+          },
+          {
+            "slug": "10-updates",
+            "title": "第10章 用事务维护增量更新的一致性",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/10-updates.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "fff37adf7aa63c97799aabad61a38aae7db03c7c7cf4cba7ec4a47039ddb5cc4"
+          },
+          {
+            "slug": "11-deletion",
+            "title": "第11章 删除、墓碑与旧事件重放",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/11-deletion.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "0c1ff98d1932c5fc1fdf2e88bbfe47e5632d571a49043778cca5421904b74a26"
+          },
+          {
+            "slug": "12-acl",
+            "title": "第12章 权限过滤、撤权与缓存失效",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/12-acl.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "c27f0e89d0c48934c0ee0b0cd4d8f2cf6b690afce69b6c017efd7bbfd4c57be1"
+          },
+          {
+            "slug": "13-lab-core",
+            "title": "第13章 运行核心实验并检查失败路径",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/13-lab-core.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "2034aecc07c472995b45c448543b8f33f97dba72aef6c664d992633999497e64"
+          },
+          {
+            "slug": "14-lab-embedding",
+            "title": "第14章 复现本地 BGE 量化模型实验",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/14-lab-embedding.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "96ef524b47309529f138e9ec2a26f88863f97319f38af93ea7c6f2f2d9215bd9"
+          },
+          {
+            "slug": "15-evaluation",
+            "title": "第15章 检索评估必须包括负例与权限",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/15-evaluation.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "27307e1231d240e79f791434ae7423dce548d9e94a31848c37ec9142f215535e"
+          },
+          {
+            "slug": "16-operations",
+            "title": "第16章 从实验走向可维护的检索系统",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/16-operations.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "884d49ab7a55e831de89284672bfee1134219e71f53882fa231d8398ce7ad6e6"
+          },
+          {
+            "slug": "90-sources",
+            "title": "附录A 来源与事实边界",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/90-sources.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "8e1133f9f2962c10379e0ab343a808efe446afc51d2af88e75451893dc25bab3"
+          },
+          {
+            "slug": "91-experiments",
+            "title": "附录B 实验记录与复现坐标",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/91-experiments.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "7fe5871a729c5ef8e236ac001464bce56f35e2b7c363ac5a4276bceae0de86cd"
+          },
+          {
+            "slug": "92-migration",
+            "title": "附录C 接入自己的文档前",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/92-migration.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "e08c1b57aec402eadcb211ce5f72e7af7ca9c0552bd89748fd1357a15b75b2e0"
+          },
+          {
+            "slug": "99-generated-lab",
+            "title": "附录：随书实验完整代码",
+            "url": "https://aias00.github.io/knowledge-retrieval-book/chapters/99-generated-lab.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "03f99abff7bf52c42d6c253824b4bcb0a267904fb287087ebd0fddc0fcdb1be2"
+          }
+        ]
+      },
+      "epub": {
+        "ci": {
+          "sha256": "9ccdece40866ff9039b6088b69a276b266e9d133e17d9f2acf98825f446aba2b",
+          "bytes": 112945,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 31,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "release": {
+          "sha256": "9ccdece40866ff9039b6088b69a276b266e9d133e17d9f2acf98825f446aba2b",
+          "bytes": 112945,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 31,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages": {
+          "sha256": "9ccdece40866ff9039b6088b69a276b266e9d133e17d9f2acf98825f446aba2b",
+          "bytes": 112945,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 31,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file0.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages_url": "https://aias00.github.io/knowledge-retrieval-book/downloads/knowledge-retrieval-book.epub",
+        "release_url": "https://github.com/Aias00/knowledge-retrieval-book/releases/download/v1.0.1/knowledge-retrieval-book.epub",
+        "ci_local_path": "/tmp/eight-books-final-audit/knowledge-retrieval-book/ci/knowledge-retrieval-book.epub"
+      },
+      "experiment_zip": {
+        "sha256": "87719c5ce56a40c5738f1633d9261fb86c7174cd905b317540060aecc359d9b8",
+        "bytes": 25352,
+        "zip": {
+          "directory_readable": true,
+          "all_members_readable": true,
+          "crc_valid": true,
+          "entries": 19,
+          "member_names": [
+            "lab/README.md",
+            "lab/__init__.py",
+            "lab/data/corpus.json",
+            "lab/data/manifest.json",
+            "lab/data/queries.json",
+            "lab/demo.py",
+            "lab/embedding.py",
+            "lab/evaluate.py",
+            "lab/evidence/bge-evaluation.json",
+            "lab/evidence/demo.json",
+            "lab/evidence/term-evaluation.json",
+            "lab/fetch_embedding.py",
+            "lab/fixtures.py",
+            "lab/index.py",
+            "lab/requirements-embedding.txt",
+            "lab/text.py",
+            "tests/test_embedding.py",
+            "tests/test_retrieval.py",
+            "LICENSE"
+          ],
+          "mimetype_valid": null
+        }
+      }
+    },
+    {
+      "id": "mysql-reliability-book",
+      "status": "passed",
+      "checked_at_utc": "2026-10-21T09:59:03.463864+00:00",
+      "repository": "Aias00/mysql-reliability-book",
+      "pages_url": "https://aias00.github.io/mysql-reliability-book/",
+      "artifact_directory": "/tmp/eight-books-final-audit/mysql-reliability-book",
+      "checks": {
+        "repository_public": true,
+        "ci_success_for_product_commit": true,
+        "latest_release_matches_expected": true,
+        "release_targets_ci_product_commit": true,
+        "all_public_reading_units_accessible": true,
+        "ci_release_pages_epub_byte_identical": true,
+        "epub_hash_matches_build_info_and_release_metadata": true,
+        "epub_zip_directory_and_contents_readable": true,
+        "pages_experiment_zip_matches_ci_and_is_readable": true,
+        "mysql_experiment_zip_has_pinned_dependencies_and_same_ci_enhanced_probe": true,
+        "experiment_zip_has_no_git_history_or_escaping_paths": true
+      },
+      "repository_metadata": {
+        "defaultBranchRef": {
+          "name": "main"
+        },
+        "url": "https://github.com/Aias00/mysql-reliability-book",
+        "visibility": "PUBLIC"
+      },
+      "final_ci": {
+        "status": "completed",
+        "conclusion": "success",
+        "headSha": "1d1f9f1f410224de1f2f6b76ab5b5e7d592ad23f",
+        "url": "https://github.com/Aias00/mysql-reliability-book/actions/runs/39580353204",
+        "run_id": 39580353204,
+        "jobs": [
+          {
+            "name": "build",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "name": "deploy",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      },
+      "release": {
+        "url": "https://github.com/Aias00/mysql-reliability-book/releases/tag/v1.0.0",
+        "tagName": "v1.0.0",
+        "targetCommitish": "1d1f9f1f410224de1f2f6b76ab5b5e7d592ad23f",
+        "publishedAt": "2026-10-21T09:58:21Z"
+      },
+      "published_content": {
+        "version": "1.0.0",
+        "body_chapters": 17,
+        "appendices": 4,
+        "reading_units": 22,
+        "preface": 1,
+        "public_chapter_pages": [
+          {
+            "slug": "00-preface",
+            "title": "前言：从一句“事务失败了”追问到证据",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/00-preface.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "ba1a987da37ead98e176d9f358125e5e10d3e5d8cc3976d2ac2b473535d70363"
+          },
+          {
+            "slug": "01-transaction-boundaries",
+            "title": "第 1 章：先确定事务从哪里开始，到哪里结束",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/01-transaction-boundaries.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "42ac9cecfbaf5da49909d4e32eac04217bd215dbee670ff860bb96455b585608"
+          },
+          {
+            "slug": "02-business-invariants",
+            "title": "第 2 章：用业务不变量判断数据是否正确",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/02-business-invariants.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "917147e3d32584a95c6a2595ffc3bdcd6a015185147f49486bfe6dd7daece17d"
+          },
+          {
+            "slug": "03-isolation-snapshots",
+            "title": "第 3 章：看清 RR 与 RC 的快照起点",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/03-isolation-snapshots.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "4168272b0807d5660be85acb6304740e0c2ca0736e11de6e6998ff3849892660"
+          },
+          {
+            "slug": "04-locking-current-reads",
+            "title": "第 4 章：普通读取与锁定读取回答不同的问题",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/04-locking-current-reads.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "394d0e655c6a04f671306412648ccbef7cbf1ca22cf33159a053f70e674aca7f"
+          },
+          {
+            "slug": "05-indexes-and-plans",
+            "title": "第 5 章：先读执行计划，再讨论索引是否有用",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/05-indexes-and-plans.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "e169b0f7534a9241c4270f9eecb85fe7eeb2d78a9764f497e2cc5541d78dc407"
+          },
+          {
+            "slug": "06-locks-and-waiting",
+            "title": "第 6 章：把“卡住了”还原成等待关系",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/06-locks-and-waiting.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "ba5cacb870f12e551eedcac8fa0c9d54aa32fd0b81ea8aca7a13eb9bfc120103"
+          },
+          {
+            "slug": "07-deadlock",
+            "title": "第 7 章：死锁后，重试的是完整业务事务",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/07-deadlock.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "e5a0a11bae6e3b34165d173da61ee71a1bf727f146f26c1153ae1e9d5fc4ccdf"
+          },
+          {
+            "slug": "08-lock-timeout",
+            "title": "第 8 章：锁等待超时不一定回滚整个事务",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/08-lock-timeout.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "28fbc5fb07648cc3021950f5b194f9d7449c502d9cd9fdf4c44bb1f8b632ec96"
+          },
+          {
+            "slug": "09-idempotent-orders",
+            "title": "第 9 章：唯一业务键与库存变化共同提交",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/09-idempotent-orders.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "563a01322aabaf11c1d891d0806594abf5803ce2936abbe4fe79ac2af7f1cc36"
+          },
+          {
+            "slug": "10-unknown-commit",
+            "title": "第 10 章：提交响应丢失，不能直接当作回滚",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/10-unknown-commit.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "322ad02d77e1bc2cf0611c3e3617d5bf01dd1bf19c6ad5cc54d78f5759c67706"
+          },
+          {
+            "slug": "11-outbox-and-claims",
+            "title": "第 11 章：本地 Outbox 解决哪一段原子性",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/11-outbox-and-claims.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "6eab92bb3b9bc2b8dd7d19cabdd821d4acab739dcc3e772d250c32a453403c73"
+          },
+          {
+            "slug": "12-troubleshooting",
+            "title": "第 12 章：按证据缩小一次数据库故障",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/12-troubleshooting.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "7cf85b50923d904a0be72d2948cf447ab433105f830f3f76e3a887e62d1ecc3d"
+          },
+          {
+            "slug": "13-lab-first-run",
+            "title": "第 13 章：第一次运行，把环境、断言和证据对齐",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/13-lab-first-run.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "769aaef7748a6eaf2ae85788d01bc98ec758610775612e71ad1edf30cea01204"
+          },
+          {
+            "slug": "14-lab-snapshots-and-locks",
+            "title": "第 14 章：用两条连接重放快照与等待",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/14-lab-snapshots-and-locks.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "2c7e3cba82ab3264f265ee0e5d538c5128d5f46b70ae761eebc385d6d1372ae0"
+          },
+          {
+            "slug": "15-lab-failure-recovery",
+            "title": "第 15 章：报错以后，先查清数据库留下什么",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/15-lab-failure-recovery.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "e8bca22e89d416c250354ab169cc9020ebca54986c051e0863437c783bb309fd"
+          },
+          {
+            "slug": "16-production-design",
+            "title": "第 16 章：把实验结论带到真实服务之前",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/16-production-design.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "ee71fde999bd713c6998a023863c10a2027a7d573b31a6bec349e2e6f5f79b38"
+          },
+          {
+            "slug": "17-capstone",
+            "title": "第 17 章：交付一个可以解释失败的订单内核",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/17-capstone.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "a861ead0c559f14f239e0528b87219f032ff78ad39e7c679de5dd7c8d34fbbc5"
+          },
+          {
+            "slug": "90-exercise-answers",
+            "title": "附录 A：练习解题方向",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/90-exercise-answers.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "65535b83bc44bf82d5c85f209749e6959c6d4c6b38b1fa7c0634e2621f21fa83"
+          },
+          {
+            "slug": "91-sources",
+            "title": "附录 B：来源与复核范围",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/91-sources.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "d927b5dc178e7cb7425ed7b826310c8b9adc02b6e868fcdda10d8df6336b9e66"
+          },
+          {
+            "slug": "92-glossary",
+            "title": "附录 C：术语与故障速查",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/92-glossary.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "2a6c03205c553097827e86abef2977615aa92a58673945d067400076283e297b"
+          },
+          {
+            "slug": "99-generated-lab",
+            "title": "附录：随书实验完整代码",
+            "url": "https://aias00.github.io/mysql-reliability-book/chapters/99-generated-lab.html",
+            "http_readable": true,
+            "article_nonempty": true,
+            "html_sha256": "c9d2a9bffac26d4e8a311538c46901fc618d84e264df773800995b6130493c2b"
+          }
+        ]
+      },
+      "epub": {
+        "ci": {
+          "sha256": "bf8bb0f9dd9174f583eebd429d4f1b92d8007eb0a410ac5607a365f5ee8c23eb",
+          "bytes": 102604,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 34,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file1.svg",
+              "EPUB/media/file0.svg",
+              "EPUB/media/file2.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml",
+              "EPUB/text/ch022.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "release": {
+          "sha256": "bf8bb0f9dd9174f583eebd429d4f1b92d8007eb0a410ac5607a365f5ee8c23eb",
+          "bytes": 102604,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 34,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file1.svg",
+              "EPUB/media/file0.svg",
+              "EPUB/media/file2.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml",
+              "EPUB/text/ch022.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages": {
+          "sha256": "bf8bb0f9dd9174f583eebd429d4f1b92d8007eb0a410ac5607a365f5ee8c23eb",
+          "bytes": 102604,
+          "zip": {
+            "directory_readable": true,
+            "all_members_readable": true,
+            "crc_valid": true,
+            "entries": 34,
+            "member_names": [
+              "mimetype",
+              "META-INF/container.xml",
+              "META-INF/com.apple.ibooks.display-options.xml",
+              "EPUB/content.opf",
+              "EPUB/toc.ncx",
+              "EPUB/nav.xhtml",
+              "EPUB/text/title_page.xhtml",
+              "EPUB/styles/stylesheet1.css",
+              "EPUB/media/file1.svg",
+              "EPUB/media/file0.svg",
+              "EPUB/media/file2.svg",
+              "EPUB/text/cover.xhtml",
+              "EPUB/text/ch001.xhtml",
+              "EPUB/text/ch002.xhtml",
+              "EPUB/text/ch003.xhtml",
+              "EPUB/text/ch004.xhtml",
+              "EPUB/text/ch005.xhtml",
+              "EPUB/text/ch006.xhtml",
+              "EPUB/text/ch007.xhtml",
+              "EPUB/text/ch008.xhtml",
+              "EPUB/text/ch009.xhtml",
+              "EPUB/text/ch010.xhtml",
+              "EPUB/text/ch011.xhtml",
+              "EPUB/text/ch012.xhtml",
+              "EPUB/text/ch013.xhtml",
+              "EPUB/text/ch014.xhtml",
+              "EPUB/text/ch015.xhtml",
+              "EPUB/text/ch016.xhtml",
+              "EPUB/text/ch017.xhtml",
+              "EPUB/text/ch018.xhtml",
+              "EPUB/text/ch019.xhtml",
+              "EPUB/text/ch020.xhtml",
+              "EPUB/text/ch021.xhtml",
+              "EPUB/text/ch022.xhtml"
+            ],
+            "mimetype_valid": true
+          }
+        },
+        "pages_url": "https://aias00.github.io/mysql-reliability-book/downloads/mysql-reliability-book.epub",
+        "release_url": "https://github.com/Aias00/mysql-reliability-book/releases/download/v1.0.0/mysql-reliability-book.epub",
+        "ci_local_path": "/tmp/eight-books-final-audit/mysql-reliability-book/ci/mysql-reliability-book.epub"
+      },
+      "experiment_zip": {
+        "sha256": "62907671bce594564de60ea2137c40f44371e2e395c71654fcb4343d45259409",
+        "bytes": 13293,
+        "zip": {
+          "directory_readable": true,
+          "all_members_readable": true,
+          "crc_valid": true,
+          "entries": 12,
+          "member_names": [
+            "lab/README.md",
+            "lab/__init__.py",
+            "lab/commit_proxy.py",
+            "lab/db.py",
+            "lab/demo.py",
+            "lab/evidence/container.json",
+            "lab/evidence/mysql.json",
+            "lab/scenarios.py",
+            "tests/test_mysql.py",
+            "README.md",
+            "LICENSE",
+            "requirements.txt"
+          ],
+          "mimetype_valid": null
+        }
+      },
+      "runtime_evidence": {
+        "mysql_tests_run": 15,
+        "passed": true,
+        "enhanced_deadlock_probe": {
+          "scenario": "test_09_deadlock_rolls_back_one_entire_transaction",
+          "outcomes": [
+            "committed",
+            "deadlock_1213"
+          ],
+          "balances": [
+            101,
+            101
+          ],
+          "victim_final_action": "commit_without_explicit_rollback"
+        }
+      }
+    }
+  ]
+}

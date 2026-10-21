@@ -97,6 +97,22 @@ export const books = [
     "coverArt": "<svg viewBox=\"0 0 82 54\"><ellipse cx=\"41\" cy=\"10\" rx=\"28\" ry=\"8\"/><path d=\"M13 10v14c0 11 56 11 56 0V10M13 24v14c0 11 56 11 56 0V24\"/><path d=\"M13 22c0 11 56 11 56 0M13 35c0 11 56 11 56 0\"/></svg>"
   },
   {
+    "id": "mysql",
+    "topic": "backend",
+    "topicLabel": "DATABASE ENGINEERING",
+    "title": "MySQL 事务、并发控制与故障排查",
+    "description": "用真实 InnoDB 实验理解快照、锁与事务恢复，围绕库存、幂等订单和提交结果未知建立排障方法。",
+    "scale": "17 章 · 4 个附录",
+    "level": "事务与并发实践",
+    "readUrl": "https://aias00.github.io/mysql-reliability-book/",
+    "epubUrl": "https://aias00.github.io/mysql-reliability-book/downloads/mysql-reliability-book.epub",
+    "coverColor": "#b7cbdc",
+    "coverInk": "#293f54",
+    "coverLines": ["MySQL", "事务与并发"],
+    "coverSubtitle": "从隔离级别到业务一致性",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><ellipse cx=\"31\" cy=\"10\" rx=\"22\" ry=\"7\"/><path d=\"M9 10v25c0 9 44 9 44 0V10M9 23c0 9 44 9 44 0M9 34c0 9 44 9 44 0M57 18h17m-5-5 5 5-5 5M74 37H57m5-5-5 5 5 5\"/></svg>"
+  },
+  {
     "id": "rocketmq",
     "topic": "backend",
     "topicLabel": "MESSAGING SYSTEMS",
@@ -127,6 +143,22 @@ export const books = [
     "coverLines": ["Kafka", "从零开始"],
     "coverSubtitle": "日志 · 消费 · 回放",
     "coverArt": "<svg viewBox=\"0 0 82 54\"><path d=\"M5 11h72M5 27h72M5 43h72\"/><rect x=\"13\" y=\"6\" width=\"12\" height=\"10\"/><rect x=\"32\" y=\"22\" width=\"12\" height=\"10\"/><rect x=\"52\" y=\"38\" width=\"12\" height=\"10\"/><path d=\"m70 6 7 5-7 5m0 6 7 5-7 5m0 6 7 5-7 5\"/></svg>"
+  },
+  {
+    "id": "kubernetes",
+    "topic": "backend",
+    "topicLabel": "CONTAINER ORCHESTRATION",
+    "title": "从零开始学 Kubernetes",
+    "description": "从 Pod、Deployment 与 Service 出发，用真实 kind 集群练习配置、健康检查、发布回滚、持久卷和调度排错。",
+    "scale": "14 章 · 3 个附录",
+    "level": "容器编排入门",
+    "readUrl": "https://aias00.github.io/k8s-book-reader/",
+    "epubUrl": "https://aias00.github.io/k8s-book-reader/downloads/k8s-book-reader.epub",
+    "coverColor": "#b8c6e1",
+    "coverInk": "#2d3b58",
+    "coverLines": ["Kubernetes", "从零开始"],
+    "coverSubtitle": "概念 · 部署 · 故障演练",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><path d=\"m41 3 23 13v26L41 53 18 42V16Z\"/><circle cx=\"41\" cy=\"27\" r=\"9\"/><path d=\"M41 3v15m0 18v16M18 16l15 7m16 8 15 11M18 42l15-11m16-8 15-7\"/><circle cx=\"41\" cy=\"27\" r=\"2\"/></svg>"
   },
   {
     "id": "envoy",
@@ -216,6 +248,22 @@ export const books = [
     ],
     "coverSubtitle": "Java 开发者学习指南",
     "coverArt": "<svg viewBox=\"0 0 82 54\"><rect x=\"27\" y=\"17\" width=\"28\" height=\"20\" rx=\"4\"/><path d=\"M41 7v10M41 37v10M7 27h20m28 0h20M14 10l13 10m28 14 13 10M14 44l13-10m28-14 13-10\"/><circle cx=\"36\" cy=\"27\" r=\"2\"/><circle cx=\"46\" cy=\"27\" r=\"2\"/></svg>"
+  },
+  {
+    "id": "knowledge-retrieval",
+    "topic": "agents",
+    "topicLabel": "KNOWLEDGE RETRIEVAL",
+    "title": "企业知识库检索工程",
+    "description": "从文档版本、分块和权限出发，学习全文、向量与混合检索，用可核查的引用处理更新、撤权和删除。",
+    "scale": "16 章 · 4 个附录",
+    "level": "检索与证据实践",
+    "readUrl": "https://aias00.github.io/knowledge-retrieval-book/",
+    "epubUrl": "https://aias00.github.io/knowledge-retrieval-book/downloads/knowledge-retrieval-book.epub",
+    "coverColor": "#c6cce0",
+    "coverInk": "#333d5a",
+    "coverLines": ["企业知识库", "检索工程"],
+    "coverSubtitle": "从文档与权限到可核查的证据",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><path d=\"M9 6h27l9 9v32H9ZM36 6v9h9M16 23h20M16 31h15M16 39h17\"/><circle cx=\"59\" cy=\"25\" r=\"12\"/><path d=\"m67 34 10 12m-25-21 5 5 9-10\"/></svg>"
   },
   {
     "id": "sandbox",
