@@ -11,7 +11,7 @@
 
 ## 分类与默认排列
 
-同一主题放在一起，主题内优先基础，再到实践。当前共 9 本、3 个阅读方向；数量按已核验的公开阅读入口统计，不将 EPUB、PDF 或独立发布站重复计为新书。
+同一主题放在一起，主题内优先基础，再到实践。当前共 12 本、3 个阅读方向；数量按已核验的公开阅读入口统计，不将 EPUB、PDF 或独立发布站重复计为新书。
 
 | 顺序 | 分类 | 书籍 | 内容规模 | 主要读者与用途 |
 | --- | --- | --- | --- | --- |
@@ -23,7 +23,10 @@
 | 06 | AI 与智能体 | Agent 工程入门与实战：Java 开发者学习指南 | 16 章、附录 | Java 开发者围绕知识库助手学习 Agent 工程与维护 |
 | 07 | AI 与智能体 | Agent Sandbox：从零开始 | 27 章 | 理解执行边界，从概念和 Docker 实验走向工程导读 |
 | 08 | AI 与智能体 | Agent 记忆：从概念到可落地的工程设计 | 5 章正文 | 探索 Agent 记忆的研究与工程设计方案 |
-| 09 | 开源实践 | 从零参与 Apache 开源 | 13 章 | 开始贡献，了解协作、发布与社区治理 |
+| 09 | AI 与智能体 | 从零读懂 Codex 工程 | 14 章、2 个附录 | 从终端与 Git 基础走向代理循环、权限与 SDK 源码导读 |
+| 10 | AI 与智能体 | 从零读懂 Pi：AI 编程助手的工程入门 | 16 章、3 个附录 | 理解会话、工具、扩展与编程助手的工程结构 |
+| 11 | AI 与智能体 | 从零认识 DeepSeek Harness | 12 章 | 从任务流程、插件协作和排错建立工程阅读地图 |
+| 12 | 开源实践 | 从零参与 Apache 开源 | 13 章 | 开始贡献，了解协作、发布与社区治理 |
 
 Java 并发虽然发布在 Apache 开源书站的子目录，内容是独立书籍，在书架独立呈现。JVM 的十个案例是教学案例，文案不称为真实生产事故。Agent 记忆定位研究与设计，不宣传为已经实现或压测的产品。
 
@@ -32,6 +35,7 @@ Java 并发虽然发布在 Apache 开源书站的子目录，内容是独立书�
 - **Java 工程**：Java 高并发 → JVM 故障排查。
 - **中间件与网关**：Redis → Envoy → API 网关设计与实现，作为扩大技术视野的选读顺序，不是必需前置关系。
 - **Agent 工程**：先读《Agent 工程入门与实战》，围绕 Java 知识库助手建立整体认识，再按目标选读专题。Sandbox 关注执行与隔离边界，Agent 记忆关注记忆组织与系统设计，可按目标独立选读。
+- **AI 编程助手工程**：Codex、Pi、DeepSeek Harness 是三个独立项目的工程导读，可按目标选读，不构成前置关系。
 - **开源协作**：Apache 开源入门的选项目 → 第一个 PR → 持续贡献与社区协作。
 
 ## 书目入口
@@ -46,6 +50,9 @@ Java 并发虽然发布在 Apache 开源书站的子目录，内容是独立书�
 | Agent 工程入门与实战 | https://aias00.github.io/agent-book/ | https://aias00.github.io/agent-book/downloads/agent-engineering-java.epub |
 | Agent Sandbox | https://aias00.github.io/agent-sandbox-book-online/ | https://aias00.github.io/agent-sandbox-book-online/Agent-Sandbox-3.0.epub |
 | Agent 记忆 | https://aias00.github.io/agent-memory-book/ | https://aias00.github.io/agent-memory-book/agent-memory.epub |
+| Codex 工程 | https://aias00.github.io/codex-engineering-book/ | https://aias00.github.io/codex-engineering-book/downloads/codex-engineering-book.epub |
+| Pi 工程入门 | https://aias00.github.io/pi-beginner-book-zh/ | https://aias00.github.io/pi-beginner-book-zh/downloads/pi-beginner.epub |
+| DeepSeek Harness | https://aias00.github.io/deepseek-harness-book/ | https://aias00.github.io/deepseek-harness-book/deepseek-harness-book.epub |
 | Apache 开源 | https://aias00.github.io/opensource-book-site/ | https://aias00.github.io/opensource-book-site/book.epub |
 
 Envoy 的 PDF、HTML 和 Markdown 版本保留在其 [Release](https://github.com/Aias00/envoy-learning-book/releases/tag/v1.0.0)，书架主操作统一使用在线阅读和 EPUB。
@@ -61,3 +68,5 @@ Envoy 的 PDF、HTML 和 Markdown 版本保留在其 [Release](https://github.co
 ## 最近核验
 
 2026-10-20：新增《Agent 工程入门与实战：Java 开发者学习指南》，按公开仓库 README 核对为 16 章及附录；全部 9 本书的在线阅读和 EPUB 入口均返回 HTTP 200。Kafka、Netty、Kubernetes 等本地书稿待公开阅读与下载入口可核验后再加入书架。
+
+2026-10-20（第二轮）：新增 Codex、Pi、DeepSeek Harness 三本工程导读，书架共 12 本。Sandbox 分章页面包含指南和附录，正文仍为 27 章。阅读站统一采用浅色默认、手动深色切换与共用排版；网页版调整不更改 EPUB。
