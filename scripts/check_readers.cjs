@@ -95,7 +95,7 @@ async function toggle(page) {
     }
     const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
     const page = await context.newPage();
-    await page.goto(new URL('aias-homepage/index.html', base).href);
+    await page.goto(process.env.HOMEPAGE_URL || 'http://127.0.0.1:4321/');
     assert.equal(await page.locator('.book-card').count(), 12);
     await page.locator('[data-filter="agents"]').click();
     assert.equal(await page.locator('.book-card:visible').count(), 6);

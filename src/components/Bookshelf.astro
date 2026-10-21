@@ -1,0 +1,21 @@
+---
+import { books, topics } from '../data/books';
+import BookCard from './BookCard.astro';
+import ReadingPaths from './ReadingPaths.astro';
+---
+
+<section class="books" id="books" aria-labelledby="books-title">
+  <div class="section-heading">
+    <div><p class="section-kicker"><span>01 /</span> THE BOOKSHELF</p><h2 id="books-title">把探索，写成一本书<span class="accent">.</span></h2><p class="section-description">{books.length} 本中文技术电子书，{topics.length} 个阅读方向。在线翻阅，也可以下载 EPUB 慢慢读。</p></div>
+    <div class="shelf-index"><span>{String(books.length).padStart(2, '0')}</span> BOOKS / <span>{String(topics.length).padStart(2, '0')}</span> TOPICS</div>
+  </div>
+  <div class="shelf-toolbar" id="shelf-toolbar" hidden>
+    <div class="shelf-filters" role="group" aria-label="按主题筛选电子书">
+      <button class="shelf-filter" type="button" data-filter="all" aria-pressed="true" aria-controls="book-grid">全部 <span>{books.length}</span></button>
+      {topics.map(topic => <button class="shelf-filter" type="button" data-filter={topic.id} aria-pressed="false" aria-controls="book-grid">{topic.label} <span>{books.filter(book => book.topic === topic.id).length}</span></button>)}
+    </div>
+    <span class="shelf-results" id="shelf-results" role="status" aria-live="polite" aria-atomic="true">共 {books.length} 本电子书</span>
+  </div>
+  <div class="book-grid" id="book-grid">{books.map((book, index) => <BookCard book={book} index={index} />)}</div>
+  <ReadingPaths />
+</section>

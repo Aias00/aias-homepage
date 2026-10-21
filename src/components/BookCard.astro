@@ -1,0 +1,32 @@
+---
+import type { Book } from '../data/books';
+
+interface Props {
+  book: Book;
+  index: number;
+}
+const { book, index } = Astro.props;
+const number = String(index + 1).padStart(2, '0');
+---
+
+<article class="book-card" id={`book-${book.id}`} data-topic={book.topic} aria-labelledby={`title-${book.id}`}>
+  <div class="book-cover" style={`--cover:${book.coverColor};--cover-ink:${book.coverInk}`} aria-hidden="true">
+    <span class="cover-series">AIAS / FIELD NOTES</span>
+    <div>
+      <div class="cover-title">{book.coverLines.map((line, i) => <Fragment>{line}{i < book.coverLines.length - 1 && <br />}</Fragment>)}</div>
+      <p class="cover-subtitle">{book.coverSubtitle}</p>
+    </div>
+    <div class="cover-art" set:html={book.coverArt} />
+    <div class="cover-footer"><span>AIAS</span><span>NO. {number}</span></div>
+  </div>
+  <div class="book-info">
+    <p class="book-topic">{number} / {book.topicLabel}</p>
+    <h3 id={`title-${book.id}`}>{book.title}</h3>
+    <p class="book-description">{book.description}</p>
+    <div class="book-details"><span>{book.scale}</span><span class="detail-separator" aria-hidden="true">/</span><span>{book.level}</span></div>
+    <div class="book-actions">
+      <a class="book-read" href={book.readUrl} target="_blank" rel="noopener noreferrer" aria-label={`在线阅读《${book.title}》（新窗口）`}>在线阅读 <svg class="icon" aria-hidden="true"><use href="#i-arrow" /></svg></a>
+      <a class="book-download" href={book.epubUrl} target="_blank" rel="noopener noreferrer" aria-label={`下载《${book.title}》EPUB`}>下载 EPUB <svg class="icon" aria-hidden="true"><use href="#i-download" /></svg></a>
+    </div>
+  </div>
+</article>

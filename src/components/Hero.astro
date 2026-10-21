@@ -1,0 +1,38 @@
+---
+import { books, topics } from '../data/books';
+---
+
+<section class="hero" id="intro" aria-labelledby="intro-title">
+      <div class="hero-main">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> OPEN SOURCE. OPEN MIND.</p>
+          <h1 id="intro-title" lang="en">Hi, I'm <span class="name">Aias<span class="cursor" aria-hidden="true">_</span></span></h1>
+          <p class="hero-motto">保持好奇，持续构建。</p>
+          <p class="hero-description"><a href="https://shenyu.apache.org/team/#pmc" target="_blank" rel="noopener noreferrer">Apache ShenYu PMC 成员</a>。探索开源、基础设施与 AI Agent，把想法写成代码，也把学习过程整理成可以一起读的书。</p>
+          <div class="hero-actions">
+            <a class="button-primary" href="#books">浏览电子书架 <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-grid"></div>
+          <div class="orb-halo"></div>
+          <span class="visual-caption">EXPLORING THE POSSIBILITIES</span>
+          <canvas class="orb-canvas" id="orb" width="1000" height="880">
+            <svg viewBox="0 0 500 440"><g fill="none" stroke="#c2f970" stroke-opacity=".45"><circle cx="250" cy="220" r="140"/><ellipse cx="250" cy="220" rx="70" ry="140"/><ellipse cx="250" cy="220" rx="140" ry="50"/><ellipse cx="250" cy="220" rx="215" ry="60" transform="rotate(-28 250 220)"/></g></svg>
+          </canvas>
+          <div class="code-tag"><span class="code-keyword">const</span> curiosity = <span class="code-value">Infinity</span>;</div>
+          <div class="visual-coordinate">A PERSONAL NODE<br><span>IN A CONNECTED WORLD.</span></div>
+          <div class="visual-badge"><svg class="icon"><use href="#i-code"/></svg> building something meaningful</div>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <div class="interests" aria-label="书架概览">
+          <span><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg> {books.length} 本中文电子书</span>
+          <span class="divider" aria-hidden="true">/</span>
+          <span>{String(topics.length).padStart(2, '0')} 个阅读方向</span>
+          <span class="divider" aria-hidden="true">/</span>
+          <span>ONLINE &amp; EPUB</span>
+        </div>
+        <a class="scroll-link" href="#books" aria-label="向下浏览电子书">EXPLORE THE BOOKSHELF <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+      </div>
+    </section>

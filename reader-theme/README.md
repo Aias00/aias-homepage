@@ -39,4 +39,4 @@ python3 -m http.server 4198 --bind 127.0.0.1 --directory /path/to/books
 PLAYWRIGHT_MODULE=/path/to/node_modules/playwright node scripts/check_readers.cjs
 ```
 
-检查器中的路径按上述临时快照和原有写作目录布局设置。可通过 `READER_BASE` 指定服务地址、`READER_SCREENSHOTS` 指定截图输出目录。
+检查器中的书站路径按上述临时快照和原有写作目录布局设置；首页另用 `npm run preview` 启动，默认访问 http://127.0.0.1:4321/。可通过 `HOMEPAGE_URL` 指定首页、`READER_BASE` 指定书站服务地址、`READER_SCREENSHOTS` 指定截图输出目录。
