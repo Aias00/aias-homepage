@@ -62,6 +62,22 @@ export const books = [
     "coverArt": "<svg viewBox=\"0 0 82 54\"><path d=\"M4 28h15l6-15 9 28 9-36 9 26h26M5 46h72M5 5v41\"/><circle cx=\"61\" cy=\"31\" r=\"4\"/></svg>"
   },
   {
+    "id": "netty",
+    "topic": "backend",
+    "topicLabel": "NETWORK PROGRAMMING",
+    "title": "从零开始学 Netty",
+    "description": "从 TCP 行协议出发，学习 Pipeline、ByteBuf、消息边界与连接生命周期，用 Java 工程验证网络编程。",
+    "scale": "15 章 · 4 个附录",
+    "level": "网络编程入门",
+    "readUrl": "https://aias00.github.io/netty-book-reader/",
+    "epubUrl": "https://aias00.github.io/netty-book-reader/downloads/netty-book-reader.epub",
+    "coverColor": "#b6cdd5",
+    "coverInk": "#2c4351",
+    "coverLines": ["Netty", "网络编程"],
+    "coverSubtitle": "从 TCP 到异步网络服务",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><rect x=\"4\" y=\"17\" width=\"18\" height=\"20\" rx=\"2\"/><rect x=\"60\" y=\"17\" width=\"18\" height=\"20\" rx=\"2\"/><path d=\"M22 22h38m-7-5 7 5-7 5M60 32H22m7-5-7 5 7 5\"/><circle cx=\"41\" cy=\"22\" r=\"3\"/></svg>"
+  },
+  {
     "id": "redis",
     "topic": "backend",
     "topicLabel": "MIDDLEWARE",
@@ -133,6 +149,22 @@ export const books = [
     ],
     "coverSubtitle": "从原理走向工程设计",
     "coverArt": "<svg viewBox=\"0 0 82 54\"><rect x=\"31\" y=\"16\" width=\"20\" height=\"21\" rx=\"2\"/><path d=\"M8 9h13v16h10M8 43h13V27h10M51 26h13V9h11M64 26v17h11\"/><circle cx=\"8\" cy=\"9\" r=\"3\"/><circle cx=\"8\" cy=\"43\" r=\"3\"/><circle cx=\"75\" cy=\"9\" r=\"3\"/><circle cx=\"75\" cy=\"43\" r=\"3\"/></svg>"
+  },
+  {
+    "id": "ai-gateway",
+    "topic": "backend",
+    "topicLabel": "AI GATEWAY ENGINEERING",
+    "title": "AI 网关与模型路由实战",
+    "description": "围绕真实 HTTP 实验，理解能力路由、流式输出、取消、租户预算与故障边界，连接网关和 Agent 工程。",
+    "scale": "17 章 · 4 个附录",
+    "level": "协议与工程实践",
+    "readUrl": "https://aias00.github.io/ai-gateway-book/",
+    "epubUrl": "https://aias00.github.io/ai-gateway-book/downloads/ai-gateway-book.epub",
+    "coverColor": "#bac6ef",
+    "coverInk": "#2b3d69",
+    "coverLines": ["AI 网关", "模型路由"],
+    "coverSubtitle": "流式协议 · 预算 · 故障恢复",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><rect x=\"28\" y=\"16\" width=\"23\" height=\"23\" rx=\"3\"/><path d=\"M3 27h25m23 0h13V8h11M64 27v19h11\"/><circle cx=\"75\" cy=\"8\" r=\"4\"/><circle cx=\"75\" cy=\"46\" r=\"4\"/><path d=\"m35 28 4 4 7-10\"/></svg>"
   },
   {
     "id": "agent",

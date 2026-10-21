@@ -12,25 +12,27 @@
 
 ## 分类与默认排列
 
-同一主题放在一起，主题内优先基础，再到实践。当前共 15 本、3 个阅读方向：后端与基础设施 6 本、AI 与智能体 8 本、开源实践 1 本。数量按已核验的公开阅读入口统计，不将 EPUB、PDF 或独立发布站重复计为新书。
+同一主题放在一起，主题内优先基础，再到实践。当前共 17 本、3 个阅读方向：后端与基础设施 8 本、AI 与智能体 8 本、开源实践 1 本。数量按已核验的公开阅读入口统计，不将 EPUB、PDF 或独立发布站重复计为新书。
 
 | 顺序 | 分类 | 书籍 | 内容规模 | 主要读者与用途 |
 | --- | --- | --- | --- | --- |
 | 01 | 后端与基础设施 / Java 与 JVM | 从零开始学 Java 高并发 | 18 章、5 个实验 | 有 Java 基础，开始学习线程安全、并发工具与系统场景 |
 | 02 | 后端与基础设施 / Java 与 JVM | JVM 线上故障排查实战 | 10 个教学案例 | 通过症状、证据、根因和复盘练习故障排查 |
-| 03 | 后端与基础设施 / 中间件 | Redis 学习手册 | 20 章 | 从数据结构、业务建模走向可靠性与综合实践 |
-| 04 | 后端与基础设施 / 消息中间件 | RocketMQ：从消息模型到可靠系统 | 17 章正文、2 个附录 | 从消息模型、生产消费走向消息系统可靠性设计 |
-| 05 | 后端与基础设施 / 云原生 | 从零读懂 Envoy | 26 章、3 个实验 | 理解代理、Go xDS 控制平面与 Kubernetes 网关 |
-| 06 | 后端与基础设施 / 网关工程 | API 网关设计与实现 | 20 章、5 个附录 | 有 HTTP、Java 或后端基础，理解 ShenYu 与网关工程设计 |
-| 07 | AI 与智能体 | Agent 工程入门与实战：Java 开发者学习指南 | 16 章、附录 | Java 开发者围绕知识库助手学习 Agent 工程与维护 |
-| 08 | AI 与智能体 | Agent Sandbox：从零开始 | 27 章 | 理解执行边界，从概念和 Docker 实验走向工程导读 |
-| 09 | AI 与智能体 | Agent 记忆：从概念到可落地的工程设计 | 5 章正文 | 探索 Agent 记忆的研究与工程设计方案 |
-| 10 | AI 与智能体 | 从零读懂 Codex 工程 | 14 章、2 个附录 | 从终端与 Git 基础走向代理循环、权限与 SDK 源码导读 |
-| 11 | AI 与智能体 | 从零读懂 Pi：AI 编程助手的工程入门 | 16 章、3 个附录 | 理解会话、工具、扩展与编程助手的工程结构 |
-| 12 | AI 与智能体 | 从零认识 DeepSeek Harness | 12 章 | 从任务流程、插件协作和排错建立工程阅读地图 |
-| 13 | AI 与智能体 | Claude Code 源码阅读 | 12 章导读、源码附录 | 围绕 Claude Code 2.1.88 阅读架构、工程导读与完整源码 |
-| 14 | AI 与智能体 | AI 编程代理工程 | 26 章正文、5 个附录 | 对照四套实现，理解编程代理的工程结构并设计自己的 Harness |
-| 15 | 开源实践 | 从零参与 Apache 开源 | 13 章、4 个附录 | 开始贡献，了解协作、发布与社区治理 |
+| 03 | 后端与基础设施 / 网络编程 | 从零开始学 Netty | 15 章、4 个附录 | 从 TCP 与协议边界学习异步网络服务 |
+| 04 | 后端与基础设施 / 中间件 | Redis 学习手册 | 20 章 | 从数据结构、业务建模走向可靠性与综合实践 |
+| 05 | 后端与基础设施 / 消息中间件 | RocketMQ：从消息模型到可靠系统 | 17 章正文、2 个附录 | 从消息模型、生产消费走向消息系统可靠性设计 |
+| 06 | 后端与基础设施 / 云原生 | 从零读懂 Envoy | 26 章、3 个实验 | 理解代理、Go xDS 控制平面与 Kubernetes 网关 |
+| 07 | 后端与基础设施 / 网关工程 | API 网关设计与实现 | 20 章、5 个附录 | 有 HTTP、Java 或后端基础，理解 ShenYu 与网关工程设计 |
+| 08 | 后端与基础设施 / AI 网关 | AI 网关与模型路由实战 | 17 章、4 个附录 | 用真实 HTTP 实验学习流式协议、能力路由、租户预算和故障边界 |
+| 09 | AI 与智能体 | Agent 工程入门与实战：Java 开发者学习指南 | 16 章、附录 | Java 开发者围绕知识库助手学习 Agent 工程与维护 |
+| 10 | AI 与智能体 | Agent Sandbox：从零开始 | 27 章 | 理解执行边界，从概念和 Docker 实验走向工程导读 |
+| 11 | AI 与智能体 | Agent 记忆：从概念到可落地的工程设计 | 5 章正文 | 探索 Agent 记忆的研究与工程设计方案 |
+| 12 | AI 与智能体 | 从零读懂 Codex 工程 | 14 章、2 个附录 | 从终端与 Git 基础走向代理循环、权限与 SDK 源码导读 |
+| 13 | AI 与智能体 | 从零读懂 Pi：AI 编程助手的工程入门 | 16 章、3 个附录 | 理解会话、工具、扩展与编程助手的工程结构 |
+| 14 | AI 与智能体 | 从零认识 DeepSeek Harness | 12 章 | 从任务流程、插件协作和排错建立工程阅读地图 |
+| 15 | AI 与智能体 | Claude Code 源码阅读 | 12 章导读、源码附录 | 围绕 Claude Code 2.1.88 阅读架构、工程导读与完整源码 |
+| 16 | AI 与智能体 | AI 编程代理工程 | 26 章正文、5 个附录 | 对照四套实现，理解编程代理的工程结构并设计自己的 Harness |
+| 17 | 开源实践 | 从零参与 Apache 开源 | 13 章、4 个附录 | 开始贡献，了解协作、发布与社区治理 |
 
 《Claude Code 源码阅读》的副标题为“架构导读与完整源码”，《AI 编程代理工程》的副标题为“从四套实现到自己的 Harness”；书架卡片展示主标题，副标题保留在封面。
 
@@ -38,8 +40,8 @@ Java 并发虽然发布在 Apache 开源书站的子目录，内容是独立书�
 
 ## 建议阅读路线
 
-- **Java 工程**：Java 高并发 → JVM 故障排查。
-- **中间件与网关**：Redis 关注数据建模与可靠性，RocketMQ 关注消息模型与消息系统可靠性；网关方向选读 Envoy → API 网关设计与实现。各专题按目标选读，不构成必需前置关系。
+- **Java 工程**：Java 高并发 → JVM 故障排查；Netty 补充 TCP、异步网络和协议实现。
+- **中间件与网关**：Redis 关注数据建模与可靠性，RocketMQ 关注消息模型与消息系统可靠性；网关方向选读 Envoy → API 网关设计与实现 → AI 网关与模型路由实战。各专题按目标选读，不构成必需前置关系。
 - **Agent 工程**：先读《Agent 工程入门与实战》，围绕 Java 知识库助手建立整体认识，再按目标选读专题。Sandbox 关注执行与隔离边界，Agent 记忆关注记忆组织与系统设计，可按目标独立选读。
 - **AI 编程助手工程**：《AI 编程代理工程》对照四套实现，建立 Harness 的工程认识；Codex、Pi、DeepSeek Harness、Claude Code 是独立项目的源码与工程导读，可按目标选读，不构成前置关系。
 - **开源协作**：Apache 开源入门的选项目 → 第一个 PR → 持续贡献与社区协作。
@@ -50,10 +52,12 @@ Java 并发虽然发布在 Apache 开源书站的子目录，内容是独立书�
 | --- | --- | --- |
 | Java 高并发 | https://aias00.github.io/opensource-book-site/java-concurrency/ | https://aias00.github.io/opensource-book-site/java-concurrency/book.epub |
 | JVM 故障排查 | https://aias00.github.io/jvm-bug-book-reader/ | https://aias00.github.io/jvm-bug-book-reader/book.epub |
+| Netty | https://aias00.github.io/netty-book-reader/ | https://aias00.github.io/netty-book-reader/downloads/netty-book-reader.epub |
 | Redis | https://aias00.github.io/redis-book/ | https://aias00.github.io/redis-book/downloads/redis-learning-handbook.epub |
 | RocketMQ | https://aias00.github.io/rocketmq-book/ | https://aias00.github.io/rocketmq-book/rocketmq-book.epub |
 | Envoy | https://aias00.github.io/envoy-learning-book/ | https://github.com/Aias00/envoy-learning-book/releases/download/v1.0.0/envoy-learning-book.epub |
 | API 网关 | https://aias00.github.io/api-gateway-book-reader/ | https://aias00.github.io/api-gateway-book-reader/book.epub |
+| AI 网关与模型路由实战 | https://aias00.github.io/ai-gateway-book/ | https://aias00.github.io/ai-gateway-book/downloads/ai-gateway-book.epub |
 | Agent 工程入门与实战 | https://aias00.github.io/agent-book/ | https://aias00.github.io/agent-book/downloads/agent-engineering-java.epub |
 | Agent Sandbox | https://aias00.github.io/agent-sandbox-book-online/ | https://aias00.github.io/agent-sandbox-book-online/Agent-Sandbox-3.0.epub |
 | Agent 记忆 | https://aias00.github.io/agent-memory-book/ | https://aias00.github.io/agent-memory-book/agent-memory.epub |
@@ -83,3 +87,7 @@ Envoy 的 PDF、HTML 和 Markdown 版本保留在其 [Release](https://github.co
 2026-10-21：新增 RocketMQ、Claude Code 源码阅读、AI 编程代理工程三本，书架共 15 本。三本的在线阅读入口均可访问，EPUB 下载最终返回 HTTP 200，并验证 ZIP 结构与 EPUB mimetype。RocketMQ 为 17 章正文、2 个附录，AI 编程代理工程为 26 章正文、5 个附录；Claude Code 为 12 章导读，另有前言、附录说明与完整源码，源码基于 2.1.88。原有 12 本未发现扩章或主版本变化；补齐 Agent 记忆的正式书名，以及 Apache 开源书的 4 个附录说明。
 
 新增三站已接入共用阅读主题；15 本阅读器的默认浅色、深色切换、刷新保留和移动端检查通过，新增页面补测 320px 目录与顶栏操作、下载按钮对比度。书架三页浏览器回归全部 8 项通过，15 本的 30 个阅读与下载入口均完整 GET 返回 HTTP 200。
+
+本轮写作与整理共八本，逐本交付状态见 [写作路线](WRITING_ROADMAP.md)。已完成公开阅读与 EPUB 核验的书籍才加入上述书架；后续待写书目不计入总数。
+
+2026-10-21（写作路线首批）：新增《AI 网关与模型路由实战》（17章、4附录）与《从零开始学 Netty》（15章、4附录），共17本。AI网关26项真实HTTP测试、Netty Java/TCP实验、两书EPUBCheck及320/390px在线阅读均通过。EPUB使用成功CI产物发布，Pages与Release核对相同内容；原Netty维护仓库保持私有，公开reader仓库采用审查后的干净历史。
