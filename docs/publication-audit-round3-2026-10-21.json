@@ -1,0 +1,1125 @@
+{
+  "schema_version": 1,
+  "audited_at_utc": "2026-10-21T12:35:57.747389+00:00",
+  "overall_status": "PASS",
+  "round": 3,
+  "review_independence": "Root independently downloaded each exact CI artifact, all 69 public chapter pages and anonymous Release EPUB/ZIP. Root compared 66 authored units to independent Pandoc source renders plus all generated appendices to EPUB and all ZIP members to product git source. MySQL and Operator authors cross-read each other; root read the CDC manuscript and all lab sources. Owner-run public browser/EPUBCheck evidence is explicitly attributed.",
+  "books": {
+    "kubernetes-operator-book": {
+      "status": "PASS",
+      "product_commit": "7fd0557b909b4daeb4a2ac92e1f19f2a706f3780",
+      "ci": {
+        "run_id": 39598242663,
+        "url": "https://github.com/Aias00/kubernetes-operator-book/actions/runs/39598242663",
+        "build_deploy_success": true
+      },
+      "release": {
+        "tag": "v1.0.0",
+        "url": "https://github.com/Aias00/kubernetes-operator-book/releases/tag/v1.0.0",
+        "tag_commit": "7fd0557b909b4daeb4a2ac92e1f19f2a706f3780"
+      },
+      "pages": "https://aias00.github.io/kubernetes-operator-book/",
+      "epub": {
+        "bytes": 122382,
+        "sha256": "c08e136ed8acdfd41c92d95c2f265a557d1f34dc458febfd50d7a8362b387542",
+        "ci_pages_release_equal": true,
+        "successful_ci_epubcheck_report_sha256": "7c95ae83bd95b865402e6447a8baf02c4295aafb228288e017bf71d6ed00d505",
+        "epubcheck": "PASS: no errors or warnings; same bytes as public EPUB"
+      },
+      "lab": {
+        "files": 12,
+        "sha256": "c8f037d2e84d5ca534c1893b8c7e34bb2883bcfa9faa19eedd7aa3a7b279bea6",
+        "ci_pages_release_equal": true,
+        "all_files_equal_product_source": true
+      },
+      "content": {
+        "body_chapters": 18,
+        "appendices": 4,
+        "reading_units": 23,
+        "authored_public_pages_epub_equal_independent_source_render": [
+          "00-preface",
+          "01-contract",
+          "02-crd",
+          "03-reconcile",
+          "04-ownership",
+          "05-idempotence",
+          "06-queue",
+          "07-conflicts",
+          "08-status",
+          "09-dataplane",
+          "10-deletion",
+          "11-external",
+          "12-restart",
+          "13-rbac",
+          "14-observability",
+          "15-testing",
+          "16-versioning",
+          "17-delivery",
+          "18-runbook",
+          "90-answers",
+          "91-sources",
+          "92-glossary"
+        ],
+        "generated_appendix_public_epub_equal": true,
+        "all_authored_markdown_hashes_equal_source": true,
+        "body_chinese_characters_excluding_fenced_code": 25631,
+        "count_method": "CJK U+4E00..U+9FFF in authored Markdown body chapters 01..18, excluding fenced code; captions counted once.",
+        "long_duplicate_paragraphs": [],
+        "all_authored_units_read": 22
+      },
+      "runtime_source_and_independent_archive": [
+        {
+          "runtime_sha256": "7fda4936446f30ebc8add2433dc2f264c12b476b041b19ace7f0aa1191767c43",
+          "raw_jsonl_sha256": "cd6ca07531d5c4e2e50bb6d6fb5b92687d31621aff94fbcc81103e477b19fefc",
+          "pass_entries": 18,
+          "named_real_cluster_scenarios": 17,
+          "test_skips": 0,
+          "failures": 0,
+          "http": {
+            "actual_image_ids": [
+              "docker.io/envoyproxy/envoy@sha256:e2baf0b155d0f54881b54621fdd997e3ec81dc6454f299d4e590afe18256a176"
+            ],
+            "after": "updated gateway response",
+            "before": "gateway ready",
+            "envoy_image": "envoyproxy/envoy:v1.33.2@sha256:e2baf0b155d0f54881b54621fdd997e3ec81dc6454f299d4e590afe18256a176",
+            "post_update_requests": 3,
+            "rollout_strategy": "Recreate; downtime possible",
+            "transport": "in-cluster busybox wget -> Service DNS/ClusterIP -> Envoy:8080"
+          },
+          "versions": {
+            "go": "go version go1.24.3 linux/amd64",
+            "kind": "kind v0.27.0 go1.23.6 linux/amd64",
+            "kubernetes": "v1.32.2"
+          }
+        },
+        {
+          "runtime_sha256": "9df81394d68918ad1db6bd278f597b97f373cd21e1dc6d6c0c0429a6302d88a8",
+          "raw_jsonl_sha256": "b757111e9d78a9b2db86b46000b92f4c72c5c089faaf5d0875e0ca7832001744",
+          "pass_entries": 18,
+          "named_real_cluster_scenarios": 17,
+          "test_skips": 0,
+          "failures": 0,
+          "http": {
+            "actual_image_ids": [
+              "docker.io/envoyproxy/envoy@sha256:e2baf0b155d0f54881b54621fdd997e3ec81dc6454f299d4e590afe18256a176"
+            ],
+            "after": "updated gateway response",
+            "before": "gateway ready",
+            "envoy_image": "envoyproxy/envoy:v1.33.2@sha256:e2baf0b155d0f54881b54621fdd997e3ec81dc6454f299d4e590afe18256a176",
+            "post_update_requests": 3,
+            "rollout_strategy": "Recreate; downtime possible",
+            "transport": "in-cluster busybox wget -> Service DNS/ClusterIP -> Envoy:8080"
+          },
+          "versions": {
+            "go": "go version go1.24.3 linux/amd64",
+            "kind": "kind v0.27.0 go1.23.6 linux/amd64",
+            "kubernetes": "v1.32.2"
+          }
+        }
+      ],
+      "documentation_commit": "76834954eac2f11be359394f9316c11598ef988e",
+      "public_browser_and_epubcheck": {
+        "status": "PASS",
+        "source_commit": "7fd0557b909b4daeb4a2ac92e1f19f2a706f3780",
+        "run_url": "https://github.com/Aias00/kubernetes-operator-book/actions/runs/39598242663",
+        "epub_sha256": "c08e136ed8acdfd41c92d95c2f265a557d1f34dc458febfd50d7a8362b387542",
+        "epub_bytes": 122382,
+        "ci_pages_equal": true,
+        "public_chapters_fulltext_match_source": [
+          "00-preface",
+          "01-contract",
+          "02-crd",
+          "03-reconcile",
+          "04-ownership",
+          "05-idempotence",
+          "06-queue",
+          "07-conflicts",
+          "08-status",
+          "09-dataplane",
+          "10-deletion",
+          "11-external",
+          "12-restart",
+          "13-rbac",
+          "14-observability",
+          "15-testing",
+          "16-versioning",
+          "17-delivery",
+          "18-runbook",
+          "90-answers",
+          "91-sources",
+          "92-glossary",
+          "99-generated-lab"
+        ],
+        "runtime": [
+          {
+            "directory": "/tmp/operator-publication-final/runtime",
+            "status": "PASS",
+            "test_count": 18,
+            "raw_sha256": "cd6ca07531d5c4e2e50bb6d6fb5b92687d31621aff94fbcc81103e477b19fefc",
+            "http": {
+              "actual_image_ids": [
+                "docker.io/envoyproxy/envoy@sha256:e2baf0b155d0f54881b54621fdd997e3ec81dc6454f299d4e590afe18256a176"
+              ],
+              "after": "updated gateway response",
+              "before": "gateway ready",
+              "envoy_image": "envoyproxy/envoy:v1.33.2@sha256:e2baf0b155d0f54881b54621fdd997e3ec81dc6454f299d4e590afe18256a176",
+              "post_update_requests": 3,
+              "rollout_strategy": "Recreate; downtime possible",
+              "transport": "in-cluster busybox wget -> Service DNS/ClusterIP -> Envoy:8080"
+            }
+          },
+          {
+            "directory": "/tmp/operator-publication-final/runtime/archive",
+            "status": "PASS",
+            "test_count": 18,
+            "raw_sha256": "b757111e9d78a9b2db86b46000b92f4c72c5c089faaf5d0875e0ca7832001744",
+            "http": {
+              "actual_image_ids": [
+                "docker.io/envoyproxy/envoy@sha256:e2baf0b155d0f54881b54621fdd997e3ec81dc6454f299d4e590afe18256a176"
+              ],
+              "after": "updated gateway response",
+              "before": "gateway ready",
+              "envoy_image": "envoyproxy/envoy:v1.33.2@sha256:e2baf0b155d0f54881b54621fdd997e3ec81dc6454f299d4e590afe18256a176",
+              "post_update_requests": 3,
+              "rollout_strategy": "Recreate; downtime possible",
+              "transport": "in-cluster busybox wget -> Service DNS/ClusterIP -> Envoy:8080"
+            }
+          }
+        ],
+        "epub_three_way_identity": {
+          "ci_pages_release_equal": true,
+          "sha256": "c08e136ed8acdfd41c92d95c2f265a557d1f34dc458febfd50d7a8362b387542",
+          "bytes": 122382
+        },
+        "lab_zip_three_way_identity": {
+          "ci_pages_release_equal": true,
+          "sha256": "c8f037d2e84d5ca534c1893b8c7e34bb2883bcfa9faa19eedd7aa3a7b279bea6",
+          "bytes": 22772
+        },
+        "release_url": "https://github.com/Aias00/kubernetes-operator-book/releases/tag/v1.0.0",
+        "release_is_draft": false,
+        "public_browser": {
+          "status": "PASS",
+          "chapters": 23,
+          "widths": [
+            320,
+            390
+          ],
+          "all_chapters_without_javascript": true,
+          "checks": [
+            "light default under dark OS",
+            "shared theme key/tab synchronization",
+            "search",
+            "font persistence",
+            "mobile menu",
+            "all chapter overflow checks",
+            "no-JS pagination",
+            "storage denied",
+            "all downloads",
+            "no JavaScript errors"
+          ]
+        },
+        "final_epubcheck": {
+          "artifact": "public Pages EPUB (byte-identical CI/Release)",
+          "errors": 0,
+          "warnings": 0
+        },
+        "cross_review": {
+          "status": "PASS",
+          "path": "research/independent-review-2026-10-21.json"
+        },
+        "checked_at": "2026-10-21T12:26:01.490187+00:00"
+      },
+      "editorial_review": {
+        "reviewer": "mysql_recovery_round3 independent cross review",
+        "status": "PASS",
+        "source_reviewed_initial": "7196b317c5a058fbeecec15f9d88c2d445f7f8b1",
+        "source_fix_reviewed": "7fd0557b909b4daeb4a2ac92e1f19f2a706f3780",
+        "read_all_authored_units": 22,
+        "authored_file_sha256": {
+          "book/chapters/00-preface.md": "832a6a79ce08b44cfa9fe88bee3d2f94e0c0a3c483b44e5f1675a66a0091eee8",
+          "book/chapters/01-contract.md": "c52722fef0db5f93a0d96186af68b6fb40a4765b794941d2cc92306e32cb3fab",
+          "book/chapters/02-crd.md": "af8d8e32187c84f3d053e77b8da64b8ff7730c83893754b9a118e314be23a246",
+          "book/chapters/03-reconcile.md": "bcbd8abcca016ed601c988984d7a3e5a3affb675b03177a1cb1281c0fa065df0",
+          "book/chapters/04-ownership.md": "ec8531292aa40538c1ad7e19bd5842185a2658358117a18a298e5dc8ff4aa767",
+          "book/chapters/05-idempotence.md": "be45cfccd884c134af4059a96071d3b3fdc1722d05def6264bfec696c367e2fe",
+          "book/chapters/06-queue.md": "1a5b063e0a20eef776a93397db43861b6cde0bc69b742fb82c03d9734df6ed79",
+          "book/chapters/07-conflicts.md": "a32b59c76addfd5643937160262772113c8c19c51730bc491ab5e5b8afe759da",
+          "book/chapters/08-status.md": "68ebdce5d61a581fae9f2a448bd6925c6555bf59d402980a8402f51f306ba3d4",
+          "book/chapters/09-dataplane.md": "c9a21275c0161dd93b22f6cef3a9e99b985c6892b24de7c172ba28bcf4c7afca",
+          "book/chapters/10-deletion.md": "b1686162402645fdeb9e9f87271a1dabcc367dd161a1ea104e9183ff0bb51ddd",
+          "book/chapters/11-external.md": "2f7fbca6023744070220c82fe0e856615a85e7b1b666ef0be661a8761f8c3ae8",
+          "book/chapters/12-restart.md": "5bc700e7e3553bc6c37c5ce47e3e8ef5cd2c45ec9f9c66420afdfccb30e25e1e",
+          "book/chapters/13-rbac.md": "dd909817fc14e5873b8007cf7c105460dfa6187835dae2fe2edf450846fe0997",
+          "book/chapters/14-observability.md": "c72202a6c3b9f77a55bdc079c317ae696e4754ec46310194ab998a96785e2945",
+          "book/chapters/15-testing.md": "d29a49f2da2bebec3b526e913183b337e06d17684b899a6f7aa7a2cc72dab419",
+          "book/chapters/16-versioning.md": "85a7dd6e133c05f927dfc31cd6a7e958170fbf7679cddd2ccda17a95ab99b199",
+          "book/chapters/17-delivery.md": "e4d3cbbe3e62b410bf8c725032c9a96776a4d2e149625e651025a961b821df11",
+          "book/chapters/18-runbook.md": "e9062c4291c65f637589605f68ec02c4f400e4cefa53fee24874648289333c3c",
+          "book/chapters/90-answers.md": "1aa8a96323e7e552ab992bba9379305693a49ca5773c51efc90d24889cc5335b",
+          "book/chapters/91-sources.md": "2085826afc66508bfff3e99ece16f01c7c45af550cf306335a353747cd3ec2ed",
+          "book/chapters/92-glossary.md": "e7d00cb4d694080e0844ef0016e588102ea1f9a097c40c3e5b6eb9662aca9059"
+        },
+        "scope": [
+          "All 18 body chapters, preface, three authored appendices read in full",
+          "controller.go and complete integration_test.go read against prose",
+          "run-kind.sh, collect_evidence.py, both CRDs and CLI read",
+          "all 10 source-cache file hashes match sources.json",
+          "go vet ./... PASS locally; no local real-cluster claim"
+        ],
+        "prior_real_evidence": {
+          "path": "/tmp/operator-lab-final",
+          "test_count": 17,
+          "test_failures": 0,
+          "test_skips": 0,
+          "raw_tests_sha256": "bdca1b437cc067b78445649301cefa9899c753e85e11f1827ff157706539fac1",
+          "http_path": "in-cluster BusyBox wget -> full Service DNS -> ClusterIP -> actual Envoy",
+          "versioning": "same-schema served/storage transition; both storedVersions retained; no completed migration claimed"
+        },
+        "findings": [
+          {
+            "id": "OP-01",
+            "severity": "material",
+            "description": "Replacing entire first container during owned-field update discarded unowned env/resources/probe timeout, inconsistent with field-ownership contract.",
+            "resolution": "7fd0557 merges owned fields and adds real API UnownedContainerFieldsSurviveSpecUpdate; source reviewed; awaiting actual new CI result. Updated full CI39598242663 both source and isolated ZIP passed18 incl new preservation case."
+          },
+          {
+            "id": "OP-02",
+            "severity": "minor",
+            "description": "Preface referenced runtime.json although public download is validation.json.",
+            "resolution": "7fd0557 corrects preface to validation.json; verified."
+          }
+        ],
+        "core_conclusions": {
+          "observedGeneration": "captured generation rechecked inside status RetryOnConflict; real before-status concurrent spec update asserts old status retained",
+          "resourceVersion": "test provokes actual API IsConflict and verifies replica intent plus concurrent annotation preservation",
+          "finalizer": "persist before external record; retain on injected dependency block; clear external record before own finalizer; unrelated finalizers preserved by filtering",
+          "ownership": "owner UID and controller flag checked; unrelated Service refusal checks no mutation; new container preservation test required",
+          "http": "real Envoy readiness plus Deployment generation/updated/available checks; Service DNS requests; Recreate downtime accurately disclosed",
+          "rbac": "real API ServiceAccount impersonation completes own namespace reconcile; cross namespace and Secrets Forbidden; token auth lifecycle not claimed",
+          "versioning": "None same schema alpha+beta; beta write retains UID; alpha reconcile works; both storedVersions remain; no full migration claim"
+        },
+        "remaining_gates": [
+          "public Pages/Release final artifact identity audit by book owner/root"
+        ],
+        "updated_full_ci": {
+          "run_id": 39598242663,
+          "source": "7fd0557b909b4daeb4a2ac92e1f19f2a706f3780",
+          "artifact_directory": "/tmp/operator-review-39598242663",
+          "source_real_tests": 18,
+          "archive_real_tests": 18,
+          "test_failures": 0,
+          "test_skips": 0,
+          "new_field_preservation_test": "PASS"
+        }
+      },
+      "editorial_review_remaining_gates_satisfied": "Root subsequent public artifact, anonymous Release, source fulltext and ZIP identity checks all PASS."
+    },
+    "cdc-data-pipeline-book": {
+      "status": "PASS",
+      "product_commit": "c39816db6f92728eeaf5946dcde9a3e1300f8ada",
+      "ci": {
+        "run_id": 39598024894,
+        "url": "https://github.com/Aias00/cdc-data-pipeline-book/actions/runs/39598024894",
+        "build_deploy_success": true
+      },
+      "release": {
+        "tag": "v1.0.0",
+        "url": "https://github.com/Aias00/cdc-data-pipeline-book/releases/tag/v1.0.0",
+        "tag_commit": "c39816db6f92728eeaf5946dcde9a3e1300f8ada"
+      },
+      "pages": "https://aias00.github.io/cdc-data-pipeline-book/",
+      "epub": {
+        "bytes": 104676,
+        "sha256": "affb3912ee9275a3261ecc4a35d9e339687105c9046ce09debcfb4f9b08b074f",
+        "ci_pages_release_equal": true,
+        "successful_ci_epubcheck_report_sha256": "e6bbb18e7e3b79cb3471909f06172e935f63d91191775fe59e9bf7009ff09f5c",
+        "epubcheck": "PASS: no errors or warnings; same bytes as public EPUB"
+      },
+      "lab": {
+        "files": 9,
+        "sha256": "e3311a5080e3763271c7a2cf16aeccaa3426677c34d07cccfee75d545b955640",
+        "ci_pages_release_equal": true,
+        "all_files_equal_product_source": true
+      },
+      "content": {
+        "body_chapters": 18,
+        "appendices": 4,
+        "reading_units": 23,
+        "authored_public_pages_epub_equal_independent_source_render": [
+          "00-preface",
+          "01-contract",
+          "02-log-boundaries",
+          "03-environment",
+          "04-business-model",
+          "05-snapshot",
+          "06-watermarks",
+          "07-envelopes",
+          "08-idempotency",
+          "09-crash-recovery",
+          "10-backlog",
+          "11-deletion",
+          "12-schema",
+          "13-rebuild",
+          "14-reconciliation",
+          "15-diagnosis",
+          "16-capacity",
+          "17-rollout",
+          "18-drills",
+          "90-answers",
+          "91-sources",
+          "92-glossary"
+        ],
+        "generated_appendix_public_epub_equal": true,
+        "all_authored_markdown_hashes_equal_source": true,
+        "body_chinese_characters_excluding_fenced_code": 25437,
+        "count_method": "CJK U+4E00..U+9FFF in authored Markdown body chapters 01..18, excluding fenced code; captions counted once.",
+        "long_duplicate_paragraphs": [],
+        "all_authored_units_read": 22
+      },
+      "runtime_source_and_independent_archive": [
+        {
+          "runtime_sha256": "63df4cfd3d84a5f8bda36c2f19edf8ff53e84d3c25e3d6a8776aa15e2a3a3a33",
+          "passed_checks": 22,
+          "test_skips": 0,
+          "duration_seconds": 102.082,
+          "source_revision": "c39816db6f92728eeaf5946dcde9a3e1300f8ada",
+          "versions": {
+            "mysql": "8.4.11",
+            "kafka": "3.9.1",
+            "postgres": "PostgreSQL 17.11 (Debian 17.11-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"
+          },
+          "same_snapshot_connection_observed": true,
+          "source_projection_full_row_reconciliations": 6
+        },
+        {
+          "runtime_sha256": "0d7a0262639cfeb2244450f77b685f3ad8bbc47a0210b5b42e3afe226d1cd2a5",
+          "passed_checks": 22,
+          "test_skips": 0,
+          "duration_seconds": 101.994,
+          "source_revision": "c39816db6f92728eeaf5946dcde9a3e1300f8ada",
+          "versions": {
+            "mysql": "8.4.11",
+            "kafka": "3.9.1",
+            "postgres": "PostgreSQL 17.11 (Debian 17.11-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"
+          },
+          "same_snapshot_connection_observed": true,
+          "source_projection_full_row_reconciliations": 6
+        }
+      ],
+      "documentation_commit": "da60fc0f926723c8fc1893bac4dc8af43d58e04f",
+      "public_browser_and_epubcheck": {
+        "status": "PASS",
+        "title": "业务数据同步工程：从 CDC 到可重建索引",
+        "repository": "https://github.com/Aias00/cdc-data-pipeline-book",
+        "author": "Aias00",
+        "rights": "© 2026 Aias00. 保留所有权利。",
+        "source_revision": "c39816db6f92728eeaf5946dcde9a3e1300f8ada",
+        "ci_run_id": 39598024894,
+        "ci_url": "https://github.com/Aias00/cdc-data-pipeline-book/actions/runs/39598024894",
+        "ci_build": "success",
+        "ci_deploy": "success",
+        "release": "https://github.com/Aias00/cdc-data-pipeline-book/releases/tag/v1.0.0",
+        "online": "https://aias00.github.io/cdc-data-pipeline-book/",
+        "epub": "https://aias00.github.io/cdc-data-pipeline-book/downloads/cdc-data-pipeline-book.epub",
+        "body_chapters": 18,
+        "appendices": 4,
+        "reading_units": 23,
+        "body_cjk_pandoc_ast_excluding_code": 25446,
+        "epub_bytes": 104676,
+        "epub_sha256": "affb3912ee9275a3261ecc4a35d9e339687105c9046ce09debcfb4f9b08b074f",
+        "epub_ci_pages_anonymous_release_identical": true,
+        "zip_bytes": 11580,
+        "zip_sha256": "e3311a5080e3763271c7a2cf16aeccaa3426677c34d07cccfee75d545b955640",
+        "zip_ci_pages_anonymous_release_identical": true,
+        "zip_exact_source_files": 9,
+        "zip_excludes_runtime_evidence_and_markers": true,
+        "epubcheck_public_download": {
+          "errors": 0,
+          "warnings": 0,
+          "report_file": "/tmp/cdc-publication-public-epubcheck.txt"
+        },
+        "public_browser": {
+          "status": "PASS",
+          "all_23_chapters_at_widths": [
+            320,
+            390
+          ],
+          "all_23_chapters_no_js_at_widths": [
+            320,
+            390
+          ],
+          "light_default_under_dark_os": true,
+          "theme_font_search_contents_storage_denied_downloads": true
+        },
+        "public_full_text": [
+          {
+            "slug": "00-preface",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "01-contract",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "02-log-boundaries",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "03-environment",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "04-business-model",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "05-snapshot",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "06-watermarks",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "07-envelopes",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "08-idempotency",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "09-crash-recovery",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "10-backlog",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "11-deletion",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "12-schema",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "13-rebuild",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "14-reconciliation",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "15-diagnosis",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "16-capacity",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "17-rollout",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "18-drills",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "90-answers",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "91-sources",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "92-glossary",
+            "full_text_matches_source": true
+          },
+          {
+            "slug": "99-generated-lab",
+            "full_text_matches_source": true
+          }
+        ],
+        "runtime": [
+          {
+            "artifact_file": "/tmp/cdc-publication-evidence/_temp/cdc-archive-evidence/runtime.json",
+            "check_count": 22,
+            "skipped": 0,
+            "duration_seconds": 102.082,
+            "source_revision": "c39816db6f92728eeaf5946dcde9a3e1300f8ada",
+            "versions": {
+              "mysql": "8.4.11",
+              "postgres": "PostgreSQL 17.11 (Debian 17.11-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",
+              "connect_plugins": [
+                {
+                  "class": "io.debezium.connector.jdbc.JdbcSinkConnector",
+                  "type": "sink",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.mongodb.MongoDbSinkConnector",
+                  "type": "sink",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.db2.Db2Connector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.db2as400.As400RpcConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.informix.InformixConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.mariadb.MariaDbConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.mongodb.MongoDbConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.mysql.MySqlConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.oracle.OracleConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.postgresql.PostgresConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.spanner.SpannerConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.sqlserver.SqlServerConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.vitess.VitessConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "org.apache.kafka.connect.mirror.MirrorCheckpointConnector",
+                  "type": "source",
+                  "version": "3.9.0"
+                },
+                {
+                  "class": "org.apache.kafka.connect.mirror.MirrorHeartbeatConnector",
+                  "type": "source",
+                  "version": "3.9.0"
+                },
+                {
+                  "class": "org.apache.kafka.connect.mirror.MirrorSourceConnector",
+                  "type": "source",
+                  "version": "3.9.0"
+                }
+              ],
+              "python": "3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]",
+              "kafka": "3.9.1",
+              "images": {
+                "mysql": [
+                  "mysql@sha256:0f51e63e537a1f176423fa03ef559aabe6fa4372a53160a44bc7e75da7d15364"
+                ],
+                "kafka": [
+                  "apache/kafka@sha256:4ceccc577f03f51f6af8dbfda55194d0d892f4fa7913ffbded567ce3895622ed"
+                ],
+                "connect": [
+                  "quay.io/debezium/connect@sha256:1290a7abb0c1fe957f8d732e43efbea24201d9ba0fa5ba79582f76438c05d0ba"
+                ],
+                "postgres": [
+                  "postgres@sha256:a63c1ea3f6a3a5a1621f97d2aba3b30faecfab4224c1b0000cc85ced57bb1939"
+                ]
+              }
+            }
+          },
+          {
+            "artifact_file": "/tmp/cdc-publication-evidence/cdc-data-pipeline-book/cdc-data-pipeline-book/lab/evidence/runtime.json",
+            "check_count": 22,
+            "skipped": 0,
+            "duration_seconds": 101.994,
+            "source_revision": "c39816db6f92728eeaf5946dcde9a3e1300f8ada",
+            "versions": {
+              "mysql": "8.4.11",
+              "postgres": "PostgreSQL 17.11 (Debian 17.11-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",
+              "connect_plugins": [
+                {
+                  "class": "io.debezium.connector.jdbc.JdbcSinkConnector",
+                  "type": "sink",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.mongodb.MongoDbSinkConnector",
+                  "type": "sink",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.db2.Db2Connector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.db2as400.As400RpcConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.informix.InformixConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.mariadb.MariaDbConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.mongodb.MongoDbConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.mysql.MySqlConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.oracle.OracleConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.postgresql.PostgresConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.spanner.SpannerConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.sqlserver.SqlServerConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "io.debezium.connector.vitess.VitessConnector",
+                  "type": "source",
+                  "version": "3.1.2.Final"
+                },
+                {
+                  "class": "org.apache.kafka.connect.mirror.MirrorCheckpointConnector",
+                  "type": "source",
+                  "version": "3.9.0"
+                },
+                {
+                  "class": "org.apache.kafka.connect.mirror.MirrorHeartbeatConnector",
+                  "type": "source",
+                  "version": "3.9.0"
+                },
+                {
+                  "class": "org.apache.kafka.connect.mirror.MirrorSourceConnector",
+                  "type": "source",
+                  "version": "3.9.0"
+                }
+              ],
+              "python": "3.12.15 (main, Oct  1 2026, 02:35:59) [GCC 13.3.0]",
+              "kafka": "3.9.1",
+              "images": {
+                "mysql": [
+                  "mysql@sha256:0f51e63e537a1f176423fa03ef559aabe6fa4372a53160a44bc7e75da7d15364"
+                ],
+                "kafka": [
+                  "apache/kafka@sha256:4ceccc577f03f51f6af8dbfda55194d0d892f4fa7913ffbded567ce3895622ed"
+                ],
+                "connect": [
+                  "quay.io/debezium/connect@sha256:1290a7abb0c1fe957f8d732e43efbea24201d9ba0fa5ba79582f76438c05d0ba"
+                ],
+                "postgres": [
+                  "postgres@sha256:a63c1ea3f6a3a5a1621f97d2aba3b30faecfab4224c1b0000cc85ced57bb1939"
+                ]
+              }
+            }
+          }
+        ],
+        "independent_manuscript_code_review": "Parent completed all18, preface,3 authored appendices,all lab sources,8 official source hashes; no remaining blocker",
+        "canonical_downloads": "/tmp/cdc-publication-downloads",
+        "raw_evidence": "/tmp/cdc-publication-evidence",
+        "canonical_docs_head": "da60fc0f926723c8fc1893bac4dc8af43d58e04f",
+        "canonical_evidence_copied_from_same_ci": true,
+        "delivery_document": "https://github.com/Aias00/cdc-data-pipeline-book/blob/main/DELIVERY.md",
+        "worktree_clean": true
+      },
+      "editorial_review": {
+        "reviewer": "root independent full manuscript/code/source review",
+        "status": "PASS",
+        "authored_units_read": 22,
+        "source_caches_verified": 8,
+        "findings": [
+          "Generation/group/topic identity binding implemented",
+          "Same snapshot connection Id intersection asserted",
+          "One running connector task required",
+          "Optional fixed-image REST extension discovery warnings scoped in chapter15"
+        ]
+      }
+    },
+    "mysql-recovery-book": {
+      "status": "PASS",
+      "product_commit": "c0681a952fe762a0abf17e07348ebee029b692ef",
+      "ci": {
+        "run_id": 39598252259,
+        "url": "https://github.com/Aias00/mysql-recovery-book/actions/runs/39598252259",
+        "build_deploy_success": true
+      },
+      "release": {
+        "tag": "v1.0.0",
+        "url": "https://github.com/Aias00/mysql-recovery-book/releases/tag/v1.0.0",
+        "tag_commit": "c0681a952fe762a0abf17e07348ebee029b692ef"
+      },
+      "pages": "https://aias00.github.io/mysql-recovery-book/",
+      "epub": {
+        "bytes": 97994,
+        "sha256": "c794fbfa88b1b9bb775e80ce33723a050e7b11ff2e05ea2462a5ae41dd7830a0",
+        "ci_pages_release_equal": true,
+        "successful_ci_epubcheck_report_sha256": "712199531a3907607ac8429c40a2cfc830e0125d27ed2174a579f8f2acf99eba",
+        "epubcheck": "PASS: no errors or warnings; same bytes as public EPUB"
+      },
+      "lab": {
+        "files": 4,
+        "sha256": "339e8e2fe3c011ed0763ba6ecb30fc7ac3cece0b90d2c56f6e706a9127fc0271",
+        "ci_pages_release_equal": true,
+        "all_files_equal_product_source": true
+      },
+      "content": {
+        "body_chapters": 18,
+        "appendices": 4,
+        "reading_units": 23,
+        "authored_public_pages_epub_equal_independent_source_render": [
+          "00-preface",
+          "01-recovery-contract",
+          "02-isolated-topology",
+          "03-commit-boundaries",
+          "04-backup-strategy",
+          "05-consistent-snapshot",
+          "06-clean-restore",
+          "07-binlog-archive",
+          "08-position-pitr",
+          "09-accidental-delete",
+          "10-gtid",
+          "11-replication-bootstrap",
+          "12-delay-catchup",
+          "13-observed-data-loss",
+          "14-fence-old-primary",
+          "15-promote-and-quarantine",
+          "16-recovery-validation",
+          "17-rpo-rto",
+          "18-rehearsal-system",
+          "90-exercise-answers",
+          "91-sources",
+          "92-glossary"
+        ],
+        "generated_appendix_public_epub_equal": true,
+        "all_authored_markdown_hashes_equal_source": true,
+        "body_chinese_characters_excluding_fenced_code": 25315,
+        "count_method": "CJK U+4E00..U+9FFF in authored Markdown body chapters 01..18, excluding fenced code; captions counted once.",
+        "long_duplicate_paragraphs": [],
+        "all_authored_units_read": 22
+      },
+      "runtime_source_and_independent_archive": [
+        {
+          "runtime_sha256": "1ebc4b25ec9fc24ac63c661f2fcdbfe9f126e5fa357d945cd201096235041026",
+          "passed_scenarios": 10,
+          "test_skips": 0,
+          "business_identity": {
+            "user": "ledger_app",
+            "grants": "GRANT USAGE ON *.* TO `ledger_app`@`%`\nGRANT SELECT, INSERT, UPDATE, DELETE ON `ledger`.* TO `ledger_app`@`%`",
+            "scope": "ledger.* DML; no administrative privileges"
+          },
+          "new_primary_flags": {
+            "read_only": "0",
+            "super_read_only": "0"
+          },
+          "actual_readonly_denials": 1290,
+          "archive": {
+            "file": "mysql-bin.000004",
+            "bytes": 7226,
+            "sha256": "c5a68925f2c57a8293d37838636791592066bd22ff87918008bfa939877ca9ce",
+            "sealed_by_flush": true,
+            "replay_mount_readonly": true,
+            "replay_network": "none"
+          },
+          "manual_rto_seconds": 10.624,
+          "source_stopped_for_archive_replay": true,
+          "mysql_version": "8.4.11"
+        },
+        {
+          "runtime_sha256": "3dbb424d49ef4be72615c8185ca7c1a996f613add69eb638921070f6d99fe3ac",
+          "passed_scenarios": 10,
+          "test_skips": 0,
+          "business_identity": {
+            "user": "ledger_app",
+            "grants": "GRANT USAGE ON *.* TO `ledger_app`@`%`\nGRANT SELECT, INSERT, UPDATE, DELETE ON `ledger`.* TO `ledger_app`@`%`",
+            "scope": "ledger.* DML; no administrative privileges"
+          },
+          "new_primary_flags": {
+            "read_only": "0",
+            "super_read_only": "0"
+          },
+          "actual_readonly_denials": 1290,
+          "archive": {
+            "file": "mysql-bin.000004",
+            "bytes": 7226,
+            "sha256": "f9b8c5bb5d8cb883a96aeac95e6442d2a18523aa98b33f78abdf68b90a60c111",
+            "sealed_by_flush": true,
+            "replay_mount_readonly": true,
+            "replay_network": "none"
+          },
+          "manual_rto_seconds": 10.6289,
+          "source_stopped_for_archive_replay": true,
+          "mysql_version": "8.4.11"
+        }
+      ],
+      "documentation_commit": "2915f3908d131d3511b3d49580e78b1daf84bba9",
+      "public_browser_and_epubcheck": {
+        "status": "PASS",
+        "source_sha": "c0681a952fe762a0abf17e07348ebee029b692ef",
+        "ci_run": 39598252259,
+        "release": "v1.0.0",
+        "epub_bytes": 97994,
+        "epub_sha256": "c794fbfa88b1b9bb775e80ce33723a050e7b11ff2e05ea2462a5ae41dd7830a0",
+        "ci_pages_release_identical": true,
+        "all_public_chapters_match_source": 23,
+        "body_chapters": 18,
+        "appendices": 4,
+        "body_cjk_excluding_code": 25315,
+        "public_zip_matches_ci_and_source": true,
+        "public_runtime_matches_ci": true,
+        "public_reader_browser": "PASS all23 x320/390px; no-JS all23 x320/390; search/font/themes/storage-denied/downloads",
+        "public_epubcheck": "PASS 0fatals/0errors/0warnings",
+        "independent_editorial_review": "/tmp/mysql-recovery-round3-independent-review.json",
+        "real_mysql_runs": {
+          "source": 10,
+          "independent_zip": 10,
+          "skips": 0
+        },
+        "scope": "Manual isolated Docker failover; privileged role operations but ordinary ledger_app business writes; both read_only flags explicitly OFF on new primary; no HA/routing/zero-loss claim"
+      },
+      "editorial_review": {
+        "status": "PASS",
+        "reviewed_source_commit": "c0681a952fe762a0abf17e07348ebee029b692ef",
+        "body_chapters": 18,
+        "body_cjk": 25315,
+        "authored_units_read": [
+          "book/chapters/00-preface.md",
+          "book/chapters/01-recovery-contract.md",
+          "book/chapters/02-isolated-topology.md",
+          "book/chapters/03-commit-boundaries.md",
+          "book/chapters/04-backup-strategy.md",
+          "book/chapters/05-consistent-snapshot.md",
+          "book/chapters/06-clean-restore.md",
+          "book/chapters/07-binlog-archive.md",
+          "book/chapters/08-position-pitr.md",
+          "book/chapters/09-accidental-delete.md",
+          "book/chapters/10-gtid.md",
+          "book/chapters/11-replication-bootstrap.md",
+          "book/chapters/12-delay-catchup.md",
+          "book/chapters/13-observed-data-loss.md",
+          "book/chapters/14-fence-old-primary.md",
+          "book/chapters/15-promote-and-quarantine.md",
+          "book/chapters/16-recovery-validation.md",
+          "book/chapters/17-rpo-rto.md",
+          "book/chapters/18-rehearsal-system.md",
+          "book/chapters/90-exercise-answers.md",
+          "book/chapters/91-sources.md",
+          "book/chapters/92-glossary.md"
+        ],
+        "code_read": [
+          "lab/run.py",
+          "lab/tools.Dockerfile",
+          ".github/workflows/pages.yml"
+        ],
+        "sources": [
+          {
+            "id": "R01",
+            "cache": "research/cache/using-mysqldump.html",
+            "sha256": "b709140fa3f7698adf0393ec572a1768ceb6bae6d8223f40f66a4944aa598019",
+            "status": "PASS"
+          },
+          {
+            "id": "R02",
+            "cache": "research/cache/mysqldump.html",
+            "sha256": "8851ec12f70deeabda71289b50b867a2929ce0b68d3b3b5bdd81787cdffa3dfa",
+            "status": "PASS"
+          },
+          {
+            "id": "R03",
+            "cache": "research/cache/point-in-time-recovery.html",
+            "sha256": "7b4d9a6f018d0119089e344946df2c84dd65ace396ede4baa782ea40696fbc8e",
+            "status": "PASS"
+          },
+          {
+            "id": "R04",
+            "cache": "research/cache/point-in-time-recovery-positions.html",
+            "sha256": "4e6a691730d0ec03cc736581553790e01d2993d6a0fdb3a9236a0df0fcfe3a8f",
+            "status": "PASS"
+          },
+          {
+            "id": "R05",
+            "cache": "research/cache/replication-gtids.html",
+            "sha256": "cfcc065db9a6621ff943e87a1ac1fa7dea2c4799077f64b8a6398c216acde633",
+            "status": "PASS"
+          },
+          {
+            "id": "R06",
+            "cache": "research/cache/replication-gtids-howto.html",
+            "sha256": "ff71338a2b0845b3bb3d9ee2c15ce696a80ffbf80df2fa0ef8699046d5af3688",
+            "status": "PASS"
+          },
+          {
+            "id": "R07",
+            "cache": "research/cache/replication-threads.html",
+            "sha256": "90f7b3ecea73b749f1d433df870aeef1c116118512dc23f5c9dfe2a172b80f3f",
+            "status": "PASS"
+          },
+          {
+            "id": "R08",
+            "cache": "research/cache/replication-solutions-switch.html",
+            "sha256": "ed0d10e835c28e2eff2b18719201f9febf1cb25defd6ea05c5a55aa3ff26a488",
+            "status": "PASS"
+          },
+          {
+            "id": "R09",
+            "cache": "research/cache/mysqlbinlog.html",
+            "sha256": "c07e3150d9cd3790ed8dd0137d59a9f536b2ecfeeae5d2aec891ce95d615a1f5",
+            "status": "PASS"
+          },
+          {
+            "id": "R10",
+            "cache": "research/cache/show-replica-status.html",
+            "sha256": "f67613deee8956092ddf13b5d003f7d8acd3660fc39b19a3e6e1ea6e0917db32",
+            "status": "PASS"
+          },
+          {
+            "id": "R11",
+            "cache": "research/cache/backup-types.html",
+            "sha256": "250b4296a31e6a67bacc79b81ef7bcaf04df88621d4ab0ae84977b692f83137b",
+            "status": "PASS"
+          }
+        ],
+        "findings": [
+          {
+            "id": "MYSQL-PROMOTION-001",
+            "severity": "high",
+            "original_commit": "5efd8ea2a001b0323c223b105b20cdb2f0aaa8cd",
+            "issue": "Promotion disabled super_read_only only; read_only remained on, while root business writes could bypass it.",
+            "resolution": "c0681a952fe762a0abf17e07348ebee029b692ef explicitly disables and asserts both flags; all business writes/readonly negatives use limited ledger_app, grants recorded.",
+            "state": "RESOLVED_AND_REAL_SOURCE_PLUS_ARCHIVE_CI_VERIFIED"
+          }
+        ],
+        "review_checks": {
+          "consistent_snapshot": "InnoDB/no concurrent DDL boundary accurate; real dump overlaps increasing committed order count; restore invariants and count bracket match code.",
+          "pitr": "Real sealed binlog copied to independent archive, source stopped, mysqlbinlog network none/readonly mount, exact complete-transaction stop position and explicit excluded transaction verified.",
+          "gtid": "Independent PITR with set-gtid-purged OFF is not represented as production replica bootstrap or automatic rejoin.",
+          "async_loss": "Entire channel stopped before acknowledged 5001 transaction; failed promoted target lacks it; no zero-loss claim.",
+          "fencing": "Actual source stopped before promotion, refusal negative while running, returning source network detached before start and readonly negative; no HA/routing claim.",
+          "rto": "Timer begins before docker stop, ends after new-primary commit and full business comparison; text includes grace/possible kill and excludes detection/routing/client retries.",
+          "inventory": "Ten exact scenario names required in source and archive CI; no skip path."
+        },
+        "runtime_evidence_pending": null,
+        "limitations": [
+          "Reviewer has no Docker daemon; runtime conclusions require original successful Linux CI and downloaded machine-readable reports, not local static checks.",
+          "No further substantive manuscript/code inconsistency found after reading all 18 body chapters, preface and 3 authored appendices."
+        ],
+        "runtime_evidence": [
+          {
+            "file": "/tmp/mysql-recovery-cross-final/runtime.json",
+            "sha256": "1ebc4b25ec9fc24ac63c661f2fcdbfe9f126e5fa357d945cd201096235041026",
+            "status": "PASS",
+            "scenario_count": 10,
+            "business_user": "ledger_app",
+            "promoted_read_only": "0",
+            "promoted_super_read_only": "0",
+            "both_readonly_negative_errors": 1290,
+            "stop_observations": [
+              {
+                "stage": "offline-archive-replay",
+                "running": false,
+                "exit_code": 137,
+                "finished_at": "2026-10-21T12:18:10.858535777Z",
+                "grace_seconds": 10
+              },
+              {
+                "stage": "failover-fence",
+                "running": false,
+                "exit_code": 137,
+                "finished_at": "2026-10-21T12:18:27.796229008Z",
+                "grace_seconds": 10
+              }
+            ],
+            "rto_seconds": 10.624
+          },
+          {
+            "file": "/tmp/mysql-recovery-cross-final/archive-runtime.json",
+            "sha256": "3dbb424d49ef4be72615c8185ca7c1a996f613add69eb638921070f6d99fe3ac",
+            "status": "PASS",
+            "scenario_count": 10,
+            "business_user": "ledger_app",
+            "promoted_read_only": "0",
+            "promoted_super_read_only": "0",
+            "both_readonly_negative_errors": 1290,
+            "stop_observations": [
+              {
+                "stage": "offline-archive-replay",
+                "running": false,
+                "exit_code": 137,
+                "finished_at": "2026-10-21T12:19:42.163309116Z",
+                "grace_seconds": 10
+              },
+              {
+                "stage": "failover-fence",
+                "running": false,
+                "exit_code": 137,
+                "finished_at": "2026-10-21T12:19:59.098760627Z",
+                "grace_seconds": 10
+              }
+            ],
+            "rto_seconds": 10.6289
+          }
+        ],
+        "ci_run_url": "https://github.com/Aias00/mysql-recovery-book/actions/runs/39598252259"
+      }
+    }
+  },
+  "totals": {
+    "books": 3,
+    "body_chapters": 54,
+    "appendices": 12,
+    "prefaces": 3,
+    "reading_units": 69,
+    "body_chinese_characters_excluding_fenced_code": 76383
+  }
+}

@@ -132,6 +132,25 @@ export const books = [
     "coverArt": "<svg viewBox=\"0 0 82 54\"><ellipse cx=\"31\" cy=\"10\" rx=\"22\" ry=\"7\"/><path d=\"M9 10v25c0 9 44 9 44 0V10M9 23c0 9 44 9 44 0M9 34c0 9 44 9 44 0M57 18h17m-5-5 5 5-5 5M74 37H57m5-5-5 5 5 5\"/></svg>"
   },
   {
+    "id": "mysql-recovery",
+    "topic": "backend",
+    "topicLabel": "DATABASE RECOVERY",
+    "title": "MySQL 备份、复制与恢复演练：从数据保护到故障切换",
+    "description": "用真实多实例、归档日志和业务账本，学习一致快照、按事务恢复、复制追平与旧主隔离。",
+    "scale": "18 章 · 4 个附录",
+    "level": "数据恢复与切换",
+    "readUrl": "https://aias00.github.io/mysql-recovery-book/",
+    "epubUrl": "https://aias00.github.io/mysql-recovery-book/downloads/mysql-recovery-book.epub",
+    "coverColor": "#d6c4aa",
+    "coverInk": "#4a3927",
+    "coverLines": [
+      "MySQL",
+      "恢复演练"
+    ],
+    "coverSubtitle": "备份 · 复制 · 故障切换",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><ellipse cx=\"29\" cy=\"12\" rx=\"20\" ry=\"7\"/><path d=\"M9 12v24c0 10 40 10 40 0V12M9 24c0 10 40 10 40 0M55 16a16 16 0 1 1-2 26m2-26v11h12\"/><path d=\"m65 37 4 4 7-8\"/></svg>"
+  },
+  {
     "id": "rocketmq",
     "topic": "backend",
     "topicLabel": "MESSAGING SYSTEMS",
@@ -164,6 +183,25 @@ export const books = [
     "coverArt": "<svg viewBox=\"0 0 82 54\"><path d=\"M5 11h72M5 27h72M5 43h72\"/><rect x=\"13\" y=\"6\" width=\"12\" height=\"10\"/><rect x=\"32\" y=\"22\" width=\"12\" height=\"10\"/><rect x=\"52\" y=\"38\" width=\"12\" height=\"10\"/><path d=\"m70 6 7 5-7 5m0 6 7 5-7 5m0 6 7 5-7 5\"/></svg>"
   },
   {
+    "id": "cdc-data-pipeline",
+    "topic": "backend",
+    "topicLabel": "CDC & DATA PIPELINES",
+    "title": "业务数据同步工程：从 CDC 到可重建索引",
+    "description": "贯通 MySQL、Debezium、Kafka 与查询投影，验证快照衔接、重复消费、删除传播和重建对账。",
+    "scale": "18 章 · 4 个附录",
+    "level": "数据链路与一致性",
+    "readUrl": "https://aias00.github.io/cdc-data-pipeline-book/",
+    "epubUrl": "https://aias00.github.io/cdc-data-pipeline-book/downloads/cdc-data-pipeline-book.epub",
+    "coverColor": "#b8cbd7",
+    "coverInk": "#2c4351",
+    "coverLines": [
+      "CDC",
+      "数据同步"
+    ],
+    "coverSubtitle": "日志 · 投影 · 重建",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><rect x=\"3\" y=\"17\" width=\"19\" height=\"20\" rx=\"2\"/><rect x=\"31\" y=\"17\" width=\"19\" height=\"20\" rx=\"2\"/><rect x=\"59\" y=\"17\" width=\"19\" height=\"20\" rx=\"2\"/><path d=\"M22 27h9m19 0h9M12 17V6h56v11m0 20v11H12V37m22-14 4 4-4 4m28-8 4 4-4 4\"/></svg>"
+  },
+  {
     "id": "kubernetes",
     "topic": "backend",
     "topicLabel": "CONTAINER ORCHESTRATION",
@@ -178,6 +216,25 @@ export const books = [
     "coverLines": ["Kubernetes", "从零开始"],
     "coverSubtitle": "概念 · 部署 · 故障演练",
     "coverArt": "<svg viewBox=\"0 0 82 54\"><path d=\"m41 3 23 13v26L41 53 18 42V16Z\"/><circle cx=\"41\" cy=\"27\" r=\"9\"/><path d=\"M41 3v15m0 18v16M18 16l15 7m16 8 15 11M18 42l15-11m16-8 15-7\"/><circle cx=\"41\" cy=\"27\" r=\"2\"/></svg>"
+  },
+  {
+    "id": "kubernetes-operator",
+    "topic": "backend",
+    "topicLabel": "KUBERNETES CONTROLLERS",
+    "title": "Kubernetes 控制器与 Operator 工程：从协调循环到可靠运维",
+    "description": "围绕可处理真实请求的网关实例控制器，在 kind 验证资源收敛、冲突重试、状态、清理和版本边界。",
+    "scale": "18 章 · 4 个附录",
+    "level": "控制器工程进阶",
+    "readUrl": "https://aias00.github.io/kubernetes-operator-book/",
+    "epubUrl": "https://aias00.github.io/kubernetes-operator-book/downloads/kubernetes-operator-book.epub",
+    "coverColor": "#bdc5df",
+    "coverInk": "#303d59",
+    "coverLines": [
+      "K8s",
+      "Operator 工程"
+    ],
+    "coverSubtitle": "协调循环与可靠运维",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><path d=\"M16 9a26 21 0 0 1 52 10m0 26a26 21 0 0 1-52-10m0-26v12H4m64 24V33h12\"/><rect x=\"29\" y=\"17\" width=\"24\" height=\"20\" rx=\"2\"/><path d=\"M35 27h12m-6-6v12\"/></svg>"
   },
   {
     "id": "envoy",
