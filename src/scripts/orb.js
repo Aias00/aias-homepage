@@ -1,69 +1,5 @@
 (() => {
       'use strict';
-      // Keep the small personal details current without external requests.
-      document.getElementById('year').textContent = new Date().getFullYear();
-      const time = document.getElementById('beijing-time');
-      const clock = new Intl.DateTimeFormat('en-GB', {
-        timeZone: 'Asia/Shanghai', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
-      });
-      function updateClock() {
-        const now = new Date();
-        time.textContent = clock.format(now);
-        time.dateTime = now.toISOString();
-      }
-      updateClock();
-      let clockTimer = setInterval(updateClock, 1000);
-
-      // Reflect the section in view in the header navigation.
-      const links = Array.from(document.querySelectorAll('.nav-link'));
-      const sections = links.map(link => document.querySelector(link.getAttribute('href')));
-      function updateNavigation() {
-        let current = null;
-        for (const section of sections) {
-          if (section.getBoundingClientRect().top <= window.innerHeight * .38) current = section;
-        }
-        for (const link of links) {
-          if (current && link.hash === '#' + current.id) link.setAttribute('aria-current', 'location');
-          else link.removeAttribute('aria-current');
-        }
-      }
-      let navigationPending = false;
-      window.addEventListener('scroll', () => {
-        if (navigationPending) return;
-        navigationPending = true;
-        requestAnimationFrame(() => { updateNavigation(); navigationPending = false; });
-      }, { passive: true });
-      window.addEventListener('resize', updateNavigation);
-      updateNavigation();
-
-      // All books are static HTML. Filtering is a progressive enhancement.
-      const books = Array.from(document.querySelectorAll('.book-card'));
-      const filters = Array.from(document.querySelectorAll('.shelf-filter'));
-      const results = document.getElementById('shelf-results');
-      function filterBooks(topic) {
-        for (const book of books) book.hidden = topic !== 'all' && book.dataset.topic !== topic;
-        for (const button of filters) button.setAttribute('aria-pressed', String(button.dataset.filter === topic));
-        const visible = books.filter(book => !book.hidden).length;
-        results.textContent = topic === 'all' ? '共 ' + visible + ' 本电子书' : '显示 ' + visible + ' / ' + books.length + ' 本电子书';
-        updateNavigation();
-      }
-      for (const button of filters) {
-        const topic = button.dataset.filter;
-        button.querySelector('span').textContent = topic === 'all' ? books.length : books.filter(book => book.dataset.topic === topic).length;
-        button.addEventListener('click', () => filterBooks(topic));
-      }
-      document.getElementById('shelf-toolbar').hidden = false;
-      // Reading paths can reveal a book hidden by the currently selected topic.
-      function revealLinkedBook() {
-        const book = books.find(item => '#' + item.id === location.hash);
-        if (book && book.hidden) { filterBooks('all'); book.scrollIntoView(); }
-      }
-      document.querySelectorAll('.reading-path a').forEach(link => {
-        link.addEventListener('click', () => filterBooks('all'));
-      });
-      window.addEventListener('hashchange', revealLinkedBook);
-      revealLinkedBook();
-
       // A locally rendered point cloud: no images, libraries, or network dependency.
       const canvas = document.getElementById('orb');
       const ctx = canvas.getContext('2d');
@@ -177,8 +113,6 @@
       }
       motion.addEventListener('change', syncAnimation);
       document.addEventListener('visibilitychange', () => {
-        clearInterval(clockTimer);
-        if (!document.hidden) { updateClock(); clockTimer = setInterval(updateClock, 1000); }
         syncAnimation();
       });
       resizeCanvas(); syncAnimation();

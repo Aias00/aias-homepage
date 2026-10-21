@@ -10,7 +10,8 @@ import { books, topics } from '../data/books';
           <p class="hero-motto">保持好奇，持续构建。</p>
           <p class="hero-description"><a href="https://shenyu.apache.org/team/#pmc" target="_blank" rel="noopener noreferrer">Apache ShenYu PMC 成员</a>。探索开源、基础设施与 AI Agent，把想法写成代码，也把学习过程整理成可以一起读的书。</p>
           <div class="hero-actions">
-            <a class="button-primary" href="#books">浏览电子书架 <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+            <a class="button-primary" href="/books/">浏览电子书架 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="text-link" href="/about/">关于我 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
@@ -33,6 +34,10 @@ import { books, topics } from '../data/books';
           <span class="divider" aria-hidden="true">/</span>
           <span>ONLINE &amp; EPUB</span>
         </div>
-        <a class="scroll-link" href="#books" aria-label="向下浏览电子书">EXPLORE THE BOOKSHELF <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+        <a class="scroll-link" href="/books/" aria-label="打开电子书架">EXPLORE THE BOOKSHELF <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
     </section>
+
+<script>
+  import '../scripts/orb.js';
+</script>

@@ -6,7 +6,7 @@ import ReadingPaths from './ReadingPaths.astro';
 
 <section class="books" id="books" aria-labelledby="books-title">
   <div class="section-heading">
-    <div><p class="section-kicker"><span>02 /</span> THE BOOKSHELF</p><h2 id="books-title">把探索，写成一本书<span class="accent">.</span></h2><p class="section-description">{books.length} 本中文技术电子书，{topics.length} 个阅读方向。在线翻阅，也可以下载 EPUB 慢慢读。</p></div>
+    <div><p class="section-kicker">THE BOOKSHELF</p><h1 class="page-title" id="books-title">把探索，写成一本书<span class="accent">.</span></h1><p class="section-description">{books.length} 本中文技术电子书，{topics.length} 个阅读方向。在线翻阅，也可以下载 EPUB 慢慢读。</p></div>
     <div class="shelf-index"><span>{String(books.length).padStart(2, '0')}</span> BOOKS / <span>{String(topics.length).padStart(2, '0')}</span> TOPICS</div>
   </div>
   <div class="shelf-toolbar" id="shelf-toolbar" hidden>
@@ -19,3 +19,7 @@ import ReadingPaths from './ReadingPaths.astro';
   <div class="book-grid" id="book-grid">{books.map((book, index) => <BookCard book={book} index={index} />)}</div>
   <ReadingPaths />
 </section>
+
+<script>
+  import '../scripts/bookshelf.js';
+</script>

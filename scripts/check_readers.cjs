@@ -95,13 +95,13 @@ async function toggle(page) {
     }
     const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
     const page = await context.newPage();
-    await page.goto(process.env.HOMEPAGE_URL || 'http://127.0.0.1:4321/');
+    await page.goto(process.env.HOMEPAGE_URL || 'http://127.0.0.1:4321/books/');
     assert.equal(await page.locator('.book-card').count(), 12);
     await page.locator('[data-filter="agents"]').click();
     assert.equal(await page.locator('.book-card:visible').count(), 6);
     await page.locator('.reading-path a[href="#book-java"]').click();
     assert.equal(await page.locator('.book-card:visible').count(), 12);
-    assert(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'homepage mobile overflow');
+    assert(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'bookshelf mobile overflow');
     await context.close();
     // A denied storage API must not prevent reading or switching themes.
     const blocked = await browser.newContext();
@@ -130,7 +130,7 @@ async function toggle(page) {
       assert.equal((await measurements(sharedPage)).background, 'rgb(28, 31, 36)', books[index][0] + ' shares theme across books');
     }
     await shared.close();
-    console.log('PASS homepage filters, reading routes, storage denied, no JavaScript, cross-book theme');
+    console.log('PASS bookshelf filters, reading routes, storage denied, no JavaScript, cross-book theme');
   } finally {
     await browser.close();
   }

@@ -32,11 +32,11 @@ API 下载的临时仓库快照位于 `/Volumes/data/build/ebook-readers/`；原
 
 ## 验证
 
-各书正常构建后，在书仓库父目录启动静态服务。`scripts/check_readers.cjs` 使用已安装的 Playwright / Chromium 检查 12 本书：深色系统下默认浅色、手动深色、刷新保留、390px 手机宽度、正文与代码高亮对比度、JavaScript 错误；同时检查首页分类与路线、禁用存储及 JavaScript 的降级行为。
+各书正常构建后，在书仓库父目录启动静态服务。`scripts/check_readers.cjs` 使用已安装的 Playwright / Chromium 检查 12 本书：深色系统下默认浅色、手动深色、刷新保留、390px 手机宽度、正文与代码高亮对比度、JavaScript 错误；同时检查独立书架页的分类与路线、禁用存储及 JavaScript 的降级行为。主页三页导航、移动端布局和旧锚点兼容由 `npm test` 检查。
 
 ```sh
 python3 -m http.server 4198 --bind 127.0.0.1 --directory /path/to/books
 PLAYWRIGHT_MODULE=/path/to/node_modules/playwright node scripts/check_readers.cjs
 ```
 
-检查器中的书站路径按上述临时快照和原有写作目录布局设置；首页另用 `npm run preview` 启动，默认访问 http://127.0.0.1:4321/。可通过 `HOMEPAGE_URL` 指定首页、`READER_BASE` 指定书站服务地址、`READER_SCREENSHOTS` 指定截图输出目录。
+检查器中的书站路径按上述临时快照和原有写作目录布局设置；主页站点另用 `npm run preview` 启动，书架检查默认访问 http://127.0.0.1:4321/books/。可通过 `HOMEPAGE_URL` 指定完整书架页地址、`READER_BASE` 指定书站服务地址、`READER_SCREENSHOTS` 指定截图输出目录。
