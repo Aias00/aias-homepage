@@ -113,6 +113,22 @@ export const books = [
     "coverArt": "<svg viewBox=\"0 0 82 54\"><rect x=\"23\" y=\"12\" width=\"36\" height=\"30\" rx=\"3\"/><path d=\"M32 20v14m9-14v14m9-14v14M3 27h20m36 0h20m-7-6 7 6-7 6\"/><circle cx=\"7\" cy=\"27\" r=\"3\"/></svg>"
   },
   {
+    "id": "kafka",
+    "topic": "backend",
+    "topicLabel": "EVENT LOG & STREAMS",
+    "title": "Kafka 从零开始",
+    "description": "从单节点 KRaft 实验开始，理解持久日志、分区、独立消费进度、再均衡、回放与保留策略。",
+    "scale": "14 章 · 4 个附录",
+    "level": "日志与消费实践",
+    "readUrl": "https://aias00.github.io/kafka-book-reader/",
+    "epubUrl": "https://aias00.github.io/kafka-book-reader/downloads/kafka-book-reader.epub",
+    "coverColor": "#d8c5a5",
+    "coverInk": "#4a3a28",
+    "coverLines": ["Kafka", "从零开始"],
+    "coverSubtitle": "日志 · 消费 · 回放",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><path d=\"M5 11h72M5 27h72M5 43h72\"/><rect x=\"13\" y=\"6\" width=\"12\" height=\"10\"/><rect x=\"32\" y=\"22\" width=\"12\" height=\"10\"/><rect x=\"52\" y=\"38\" width=\"12\" height=\"10\"/><path d=\"m70 6 7 5-7 5m0 6 7 5-7 5m0 6 7 5-7 5\"/></svg>"
+  },
+  {
     "id": "envoy",
     "topic": "backend",
     "topicLabel": "CLOUD NATIVE",
@@ -165,6 +181,22 @@ export const books = [
     "coverLines": ["AI 网关", "模型路由"],
     "coverSubtitle": "流式协议 · 预算 · 故障恢复",
     "coverArt": "<svg viewBox=\"0 0 82 54\"><rect x=\"28\" y=\"16\" width=\"23\" height=\"23\" rx=\"3\"/><path d=\"M3 27h25m23 0h13V8h11M64 27v19h11\"/><circle cx=\"75\" cy=\"8\" r=\"4\"/><circle cx=\"75\" cy=\"46\" r=\"4\"/><path d=\"m35 28 4 4 7-10\"/></svg>"
+  },
+  {
+    "id": "observability",
+    "topic": "backend",
+    "topicLabel": "OBSERVABILITY",
+    "title": "全链路可观测性：从一次慢请求到故障定位",
+    "description": "从 Java、Redis 与 RocketMQ 真实链路出发，学习 OpenTelemetry、指标与日志关联、采样、SLO 和故障定位。",
+    "scale": "16 章 · 4 个附录",
+    "level": "故障定位与实践",
+    "readUrl": "https://aias00.github.io/observability-book/",
+    "epubUrl": "https://aias00.github.io/observability-book/downloads/observability-book.epub",
+    "coverColor": "#a9cbdc",
+    "coverInk": "#294557",
+    "coverLines": ["全链路", "可观测性"],
+    "coverSubtitle": "从一次慢请求到故障定位",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><path d=\"M6 45h70M6 8v37m8-23h13v13h13V15h13v13h17\"/><circle cx=\"27\" cy=\"22\" r=\"3\"/><circle cx=\"40\" cy=\"35\" r=\"3\"/><circle cx=\"53\" cy=\"15\" r=\"3\"/><path d=\"m65 23 5 5-5 5\"/></svg>"
   },
   {
     "id": "agent",
@@ -311,6 +343,22 @@ export const books = [
     "coverLines": ["AI 编程", "代理工程"],
     "coverSubtitle": "从四套实现到自己的 Harness",
     "coverArt": "<svg viewBox=\"0 0 82 54\"><rect x=\"31\" y=\"17\" width=\"20\" height=\"20\" rx=\"3\"/><path d=\"M18 9h46v36H18V9Zm4 4 9 8m20 12 9 8M22 41l9-8m20-12 9-8\"/><circle cx=\"18\" cy=\"9\" r=\"5\"/><circle cx=\"64\" cy=\"9\" r=\"5\"/><circle cx=\"18\" cy=\"45\" r=\"5\"/><circle cx=\"64\" cy=\"45\" r=\"5\"/></svg>"
+  },
+  {
+    "id": "ai-quality",
+    "topic": "agents",
+    "topicLabel": "EVALUATION & DELIVERY",
+    "title": "AI 应用质量交付：从评测集到发布回归",
+    "description": "用版本化样本、真实产物和可运行流水线，学习评分校准、逐样本回归、配对统计、预算与发布门槛。",
+    "scale": "16 章 · 4 个附录",
+    "level": "评测与发布实践",
+    "readUrl": "https://aias00.github.io/ai-quality-book/",
+    "epubUrl": "https://aias00.github.io/ai-quality-book/downloads/ai-quality-book.epub",
+    "coverColor": "#c7c3e2",
+    "coverInk": "#393351",
+    "coverLines": ["AI 应用", "质量交付"],
+    "coverSubtitle": "从评测集到发布回归",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><rect x=\"11\" y=\"7\" width=\"28\" height=\"40\" rx=\"2\"/><path d=\"m17 18 3 3 5-6m-8 15 3 3 5-6m4-7h5m-5 12h5M39 27h17\"/><circle cx=\"65\" cy=\"27\" r=\"13\"/><path d=\"m58 27 5 5 9-11\"/></svg>"
   },
   {
     "id": "opensource",
