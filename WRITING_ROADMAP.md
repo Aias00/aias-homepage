@@ -1,6 +1,18 @@
 # 技术电子书写作与发布路线
 
-用户目标：按已推荐路线继续写书，提供 EPUB，提交至 Aias00 的 GitHub，并支持在线阅读。2026-10-21 已确认将三份现有书稿也一并整理发布，范围共八本。完成一本不能视为整个目标完成。
+用户目标：按已推荐路线继续写书，提供 EPUB，提交至 Aias00 的 GitHub，并支持在线阅读。上一轮八本已完成；2026-10-21 用户按新的推荐路线启动第二轮，优先执行可靠执行、身份授权、Go服务工程三本。第二轮不能沿用上一轮完成状态，完成一本也不代表三本目标完成。
+
+## 第二轮：当前执行范围
+
+| 顺序 | 书籍 | 状态 | 本地目录 | 公开入口 |
+| --- | --- | --- | --- | --- |
+| 1 | 长任务 Agent 的可靠执行：状态、审批与故障恢复 | 已发布EPUB与在线阅读：18章26718正文汉字、4附录；真实PG28项、CPU模型、ZIP独立执行与完整出版CI39591665656通过，Release核验收尾中 | /Volumes/data/durable-agent-workflow-book | [阅读](https://aias00.github.io/durable-agent-workflow-book/) · [EPUB](https://aias00.github.io/durable-agent-workflow-book/downloads/durable-agent-workflow-book.epub) · [GitHub](https://github.com/Aias00/durable-agent-workflow-book) |
+| 2 | 企业 Agent 工具接入：身份委托、授权与审计 | 已交付v1.0.1：18章25303正文汉字、2附录；真实HTTP/Keycloak、独立审阅与公开产物核验通过 | /Volumes/data/enterprise-agent-auth-book | [阅读](https://aias00.github.io/enterprise-agent-auth-book/) · [EPUB](https://aias00.github.io/enterprise-agent-auth-book/downloads/enterprise-agent-auth-book.epub) · [GitHub](https://github.com/Aias00/enterprise-agent-auth-book) |
+| 3 | Go 服务工程：并发、资源管理与故障诊断 | 已交付v1.0.1：18章27153正文汉字、4附录；真实TCP/取消/SIGTERM/race/profile与公开产物核验通过 | /Volumes/data/go-service-engineering-book | [阅读](https://aias00.github.io/go-service-engineering-book/) · [EPUB](https://aias00.github.io/go-service-engineering-book/downloads/go-service-engineering-book.epub) · [GitHub](https://github.com/Aias00/go-service-engineering-book) |
+
+每本中文正文目标至少25000汉字，必须有完整解释、实际实验与明确边界。EPUB、网页、GitHub源、Release与书架仍须满足下述逐项交付条件。下一轮[选题分析](docs/next-book-topics-2026-10-21.md)建议优先Kubernetes控制器、CDC数据同步、MySQL复制恢复，浏览器Agent作为后续候选；记忆与Sandbox修订另行安排。这些建议尚未启动，不替代本轮三本。
+
+## 第一轮：已完成的八本
 
 | 顺序 | 书籍 | 状态 | 本地目录 | GitHub / 在线入口 |
 | --- | --- | --- | --- | --- |
@@ -31,10 +43,10 @@
 - 本机无容器、Kubernetes、MySQL服务；依赖实验已在 GitHub Actions 的真实容器和kind环境运行并保存证据。Netty与Kafka也保留本机JDK/Maven及真实KRaft验证。
 - Release直接采用成功CI产物，逐本比对公开Pages、Release与CI的EPUB；交付文档不触发出版重建。补丁版本保留旧Release，不覆盖既有附件。
 
-## 完成审计
+## 第一轮完成审计
 
 八本均已完成正文、实验、EPUB、GitHub源代码与在线阅读，合计125章正文、31个附录。[独立出版审计](docs/publication-audit-2026-10-21.json)的8本全部通过：164个公开阅读单元可读，各书Pages、Release与同次成功CI的EPUB逐字节相同。
 
-23本[公开书架](https://aias00.github.io/books/)已部署并复核，分类为后端12本、AI10本、开源1本。主页源提交 `d7c0419625b06a6374a897b0c347fa6f533c08c3` 的完整[CI 39581614746](https://github.com/Aias00/aias-homepage/actions/runs/39581614746)成功，发布仓库提交 `9eefbfc0051b4f8fb0725ec3e38d273f8f1e1ed3` 与该源提交对应。本地与CI均通过类型检查、构建和8项浏览器回归；公网三页320/390/820px布局、23书卡的46个链接与源数据一致、分类筛选、旧锚点和无JavaScript导航均通过，记录见[主页部署验收](docs/homepage-publication-2026-10-21.json)。本轮八本写作与整理发布范围全部完成。
+23本[公开书架](https://aias00.github.io/books/)已部署并复核，分类为后端12本、AI10本、开源1本。主页源提交 `d7c0419625b06a6374a897b0c347fa6f533c08c3` 的完整[CI 39581614746](https://github.com/Aias00/aias-homepage/actions/runs/39581614746)成功，发布仓库提交 `9eefbfc0051b4f8fb0725ec3e38d273f8f1e1ed3` 与该源提交对应。本地与CI均通过类型检查、构建和8项浏览器回归；公网三页320/390/820px布局、23书卡的46个链接与源数据一致、分类筛选、旧锚点和无JavaScript导航均通过，记录见[主页部署验收](docs/homepage-publication-2026-10-21.json)。第一轮八本写作与整理发布范围全部完成。
 
 各书 `DELIVERY.md` 记录实验前提与未测试范围：受控HTTP上游不等于真实模型API，合成评测不等于模型排名，单节点KRaft/kind不等于生产高可用，Outbox本地原子性不等于消息恰好一次。Netty、Kafka、Kubernetes的原维护仓库仍为私有，公开阅读仓库使用审查后的独立历史。

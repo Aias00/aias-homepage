@@ -62,6 +62,25 @@ export const books = [
     "coverArt": "<svg viewBox=\"0 0 82 54\"><path d=\"M4 28h15l6-15 9 28 9-36 9 26h26M5 46h72M5 5v41\"/><circle cx=\"61\" cy=\"31\" r=\"4\"/></svg>"
   },
   {
+    "id": "go-service",
+    "topic": "backend",
+    "topicLabel": "GO SERVICE ENGINEERING",
+    "title": "Go 服务工程：并发、资源管理与故障诊断",
+    "description": "从真实 HTTP 服务和后台 worker 出发，学习取消传播、有界并发、资源回收、过载与 pprof 故障诊断。",
+    "scale": "18 章 · 4 个附录",
+    "level": "并发与资源实践",
+    "readUrl": "https://aias00.github.io/go-service-engineering-book/",
+    "epubUrl": "https://aias00.github.io/go-service-engineering-book/downloads/go-service-engineering-book.epub",
+    "coverColor": "#b6ced3",
+    "coverInk": "#284750",
+    "coverLines": [
+      "Go 服务",
+      "工程实践"
+    ],
+    "coverSubtitle": "取消传播与有界并发",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><rect x=\"26\" y=\"12\" width=\"28\" height=\"30\" rx=\"3\"/><path d=\"M3 20h23M3 34h23M54 27h24m-7-6 7 6-7 6M33 20h14m-14 7h14m-14 7h8\"/><circle cx=\"10\" cy=\"20\" r=\"3\"/><circle cx=\"10\" cy=\"34\" r=\"3\"/></svg>"
+  },
+  {
     "id": "netty",
     "topic": "backend",
     "topicLabel": "NETWORK PROGRAMMING",
@@ -248,6 +267,44 @@ export const books = [
     ],
     "coverSubtitle": "Java 开发者学习指南",
     "coverArt": "<svg viewBox=\"0 0 82 54\"><rect x=\"27\" y=\"17\" width=\"28\" height=\"20\" rx=\"4\"/><path d=\"M41 7v10M41 37v10M7 27h20m28 0h20M14 10l13 10m28 14 13 10M14 44l13-10m28-14 13-10\"/><circle cx=\"36\" cy=\"27\" r=\"2\"/><circle cx=\"46\" cy=\"27\" r=\"2\"/></svg>"
+  },
+  {
+    "id": "durable-agent-workflow",
+    "topic": "agents",
+    "topicLabel": "DURABLE AGENT WORKFLOWS",
+    "title": "长任务 Agent 的可靠执行：状态、审批与故障恢复",
+    "description": "用 PostgreSQL、多 worker、HTTP 工具与崩溃实验，学习持久状态、审批、租约、幂等和结果未知时的恢复。",
+    "scale": "18 章 · 4 个附录",
+    "level": "持久执行与恢复",
+    "readUrl": "https://aias00.github.io/durable-agent-workflow-book/",
+    "epubUrl": "https://aias00.github.io/durable-agent-workflow-book/downloads/durable-agent-workflow-book.epub",
+    "coverColor": "#c6bfd8",
+    "coverInk": "#3e3454",
+    "coverLines": [
+      "长任务",
+      "Agent"
+    ],
+    "coverSubtitle": "状态 · 审批 · 故障恢复",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><rect x=\"5\" y=\"18\" width=\"18\" height=\"18\" rx=\"2\"/><rect x=\"32\" y=\"18\" width=\"18\" height=\"18\" rx=\"2\"/><rect x=\"59\" y=\"18\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M23 27h9m18 0h9M68 18V7H14v11m-5-5 5 5 5-5m17 14 4 4 6-8M14 36v11h54V36\"/></svg>"
+  },
+  {
+    "id": "enterprise-agent-auth",
+    "topic": "agents",
+    "topicLabel": "AGENT IDENTITY & ACCESS",
+    "title": "企业 Agent 工具接入：身份委托、授权与审计",
+    "description": "从真实身份与双租户业务出发，学习工具委托、对象授权、参数绑定审批、撤权与审计，用 Go 和 Keycloak 验证执行边界。",
+    "scale": "18 章 · 2 个附录",
+    "level": "身份与授权实践",
+    "readUrl": "https://aias00.github.io/enterprise-agent-auth-book/",
+    "epubUrl": "https://aias00.github.io/enterprise-agent-auth-book/downloads/enterprise-agent-auth-book.epub",
+    "coverColor": "#b9cfc5",
+    "coverInk": "#2f4940",
+    "coverLines": [
+      "Agent",
+      "工具授权"
+    ],
+    "coverSubtitle": "委托 · 对象授权 · 审计",
+    "coverArt": "<svg viewBox=\"0 0 82 54\"><path d=\"m31 5 20 9v12c0 12-20 23-20 23S11 38 11 26V14ZM51 26h8V13h6m-6 13v16h6\"/><circle cx=\"31\" cy=\"24\" r=\"5\"/><path d=\"M31 29v9m0-4h5\"/><rect x=\"65\" y=\"7\" width=\"13\" height=\"12\" rx=\"2\"/><rect x=\"65\" y=\"36\" width=\"13\" height=\"12\" rx=\"2\"/></svg>"
   },
   {
     "id": "knowledge-retrieval",
