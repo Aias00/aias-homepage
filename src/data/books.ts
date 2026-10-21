@@ -90,8 +90,8 @@ export const books = [
     "level": "网关入门",
     "readUrl": "https://aias00.github.io/envoy-learning-book/",
     "epubUrl": "https://github.com/Aias00/envoy-learning-book/releases/download/v1.0.0/envoy-learning-book.epub",
-    "coverColor": "#a0c3c0",
-    "coverInk": "#284544",
+    "coverColor": "#a9cddc",
+    "coverInk": "#264958",
     "coverLines": [
       "读懂",
       "Envoy"
@@ -128,8 +128,8 @@ export const books = [
     "level": "Java 开发者入门",
     "readUrl": "https://aias00.github.io/agent-book/",
     "epubUrl": "https://aias00.github.io/agent-book/downloads/agent-engineering-java.epub",
-    "coverColor": "#d1d99e",
-    "coverInk": "#354124",
+    "coverColor": "#b3c7ef",
+    "coverInk": "#253b62",
     "coverLines": [
       "Agent",
       "工程实战"
@@ -147,8 +147,8 @@ export const books = [
     "level": "概念到工程",
     "readUrl": "https://aias00.github.io/agent-sandbox-book-online/",
     "epubUrl": "https://aias00.github.io/agent-sandbox-book-online/Agent-Sandbox-3.0.epub",
-    "coverColor": "#bfdc94",
-    "coverInk": "#2a3d1d",
+    "coverColor": "#a6d8e5",
+    "coverInk": "#234b58",
     "coverLines": [
       "Agent",
       "Sandbox"
@@ -166,8 +166,8 @@ export const books = [
     "level": "研究与设计",
     "readUrl": "https://aias00.github.io/agent-memory-book/",
     "epubUrl": "https://aias00.github.io/agent-memory-book/agent-memory.epub",
-    "coverColor": "#a8cec0",
-    "coverInk": "#244638",
+    "coverColor": "#b9c8e6",
+    "coverInk": "#2a3c5a",
     "coverLines": [
       "Agent",
       "记忆"

@@ -4,6 +4,15 @@
       const canvas = document.getElementById('orb');
       const ctx = canvas.getContext('2d');
       if (!ctx) return;
+      // Read the same palette as the CSS so the globe stays in sync with the UI.
+      const theme = getComputedStyle(document.documentElement);
+      const colors = {
+        accent: theme.getPropertyValue('--accent-rgb').trim(),
+        secondary: theme.getPropertyValue('--secondary-rgb').trim(),
+        muted: theme.getPropertyValue('--dim-rgb').trim(),
+        glow: theme.getPropertyValue('--accent').trim(),
+        highlight: theme.getPropertyValue('--accent-hover').trim(),
+      };
       const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
       const points = [];
       const count = 1050;
@@ -29,7 +38,7 @@
           const a = project(...coordinates[i - 1], scale, cx, cy);
           const b = project(...coordinates[i], scale, cx, cy);
           const opacity = alpha * (.28 + ((a[2] + 1) / 2) * .72);
-          ctx.strokeStyle = 'rgba(177, 225, 113, ' + opacity + ')';
+          ctx.strokeStyle = `rgba(${colors.secondary}, ${opacity})`;
           ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
         }
       }
@@ -56,10 +65,10 @@
         const cx = width * .5, cy = height * .5;
         const scale = Math.min(width * .32, height * .36);
         // Quiet construction marks around the central sphere.
-        ctx.strokeStyle = 'rgba(158, 180, 133, .14)'; ctx.lineWidth = .7;
+        ctx.strokeStyle = `rgba(${colors.muted}, .18)`; ctx.lineWidth = .7;
         ctx.setLineDash([2, 5]); ctx.beginPath();
         ctx.arc(cx, cy, scale * 1.28, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]);
-        ctx.strokeStyle = 'rgba(185, 211, 156, .25)';
+        ctx.strokeStyle = `rgba(${colors.secondary}, .35)`;
         for (let i = 0; i < 4; i++) {
           const a = i * Math.PI / 2;
           ctx.beginPath();
@@ -71,20 +80,20 @@
         const projected = points.map(point => project(...point, scale, cx, cy)).sort((a, b) => a[2] - b[2]);
         for (const point of projected) {
           const front = (point[2] + 1) / 2;
-          ctx.fillStyle = 'rgba(194, 249, 112, ' + (.1 + front * .65) + ')';
+          ctx.fillStyle = `rgba(${colors.accent}, ${.1 + front * .65})`;
           ctx.beginPath(); ctx.arc(point[0], point[1], .55 + front * .65, 0, Math.PI * 2); ctx.fill();
         }
         // Two asymmetric orbits give the globe its own little solar system.
         ctx.save(); ctx.translate(cx, cy); ctx.rotate(-.39);
-        ctx.lineWidth = .8; ctx.strokeStyle = 'rgba(194, 249, 112, .55)';
+        ctx.lineWidth = .8; ctx.strokeStyle = `rgba(${colors.accent}, .6)`;
         ctx.beginPath(); ctx.ellipse(0, 0, scale * 1.5, scale * .36, 0, 0, Math.PI * 2); ctx.stroke();
         const satelliteAngle = angle * .65 + .55;
         const sx = Math.cos(satelliteAngle) * scale * 1.5, sy = Math.sin(satelliteAngle) * scale * .36;
-        ctx.shadowBlur = 16; ctx.shadowColor = '#c2f970'; ctx.fillStyle = '#d5ff9e';
+        ctx.shadowBlur = 16; ctx.shadowColor = colors.glow; ctx.fillStyle = colors.highlight;
         ctx.beginPath(); ctx.arc(sx, sy, 3.4, 0, Math.PI * 2); ctx.fill();
         ctx.shadowBlur = 0; ctx.restore();
         ctx.save(); ctx.translate(cx, cy); ctx.rotate(.65);
-        ctx.strokeStyle = 'rgba(194, 249, 112, .19)'; ctx.lineWidth = .6;
+        ctx.strokeStyle = `rgba(${colors.secondary}, .4)`; ctx.lineWidth = .6;
         ctx.beginPath(); ctx.ellipse(0, 0, scale * 1.29, scale * .45, 0, 0, Math.PI * 2); ctx.stroke(); ctx.restore();
       }
       function animate(timestamp) {
