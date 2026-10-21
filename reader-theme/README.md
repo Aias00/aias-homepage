@@ -13,7 +13,7 @@
 | agent-sandbox-book-online | reader.css / reader.js | 仓库根目录 |
 | agent-memory-book | styles/site.css / reader.js | docs/，构建脚本复制资源 |
 | jvm-bug-book-reader | public/reader.css / reader.js | public/ |
-| agent-book | assets/reader.css / reader.js / reader-head.html | docs/site/；assets/style.css 仅用于 EPUB |
+| agent-book | web/reader.css / reader.js | scripts/build_site.py 构建到 docs/site/；assets/style.css 仅用于 EPUB |
 | codex-engineering-book | web/reader.css / reader.js | 构建到 _site/ |
 | pi-beginner-book-zh | web/site.css / site.js | 构建到 site/ |
 | deepseek-harness-book | site.css / reader.js / site-template.html | docs/，构建脚本复制资源 |

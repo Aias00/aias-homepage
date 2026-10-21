@@ -53,6 +53,7 @@ def add_script(path, src="reader.js"):
 
 def sync(root):
     configs = {
+        "agent-book": ("web/reader.css", "web/reader.js", [("web/reader.css", "docs/site/style.css"), ("web/reader.js", "docs/site/reader.js")]),
         "opensource-book-site": ("reading.css", "reading.js", []),
         "redis-book": ("assets/reader.css", "assets/reader.js", [("assets/reader.css", "docs/reader.css"), ("assets/reader.js", "docs/reader.js")]),
         "api-gateway-book-reader": ("web/reader.css", "web/reader.js", [("web/reader.css", "site/reader.css"), ("web/reader.js", "site/reader.js")]),
@@ -113,41 +114,6 @@ def sync(root):
         for path in (repo / "docs").glob("*.html"):
             add_script(path)
 
-    repo = root / "agent-book"
-    if repo.exists():
-        # Keep assets/style.css for EPUB; the web reader gets separate assets.
-        base = (repo / "assets/style.css").read_text()
-        write(repo / "assets/reader.css", base + "\n" + CSS)
-        write(repo / "assets/reader.js", JS)
-        write(repo / "assets/reader-head.html", '<meta name="viewport" content="width=device-width, initial-scale=1">\n<script src="reader.js" defer></script>\n')
-        write(repo / "docs/site/style.css", (repo / "assets/reader.css").read_text())
-        write(repo / "docs/site/reader.js", JS)
-        builder = repo / "scripts/build-book.sh"
-        text = builder.read_text().replace('--css=style.css --standalone', '--css=style.css --include-in-header=assets/reader-head.html --standalone')
-        text = text.replace('cp assets/style.css docs/site/style.css', 'cp assets/reader.css docs/site/style.css\ncp assets/reader.js docs/site/reader.js')
-        # The handcrafted index and Pandoc chapter pages share the same assets.
-        text = text.replace('<meta charset="utf-8"><title>', '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="reader.js" defer></script><title>')
-        postprocess = """
-python3 - <<'PYREADER'
-from pathlib import Path
-for page in Path('docs/site').glob('*.html'):
-    text = page.read_text().replace('<body>', '<body class="aias-basic-reader">').replace('<main>', '<main class="prose">')
-    page.write_text(text)
-PYREADER
-"""
-        if "PYREADER" not in text:
-            text += postprocess
-        write(builder, text)
-        for path in (repo / "docs/site").glob("*.html"):
-            text = path.read_text().replace('<body>', '<body class="aias-basic-reader">').replace('<main>', '<main class="prose">')
-            if 'name="viewport"' not in text:
-                text = text.replace('<meta charset="utf-8">', '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">')
-            if 'src="reader.js"' not in text:
-                if '</head>' in text:
-                    text = text.replace('</head>', '<script src="reader.js" defer></script></head>')
-                else:
-                    text = text.replace('<main>', '<script src="reader.js" defer></script><main>', 1)
-            write(path, text)
 
 
 if __name__ == "__main__":
